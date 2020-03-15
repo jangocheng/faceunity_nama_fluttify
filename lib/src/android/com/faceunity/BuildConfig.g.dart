@@ -14,11 +14,12 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_faceunity_BuildConfig extends java_lang_Object  {
   //region constants
+  static final String LIBRARY_PACKAGE_NAME = "com.faceunity";
   static final String APPLICATION_ID = "com.faceunity";
   static final String BUILD_TYPE = "release";
   static final String FLAVOR = "";
-  static final int VERSION_CODE = 45;
-  static final String VERSION_NAME = "5.4.0";
+  static final int VERSION_CODE = 76;
+  static final String VERSION_NAME = "6.6.0-lite";
   //endregion
 
   //region creators

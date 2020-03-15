@@ -19,7 +19,7 @@ A new flutter plugin project.
   # flutter plugin dependency
   
   # sdk dependency
-  s.dependency 'Nama', '~> 6.6.0'
+  s.dependency 'Nama-lite', '~> 6.6.0'
 
   s.static_framework = true
   s.ios.deployment_target = '8.0'

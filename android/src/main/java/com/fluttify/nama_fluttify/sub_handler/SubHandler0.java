@@ -1249,7 +1249,87 @@ public class SubHandler0 {
                 methodResult.success("success");
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuSetup", (args, methodResult) -> {
+            put("com.faceunity.wrapper.faceunity::fuRotateImage", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.faceunity.wrapper.faceunity.RotatedImage var0 = (com.faceunity.wrapper.faceunity.RotatedImage) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+                // jsonable arg
+                byte[] var1 = (byte[]) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuRotateImage(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuRotateImage(var0, var1, var2, var3, var4, var5, var6, var7);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuSetup__Uint8List__Uint8List", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                byte[] var1 = (byte[]) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetup(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuSetup(var0, var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuSetupLocal", (args, methodResult) -> {
                 // args
                 // jsonable arg
                 byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
@@ -1263,13 +1343,13 @@ public class SubHandler0 {
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetup(" + var0 + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetupLocal(" + var0 + var1 + var2 + ")");
                 }
             
                 // invoke native method
-                int result;
+                byte[] result;
                 try {
-                    result = com.faceunity.wrapper.faceunity.fuSetup(var0, var1, var2);
+                    result = com.faceunity.wrapper.faceunity.fuSetupLocal(var0, var1, var2);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1280,7 +1360,7 @@ public class SubHandler0 {
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                byte[] jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
@@ -1302,6 +1382,104 @@ public class SubHandler0 {
                 int result;
                 try {
                     result = com.faceunity.wrapper.faceunity.fuCreateItemFromPackage(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuLoadAIModelFromPackage", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuLoadAIModelFromPackage(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuLoadAIModelFromPackage(var0, var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuReleaseAIModel", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuReleaseAIModel(" + var0 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuReleaseAIModel(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuIsAIModelLoaded", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuIsAIModelLoaded(" + var0 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuIsAIModelLoaded(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1363,6 +1541,36 @@ public class SubHandler0 {
                 // invoke native method
                 try {
                     com.faceunity.wrapper.faceunity.fuDestroyAllItems();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuDestroyLibData", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuDestroyLibData(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuDestroyLibData();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1656,6 +1864,42 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
+            put("com.faceunity.wrapper.faceunity::fuItemSetParamu64", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                long var2 = (long) ((Map<String, Object>) args).get("var2");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuItemSetParamu64(" + var0 + var1 + var2 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuItemSetParamu64(var0, var1, var2);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
             put("com.faceunity.wrapper.faceunity::fuItemSetParamu8v", (args, methodResult) -> {
                 // args
                 // jsonable arg
@@ -1755,6 +1999,74 @@ public class SubHandler0 {
             
                 // convert result to jsonable result
                 double jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuItemGetParamdv", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuItemGetParamdv(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                double[] result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuItemGetParamdv(var0, var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                double[] jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuItemGetParamfv", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuItemGetParamfv(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                float[] result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuItemGetParamfv(var0, var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                float[] jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
@@ -1986,7 +2298,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuRenderToNV21Image__int__int__int__int__Int32List__int", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -2058,6 +2370,58 @@ public class SubHandler0 {
                 int result;
                 try {
                     result = com.faceunity.wrapper.faceunity.fuRenderToNV21Image(var0, var1, var2, var3, var4, var5, var6, var7, var8);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+                // jsonable arg
+                byte[] var8 = (byte[]) ((Map<String, Object>) args).get("var8");
+                // jsonable arg
+                int var9 = (int) ((Map<String, Object>) args).get("var9");
+                // jsonable arg
+                int var10 = (int) ((Map<String, Object>) args).get("var10");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuRenderToNV21Image(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuRenderToNV21Image(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2200,7 +2564,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuRenderToI420Image__int__int__int__int__Int32List__int", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -2272,6 +2636,58 @@ public class SubHandler0 {
                 int result;
                 try {
                     result = com.faceunity.wrapper.faceunity.fuRenderToI420Image(var0, var1, var2, var3, var4, var5, var6, var7, var8);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+                // jsonable arg
+                byte[] var8 = (byte[]) ((Map<String, Object>) args).get("var8");
+                // jsonable arg
+                int var9 = (int) ((Map<String, Object>) args).get("var9");
+                // jsonable arg
+                int var10 = (int) ((Map<String, Object>) args).get("var10");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuRenderToI420Image(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuRenderToI420Image(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2372,7 +2788,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__int__int__int__int__Int32List__int", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -2444,6 +2860,58 @@ public class SubHandler0 {
                 int result;
                 try {
                     result = com.faceunity.wrapper.faceunity.fuRenderToRgbaImage(var0, var1, var2, var3, var4, var5, var6, var7, var8);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+                // jsonable arg
+                byte[] var8 = (byte[]) ((Map<String, Object>) args).get("var8");
+                // jsonable arg
+                int var9 = (int) ((Map<String, Object>) args).get("var9");
+                // jsonable arg
+                int var10 = (int) ((Map<String, Object>) args).get("var10");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuRenderToRgbaImage(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuRenderToRgbaImage(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -2564,11 +3032,11 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuRenderToYUVImage__int__int__int__int__int__int__int__int__int__Int32List", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                long var4 = (long) ((Map<String, Object>) args).get("var4");
                 // jsonable arg
                 int var6 = (int) ((Map<String, Object>) args).get("var6");
                 // jsonable arg
@@ -2658,7 +3126,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuDualInputToTexture__int__int__int__int__int__int__Int32List", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -2795,6 +3263,105 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
+            put("com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List__int__int", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int[] var6 = (int[]) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+                // jsonable arg
+                int var8 = (int) ((Map<String, Object>) args).get("var8");
+                // jsonable arg
+                byte[] var9 = (byte[]) ((Map<String, Object>) args).get("var9");
+                // jsonable arg
+                int var10 = (int) ((Map<String, Object>) args).get("var10");
+                // jsonable arg
+                int var11 = (int) ((Map<String, Object>) args).get("var11");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuDualInputToTexture(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + var11 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuDualInputToTexture(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuDualInputToFBO", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int[] var6 = (int[]) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuDualInputToFBO(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuDualInputToFBO(var0, var1, var2, var3, var4, var5, var6, var7);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
             put("com.faceunity.wrapper.faceunity::fuSetDefaultOrientation", (args, methodResult) -> {
                 // args
                 // jsonable arg
@@ -2917,6 +3484,58 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
+            put("com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int__int__int", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                byte[] var6 = (byte[]) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+                // jsonable arg
+                int var8 = (int) ((Map<String, Object>) args).get("var8");
+                // jsonable arg
+                int var9 = (int) ((Map<String, Object>) args).get("var9");
+                // jsonable arg
+                int var10 = (int) ((Map<String, Object>) args).get("var10");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuRenderToTexture(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuRenderToTexture(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
             put("com.faceunity.wrapper.faceunity::fuCreateEGLContext", (args, methodResult) -> {
                 // args
             
@@ -3007,7 +3626,39 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuGetFaceInfo", (args, methodResult) -> {
+            put("com.faceunity.wrapper.faceunity::fuGetFaceIdentifier", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuGetFaceIdentifier(" + var0 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuGetFaceIdentifier(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Float64List", (args, methodResult) -> {
                 // args
                 // jsonable arg
                 int var0 = (int) ((Map<String, Object>) args).get("var0");
@@ -3015,6 +3666,42 @@ public class SubHandler0 {
                 String var1 = (String) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
                 float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuGetFaceInfo(" + var0 + var1 + var2 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuGetFaceInfo(var0, var1, var2);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Int32List", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int[] var2 = (int[]) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -3105,8 +3792,9 @@ public class SubHandler0 {
                 }
             
                 // invoke native method
+                int result;
                 try {
-                    com.faceunity.wrapper.faceunity.fuTrackFace(var0, var1, var2, var3);
+                    result = com.faceunity.wrapper.faceunity.fuTrackFace(var0, var1, var2, var3);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3117,12 +3805,50 @@ public class SubHandler0 {
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = "success";
+                int jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuAvatarToTexture", (args, methodResult) -> {
+            put("com.faceunity.wrapper.faceunity::fuTrackFaceWithTongue", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuTrackFaceWithTongue(" + var0 + var1 + var2 + var3 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuTrackFaceWithTongue(var0, var1, var2, var3);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int", (args, methodResult) -> {
                 // args
                 // jsonable arg
                 float[] var0 = (float[]) ((Map<String, Object>) args).get("var0");
@@ -3157,6 +3883,58 @@ public class SubHandler0 {
                 int result;
                 try {
                     result = com.faceunity.wrapper.faceunity.fuAvatarToTexture(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                float[] var0 = (float[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                float[] var1 = (float[]) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                float[] var3 = (float[]) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                float[] var4 = (float[]) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+                // jsonable arg
+                int var8 = (int) ((Map<String, Object>) args).get("var8");
+                // jsonable arg
+                int[] var9 = (int[]) ((Map<String, Object>) args).get("var9");
+                // jsonable arg
+                int var10 = (int) ((Map<String, Object>) args).get("var10");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuAvatarToTexture(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuAvatarToTexture(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3224,7 +4002,7 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuAvatarToImage", (args, methodResult) -> {
+            put("com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List", (args, methodResult) -> {
                 // args
                 // jsonable arg
                 float[] var0 = (float[]) ((Map<String, Object>) args).get("var0");
@@ -3280,27 +4058,49 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuAvatarBindItems", (args, methodResult) -> {
+            put("com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                float[] var0 = (float[]) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                int[] var1 = (int[]) ((Map<String, Object>) args).get("var1");
+                float[] var1 = (float[]) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                int[] var2 = (int[]) ((Map<String, Object>) args).get("var2");
+                float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                float[] var3 = (float[]) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                float[] var4 = (float[]) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+                // jsonable arg
+                int var8 = (int) ((Map<String, Object>) args).get("var8");
+                // jsonable arg
+                int[] var9 = (int[]) ((Map<String, Object>) args).get("var9");
+                // jsonable arg
+                int var10 = (int) ((Map<String, Object>) args).get("var10");
+                // jsonable arg
+                int var11 = (int) ((Map<String, Object>) args).get("var11");
+                // jsonable arg
+                int var12 = (int) ((Map<String, Object>) args).get("var12");
+                // jsonable arg
+                byte[] var13 = (byte[]) ((Map<String, Object>) args).get("var13");
             
                 // ref
             
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuAvatarBindItems(" + var0 + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuAvatarToImage(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + var11 + var12 + var13 + ")");
                 }
             
                 // invoke native method
                 int result;
                 try {
-                    result = com.faceunity.wrapper.faceunity.fuAvatarBindItems(var0, var1, var2);
+                    result = com.faceunity.wrapper.faceunity.fuAvatarToImage(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3316,25 +4116,214 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuAvatarUnbindItems", (args, methodResult) -> {
+            put("com.faceunity.wrapper.faceunity::fuAvatarToCurrentFBO", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                float[] var0 = (float[]) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                int[] var1 = (int[]) ((Map<String, Object>) args).get("var1");
+                float[] var1 = (float[]) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                float[] var3 = (float[]) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                float[] var4 = (float[]) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
+                // jsonable arg
+                int var8 = (int) ((Map<String, Object>) args).get("var8");
+                // jsonable arg
+                int[] var9 = (int[]) ((Map<String, Object>) args).get("var9");
+                // jsonable arg
+                int var10 = (int) ((Map<String, Object>) args).get("var10");
+                // jsonable arg
+                int var11 = (int) ((Map<String, Object>) args).get("var11");
             
                 // ref
             
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuAvatarUnbindItems(" + var0 + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuAvatarToCurrentFBO(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + var9 + var10 + var11 + ")");
                 }
             
                 // invoke native method
                 int result;
                 try {
-                    result = com.faceunity.wrapper.faceunity.fuAvatarUnbindItems(var0, var1);
+                    result = com.faceunity.wrapper.faceunity.fuAvatarToCurrentFBO(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuReadPixelsRGBA2NV21", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                byte[] var4 = (byte[]) ((Map<String, Object>) args).get("var4");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuReadPixelsRGBA2NV21(" + var0 + var1 + var2 + var3 + var4 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuReadPixelsRGBA2NV21(var0, var1, var2, var3, var4);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuRenderBundles", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.faceunity.wrapper.faceunity.AvatarInfo var0 = (com.faceunity.wrapper.faceunity.AvatarInfo) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int[] var5 = (int[]) ((Map<String, Object>) args).get("var5");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuRenderBundles(" + var0 + var1 + var2 + var3 + var4 + var5 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuRenderBundles(var0, var1, var2, var3, var4, var5);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuRenderBundlesWithCamera", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int[] var6 = (int[]) ((Map<String, Object>) args).get("var6");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuRenderBundlesWithCamera(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuRenderBundlesWithCamera(var0, var1, var2, var3, var4, var5, var6);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuRenderBundlesSplitView", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.faceunity.wrapper.faceunity.AvatarInfo var0 = (com.faceunity.wrapper.faceunity.AvatarInfo) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int[] var5 = (int[]) ((Map<String, Object>) args).get("var5");
+                // ref arg
+                com.faceunity.wrapper.faceunity.SplitViewInfo var6 = (com.faceunity.wrapper.faceunity.SplitViewInfo) getHEAP().get((int) ((Map<String, Object>) args).get("var6"));
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuRenderBundlesSplitView(" + var0 + var1 + var2 + var3 + var4 + var5 + var6 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuRenderBundlesSplitView(var0, var1, var2, var3, var4, var5, var6);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3431,6 +4420,40 @@ public class SubHandler0 {
                 int result;
                 try {
                     result = com.faceunity.wrapper.faceunity.fuBindItems(var0, var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuUnBindItems", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int[] var1 = (int[]) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuUnBindItems(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuUnBindItems(var0, var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3604,38 +4627,6 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuLoadExtendedARData", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuLoadExtendedARData(" + var0 + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = com.faceunity.wrapper.faceunity.fuLoadExtendedARData(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
             put("com.faceunity.wrapper.faceunity::fuSetExpressionCalibration", (args, methodResult) -> {
                 // args
                 // jsonable arg
@@ -3667,7 +4658,7 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuLoadAnimModel", (args, methodResult) -> {
+            put("com.faceunity.wrapper.faceunity::fuLoadTongueModel", (args, methodResult) -> {
                 // args
                 // jsonable arg
                 byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
@@ -3677,13 +4668,13 @@ public class SubHandler0 {
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuLoadAnimModel(" + var0 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuLoadTongueModel(" + var0 + ")");
                 }
             
                 // invoke native method
                 int result;
                 try {
-                    result = com.faceunity.wrapper.faceunity.fuLoadAnimModel(var0);
+                    result = com.faceunity.wrapper.faceunity.fuLoadTongueModel(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3757,6 +4748,68 @@ public class SubHandler0 {
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuSetDeviceOrientation", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetDeviceOrientation(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuSetDeviceOrientation(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.faceunity.wrapper.faceunity::fuGetCurrentRotationMode", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuGetCurrentRotationMode(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuGetCurrentRotationMode();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
@@ -3855,6 +4908,38 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
+            put("com.faceunity.wrapper.faceunity::fuSetMultiSamples", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetMultiSamples(" + var0 + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuSetMultiSamples(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
             put("com.faceunity.wrapper.faceunity::fuSetAsyncTrackFace", (args, methodResult) -> {
                 // args
                 // jsonable arg
@@ -3887,1936 +4972,705 @@ public class SubHandler0 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuSetup_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuSetTongueTracking", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    byte[] var1 = (byte[]) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuSetup(var0, var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetTongueTracking(" + var0 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuSetTongueTracking(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuCreateItemFromPackage_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuCreateTexForItem", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuCreateItemFromPackage(var0);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuCreateTexForItem(" + var0 + var1 + var2 + var3 + var4 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuCreateTexForItem(var0, var1, var2, var3, var4);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuDestroyItem_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuDeleteTexForItem", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    try {
-                        com.faceunity.wrapper.faceunity.fuDestroyItem(var0);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuDeleteTexForItem(" + var0 + var1 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuDeleteTexForItem(var0, var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuDestroyAllItems_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuSetInputCameraMatrix", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
+                // ref
             
             
-                    // ref
-            
-            
-                    // invoke native method
-                    try {
-                        com.faceunity.wrapper.faceunity.fuDestroyAllItems();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetInputCameraMatrix(" + var0 + var1 + var2 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuSetInputCameraMatrix(var0, var1, var2);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuRenderNV21ImageToTexture_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuSetOutputResolution", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderNV21ImageToTexture(var0, var1, var2, var3, var4);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetOutputResolution(" + var0 + var1 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuSetOutputResolution(var0, var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuRenderI420ImageToTexture_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuSetFaceDetParam", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var0 = (String) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderI420ImageToTexture(var0, var1, var2, var3, var4);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetFaceDetParam(" + var0 + var1 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuSetFaceDetParam(var0, new Double(var1).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuDone_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuSetFaceTrackParam", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var0 = (String) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-            
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    try {
-                        com.faceunity.wrapper.faceunity.fuDone();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuSetFaceTrackParam(" + var0 + var1 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuSetFaceTrackParam(var0, new Double(var1).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuOnDeviceLost_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fu3DBodyTrackerCreate", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-            
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    try {
-                        com.faceunity.wrapper.faceunity.fuOnDeviceLost();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fu3DBodyTrackerCreate(" + var0 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                long result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fu3DBodyTrackerCreate(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                long jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuOnCameraChange_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-            
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    try {
-                        com.faceunity.wrapper.faceunity.fuOnCameraChange();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy(" + var0 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fu3DBodyTrackerDestroy(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__double_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                byte[] var3 = (byte[]) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                // jsonable arg
+                int var7 = (int) ((Map<String, Object>) args).get("var7");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    double var2 = (double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuItemSetParam(var0, var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun(" + var0 + var2 + var3 + var4 + var5 + var6 + var7 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fu3DBodyTrackerRun(var0, var2, var3, var4, var5, var6, var7);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__Float64List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureCreate", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    double[] var2 = (double[]) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuItemSetParam(var0, var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureCreate(" + var0 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                long result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuFaceCaptureCreate(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                long jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__String_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureDestory", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    String var2 = (String) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuItemSetParam(var0, var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureDestory(" + var0 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuFaceCaptureDestory(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuItemSetParamu8v_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuItemSetParamu8v(var0, var1, var2, var3);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene(" + var0 + var2 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuFaceCaptureSetScene(var0, var2);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuIsTracking_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
+                // ref
             
             
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuIsTracking();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX(" + var0 + var2 + var3 + var4 + var5 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuFaceCaptureSetBBOX(var0, var2, var3, var4, var5);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuItemGetParam_batch", (argsBatch, methodResult) -> {
-                List<Double> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureReset", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    double result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuItemGetParam(var0, var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    double jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureReset(" + var0 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                try {
+                    com.faceunity.wrapper.faceunity.fuFaceCaptureReset(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuItemGetParamString_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                // jsonable arg
+                int var6 = (int) ((Map<String, Object>) args).get("var6");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    String result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuItemGetParamString(var0, var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame(" + var0 + var2 + var3 + var4 + var5 + var6 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuFaceCaptureProcessFrame(var0, var2, var3, var4, var5, var6);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuItemGetParamu8v_batch", (argsBatch, methodResult) -> {
-                List<byte[]> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                float[] var3 = (float[]) ((Map<String, Object>) args).get("var3");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    byte[] result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuItemGetParamu8v(var0, var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    byte[] jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks(" + var0 + var2 + var3 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuFaceCaptureGetResultLandmarks(var0, var2, var3);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuSetMaxFaces_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                float[] var3 = (float[]) ((Map<String, Object>) args).get("var3");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuSetMaxFaces(var0);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity(" + var0 + var2 + var3 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuFaceCaptureGetResultIdentity(var0, var2, var3);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                float[] var3 = (float[]) ((Map<String, Object>) args).get("var3");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToNV21Image(var0, var1, var2, var3, var4);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression(" + var0 + var2 + var3 + ")");
                 }
             
-                methodResult.success(resultList);
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuFaceCaptureGetResultExpression(var0, var2, var3);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
             });
             // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToNV21ImageMasked_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                float[] var3 = (float[]) ((Map<String, Object>) args).get("var3");
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int[] var5 = (int[]) ((Map<String, Object>) args).get("var5");
-            
-                    // ref
+                // ref
             
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToNV21ImageMasked(var0, var1, var2, var3, var4, var5);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation(" + var0 + var2 + var3 + ")");
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToNV21Image(var0, var1, var2, var3, var4, var5);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                // invoke native method
+                int result;
+                try {
+                    result = com.faceunity.wrapper.faceunity.fuFaceCaptureGetResultRotation(var0, var2, var3);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
                     }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToNV21Image__int__int__int__int__Int32List__int_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+                // convert result to jsonable result
+                int jsonableResult = result;
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int[] var5 = (int[]) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToNV21Image(var0, var2, var3, var4, var5, var6);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int var7 = (int) ((Map<String, Object>) args).get("var7");
-                    // jsonable arg
-                    byte[] var8 = (byte[]) ((Map<String, Object>) args).get("var8");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToNV21Image(var0, var1, var2, var3, var4, var5, var6, var7, var8);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToI420Image(var0, var1, var2, var3, var4);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToI420ImageMasked_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int[] var5 = (int[]) ((Map<String, Object>) args).get("var5");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToI420ImageMasked(var0, var1, var2, var3, var4, var5);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToI420Image(var0, var1, var2, var3, var4, var5);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToI420Image__int__int__int__int__Int32List__int_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int[] var5 = (int[]) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToI420Image(var0, var2, var3, var4, var5, var6);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int var7 = (int) ((Map<String, Object>) args).get("var7");
-                    // jsonable arg
-                    byte[] var8 = (byte[]) ((Map<String, Object>) args).get("var8");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToI420Image(var0, var1, var2, var3, var4, var5, var6, var7, var8);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToRgbaImage(var0, var1, var2, var3, var4);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToRgbaImage(var0, var1, var2, var3, var4, var5);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__int__int__int__int__Int32List__int_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int[] var5 = (int[]) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToRgbaImage(var0, var2, var3, var4, var5, var6);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int var7 = (int) ((Map<String, Object>) args).get("var7");
-                    // jsonable arg
-                    byte[] var8 = (byte[]) ((Map<String, Object>) args).get("var8");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToRgbaImage(var0, var1, var2, var3, var4, var5, var6, var7, var8);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    byte[] var1 = (byte[]) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int var7 = (int) ((Map<String, Object>) args).get("var7");
-                    // jsonable arg
-                    int var8 = (int) ((Map<String, Object>) args).get("var8");
-                    // jsonable arg
-                    int[] var9 = (int[]) ((Map<String, Object>) args).get("var9");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToYUVImage(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List__int_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    byte[] var1 = (byte[]) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int var7 = (int) ((Map<String, Object>) args).get("var7");
-                    // jsonable arg
-                    int var8 = (int) ((Map<String, Object>) args).get("var8");
-                    // jsonable arg
-                    int[] var9 = (int[]) ((Map<String, Object>) args).get("var9");
-                    // jsonable arg
-                    int var10 = (int) ((Map<String, Object>) args).get("var10");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToYUVImage(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToYUVImage__int__int__int__int__int__int__int__int__int__Int32List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int var7 = (int) ((Map<String, Object>) args).get("var7");
-                    // jsonable arg
-                    int var8 = (int) ((Map<String, Object>) args).get("var8");
-                    // jsonable arg
-                    int var9 = (int) ((Map<String, Object>) args).get("var9");
-                    // jsonable arg
-                    int var10 = (int) ((Map<String, Object>) args).get("var10");
-                    // jsonable arg
-                    int var11 = (int) ((Map<String, Object>) args).get("var11");
-                    // jsonable arg
-                    int[] var12 = (int[]) ((Map<String, Object>) args).get("var12");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToYUVImage(var0, var2, var4, var6, var7, var8, var9, var10, var11, var12);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int[] var6 = (int[]) ((Map<String, Object>) args).get("var6");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuDualInputToTexture(var0, var1, var2, var3, var4, var5, var6);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuDualInputToTexture__int__int__int__int__int__int__Int32List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int[] var7 = (int[]) ((Map<String, Object>) args).get("var7");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuDualInputToTexture(var0, var2, var3, var4, var5, var6, var7);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuDualInputToTextureMasked_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int[] var6 = (int[]) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int[] var7 = (int[]) ((Map<String, Object>) args).get("var7");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuDualInputToTextureMasked(var0, var1, var2, var3, var4, var5, var6, var7);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int[] var6 = (int[]) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int var7 = (int) ((Map<String, Object>) args).get("var7");
-                    // jsonable arg
-                    int var8 = (int) ((Map<String, Object>) args).get("var8");
-                    // jsonable arg
-                    byte[] var9 = (byte[]) ((Map<String, Object>) args).get("var9");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuDualInputToTexture(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuSetDefaultOrientation_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuSetDefaultOrientation(var0);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToTexture(var0, var1, var2, var3, var4, var5);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int[] var4 = (int[]) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    byte[] var6 = (byte[]) ((Map<String, Object>) args).get("var6");
-                    // jsonable arg
-                    int var7 = (int) ((Map<String, Object>) args).get("var7");
-                    // jsonable arg
-                    int var8 = (int) ((Map<String, Object>) args).get("var8");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuRenderToTexture(var0, var1, var2, var3, var4, var5, var6, var7, var8);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuCreateEGLContext_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-            
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    try {
-                        com.faceunity.wrapper.faceunity.fuCreateEGLContext();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuReleaseEGLContext_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-            
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    try {
-                        com.faceunity.wrapper.faceunity.fuReleaseEGLContext();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuDisableBoostWithEGLImage_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-            
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    try {
-                        com.faceunity.wrapper.faceunity.fuDisableBoostWithEGLImage();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.faceunity.wrapper.faceunity::fuGetFaceInfo_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = com.faceunity.wrapper.faceunity.fuGetFaceInfo(var0, var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
+                methodResult.success(jsonableResult);
             });
         }};
     }

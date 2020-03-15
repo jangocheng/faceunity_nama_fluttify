@@ -49,5 +49,5 @@ dependencies {
     // flutter plugin dependency
     
     // sdk dependency
-    api 'com.faceunity:nama:6.6.0'
+    api 'com.faceunity:nama:6.6.0-lite'
 }

@@ -14,6 +14,17 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   //region constants
+  static final int FUAITYPE_DDE = 1;
+  static final int FUAITYPE_BACKGROUNDSEGMENTATION = 2;
+  static final int FUAITYPE_HAIRSEGMENTATION = 4;
+  static final int FUAITYPE_HANDGESTURE = 8;
+  static final int FUAITYPE_TONGUETRACKING = 16;
+  static final int FUAITYPE_FACELANDMARKS75 = 32;
+  static final int FUAITYPE_FACELANDMARKS209 = 64;
+  static final int FUAITYPE_FACELANDMARKS239 = 128;
+  static final int FUAITYPE_HUMANPOSE2D = 256;
+  static final int FUAITYPE_BACKGROUNDSEGMENTATION_GREEN = 512;
+  static final int FUAITYPE_FACEPROCESSOR = 1024;
   static final int FU_FORMAT_RGBA_TEXTURE = 1;
   static final int FU_FORMAT_NV21_BUFFER = 2;
   static final int FU_FORMAT_GL_CURRENT_FRAMEBUFFER = 3;
@@ -36,6 +47,11 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   static final int FU_ADM_FLAG_TEXTURE_ROTATE_90 = 8192;
   static final int FU_ADM_FLAG_TEXTURE_ROTATE_180 = 16384;
   static final int FU_ADM_FLAG_TEXTURE_ROTATE_270 = 32768;
+  static final int FU_NOCLEAR_CURRENT_FRAMEBUFFER = 65536;
+  static final int FU_ROTATION_MODE_0 = 0;
+  static final int FU_ROTATION_MODE_90 = 1;
+  static final int FU_ROTATION_MODE_180 = 2;
+  static final int FU_ROTATION_MODE_270 = 3;
   //endregion
 
   //region creators
@@ -69,14 +85,14 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   //endregion
 
   //region methods
-  static Future<int> fuSetup(Uint8List var0, Uint8List var1, Uint8List var2) async {
+  static Future<int> fuRotateImage(com_faceunity_wrapper_faceunity_RotatedImage var0, Uint8List var1, int var2, int var3, int var4, int var5, int var6, int var7) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetup([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuRotateImage([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7])');
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetup', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRotateImage', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
   
   
     // handle native call
@@ -91,6 +107,50 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
+  static Future<int> fuSetup__Uint8List__Uint8List(Uint8List var0, Uint8List var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetup([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetup__Uint8List__Uint8List', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<Uint8List> fuSetupLocal(Uint8List var0, Uint8List var1, Uint8List var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetupLocal([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetupLocal', {"var0": var0, "var1": var1, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return (result as List).cast<int>();
+    }
+  }
+  
   static Future<int> fuCreateItemFromPackage(Uint8List var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -99,6 +159,72 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateItemFromPackage', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuLoadAIModelFromPackage(Uint8List var0, int var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuLoadAIModelFromPackage([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadAIModelFromPackage', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuReleaseAIModel(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuReleaseAIModel([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseAIModel', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuIsAIModelLoaded(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuIsAIModelLoaded([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsAIModelLoaded', {"var0": var0});
   
   
     // handle native call
@@ -143,6 +269,28 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyAllItems', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuDestroyLibData() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuDestroyLibData([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyLibData', );
   
   
     // handle native call
@@ -333,6 +481,28 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
+  static Future<int> fuItemSetParamu64(int var0, String var1, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuItemSetParamu64([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu64', {"var0": var0, "var1": var1, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<int> fuItemSetParamu8v(int var0, String var1, Uint8List var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -396,6 +566,50 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     } else {
     
       return result;
+    }
+  }
+  
+  static Future<Float64List> fuItemGetParamdv(int var0, String var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuItemGetParamdv([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamdv', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return (result as List).cast<double>();
+    }
+  }
+  
+  static Future<Float64List> fuItemGetParamfv(int var0, String var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuItemGetParamfv([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamfv', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return (result as List).cast<double>();
     }
   }
   
@@ -575,6 +789,28 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
+  static Future<int> fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int(Uint8List var0, int var1, int var2, int var3, Int32List var4, int var5, int var6, int var7, Uint8List var8, int var9, int var10) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuRenderToNV21Image([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<int> fuRenderToI420Image__Uint8List__int__int__int__Int32List(Uint8List var0, int var1, int var2, int var3, Int32List var4) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -685,6 +921,28 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
+  static Future<int> fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int(Uint8List var0, int var1, int var2, int var3, Int32List var4, int var5, int var6, int var7, Uint8List var8, int var9, int var10) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuRenderToI420Image([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<int> fuRenderToRgbaImage__Uint8List__int__int__int__Int32List(Uint8List var0, int var1, int var2, int var3, Int32List var4) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -759,6 +1017,28 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int(Uint8List var0, int var1, int var2, int var3, Int32List var4, int var5, int var6, int var7, Uint8List var8, int var9, int var10) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuRenderToRgbaImage([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -927,6 +1207,50 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
+  static Future<int> fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List__int__int(Uint8List var0, int var1, int var2, int var3, int var4, int var5, Int32List var6, int var7, int var8, Uint8List var9, int var10, int var11) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuDualInputToTexture([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10, \'var11\':$var11])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuDualInputToFBO(Uint8List var0, int var1, int var2, int var3, int var4, int var5, Int32List var6, int var7) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuDualInputToFBO([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToFBO', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<int> fuSetDefaultOrientation(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -979,6 +1303,28 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int__int__int(int var0, int var1, int var2, int var3, Int32List var4, int var5, Uint8List var6, int var7, int var8, int var9, int var10) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuRenderToTexture([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -1059,14 +1405,58 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
-  static Future<int> fuGetFaceInfo(int var0, String var1, Float64List var2) async {
+  static Future<int> fuGetFaceIdentifier(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuGetFaceIdentifier([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceIdentifier', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuGetFaceInfo__int__String__Float64List(int var0, String var1, Float64List var2) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.faceunity.wrapper.faceunity::fuGetFaceInfo([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Float64List', {"var0": var0, "var1": var1, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuGetFaceInfo__int__String__Int32List(int var0, String var1, Int32List var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuGetFaceInfo([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Int32List', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
@@ -1103,7 +1493,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
-  static Future<void> fuTrackFace(Uint8List var0, int var1, int var2, int var3) async {
+  static Future<int> fuTrackFace(Uint8List var0, int var1, int var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.faceunity.wrapper.faceunity::fuTrackFace([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
@@ -1125,14 +1515,58 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
-  static Future<int> fuAvatarToTexture(Float64List var0, Float64List var1, Float64List var2, Float64List var3, int var4, int var5, int var6, int var7, Int32List var8, int var9) async {
+  static Future<int> fuTrackFaceWithTongue(Uint8List var0, int var1, int var2, int var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuTrackFaceWithTongue([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFaceWithTongue', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int(Float64List var0, Float64List var1, Float64List var2, Float64List var3, int var4, int var5, int var6, int var7, Int32List var8, int var9) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.faceunity.wrapper.faceunity::fuAvatarToTexture([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9])');
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9});
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int(Float64List var0, Float64List var1, Float64List var2, Float64List var3, Float64List var4, int var5, int var6, int var7, int var8, Int32List var9, int var10) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuAvatarToTexture([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -1169,14 +1603,14 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
-  static Future<int> fuAvatarToImage(Float64List var0, Float64List var1, Float64List var2, Float64List var3, int var4, int var5, int var6, int var7, Int32List var8, int var9, int var10, int var11, Uint8List var12) async {
+  static Future<int> fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List(Float64List var0, Float64List var1, Float64List var2, Float64List var3, int var4, int var5, int var6, int var7, Int32List var8, int var9, int var10, int var11, Uint8List var12) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: com.faceunity.wrapper.faceunity::fuAvatarToImage([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10, \'var11\':$var11, \'var12\':$var12])');
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12});
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12});
   
   
     // handle native call
@@ -1191,14 +1625,14 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
-  static Future<int> fuAvatarBindItems(int var0, Int32List var1, Int32List var2) async {
+  static Future<int> fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List(Float64List var0, Float64List var1, Float64List var2, Float64List var3, Float64List var4, int var5, int var6, int var7, int var8, Int32List var9, int var10, int var11, int var12, Uint8List var13) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuAvatarBindItems([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuAvatarToImage([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10, \'var11\':$var11, \'var12\':$var12, \'var13\':$var13])');
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarBindItems', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12, "var13": var13});
   
   
     // handle native call
@@ -1213,14 +1647,102 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
-  static Future<int> fuAvatarUnbindItems(int var0, Int32List var1) async {
+  static Future<int> fuAvatarToCurrentFBO(Float64List var0, Float64List var1, Float64List var2, Float64List var3, Float64List var4, int var5, int var6, int var7, int var8, Int32List var9, int var10, int var11) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuAvatarUnbindItems([\'var0\':$var0, \'var1\':$var1])');
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuAvatarToCurrentFBO([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10, \'var11\':$var11])');
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarUnbindItems', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToCurrentFBO', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuReadPixelsRGBA2NV21(int var0, int var1, int var2, int var3, Uint8List var4) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuReadPixelsRGBA2NV21([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReadPixelsRGBA2NV21', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuRenderBundles(com_faceunity_wrapper_faceunity_AvatarInfo var0, int var1, int var2, int var3, int var4, Int32List var5) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuRenderBundles([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundles', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuRenderBundlesWithCamera(Uint8List var0, int var1, int var2, int var3, int var4, int var5, Int32List var6) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuRenderBundlesWithCamera([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesWithCamera', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuRenderBundlesSplitView(com_faceunity_wrapper_faceunity_AvatarInfo var0, int var1, int var2, int var3, int var4, Int32List var5, com_faceunity_wrapper_faceunity_SplitViewInfo var6) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuRenderBundlesSplitView([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesSplitView', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6.refId});
   
   
     // handle native call
@@ -1287,6 +1809,28 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBindItems', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuUnBindItems(int var0, Int32List var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuUnBindItems([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnBindItems', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -1411,28 +1955,6 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
-  static Future<int> fuLoadExtendedARData(Uint8List var0) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuLoadExtendedARData([\'var0\':$var0])');
-    }
-  
-    // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadExtendedARData', {"var0": var0});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (result == null) {
-      return null;
-    } else {
-    
-      return result;
-    }
-  }
-  
   static Future<void> fuSetExpressionCalibration(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -1455,14 +1977,14 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
-  static Future<int> fuLoadAnimModel(Uint8List var0) async {
+  static Future<int> fuLoadTongueModel(Uint8List var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuLoadAnimModel([\'var0\':$var0])');
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuLoadTongueModel([\'var0\':$var0])');
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadAnimModel', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadTongueModel', {"var0": var0});
   
   
     // handle native call
@@ -1507,6 +2029,50 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultRotationMode', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuSetDeviceOrientation(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetDeviceOrientation([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDeviceOrientation', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuGetCurrentRotationMode() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuGetCurrentRotationMode([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetCurrentRotationMode', );
   
   
     // handle native call
@@ -1587,6 +2153,28 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   }
   
+  static Future<int> fuSetMultiSamples(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetMultiSamples([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMultiSamples', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<int> fuSetAsyncTrackFace(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -1595,6 +2183,666 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetAsyncTrackFace', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuSetTongueTracking(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetTongueTracking([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetTongueTracking', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuCreateTexForItem(int var0, String var1, Uint8List var2, int var3, int var4) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuCreateTexForItem([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateTexForItem', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuDeleteTexForItem(int var0, String var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuDeleteTexForItem([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDeleteTexForItem', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuSetInputCameraMatrix(int var0, int var1, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetInputCameraMatrix([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetInputCameraMatrix', {"var0": var0, "var1": var1, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuSetOutputResolution(int var0, int var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetOutputResolution([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetOutputResolution', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuSetFaceDetParam(String var0, double var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetFaceDetParam([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceDetParam', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuSetFaceTrackParam(String var0, double var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuSetFaceTrackParam([\'var0\':$var0, \'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceTrackParam', {"var0": var0, "var1": var1});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fu3DBodyTrackerCreate(Uint8List var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fu3DBodyTrackerCreate([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerCreate', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fu3DBodyTrackerDestroy(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fu3DBodyTrackerRun(int var0, int var2, Uint8List var3, int var4, int var5, int var6, int var7) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureCreate(Uint8List var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureCreate([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureCreate', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuFaceCaptureDestory(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureDestory([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureDestory', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuFaceCaptureSetScene(int var0, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene([\'var0\':$var0, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene', {"var0": var0, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuFaceCaptureSetBBOX(int var0, int var2, int var3, int var4, int var5) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<void> fuFaceCaptureReset(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureReset([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureReset', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureProcessFrame(int var0, Uint8List var2, int var3, int var4, int var5, int var6) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultLandmarks(int var0, int var2, Float64List var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks', {"var0": var0, "var2": var2, "var3": var3});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultIdentity(int var0, int var2, Float64List var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity', {"var0": var0, "var2": var2, "var3": var3});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultExpression(int var0, int var2, Float64List var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression', {"var0": var0, "var2": var2, "var3": var3});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultRotation(int var0, int var2, Float64List var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation', {"var0": var0, "var2": var2, "var3": var3});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultEyesRotation(int var0, int var2, Float64List var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultEyesRotation([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultEyesRotation', {"var0": var0, "var2": var2, "var3": var3});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultTranslation(int var0, int var2, Float64List var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTranslation([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTranslation', {"var0": var0, "var2": var2, "var3": var3});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultTongueExp(int var0, int var2, Float64List var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueExp([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueExp', {"var0": var0, "var2": var2, "var3": var3});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultIsFace(int var0, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIsFace([\'var0\':$var0, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIsFace', {"var0": var0, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultFaceID(int var0, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceID([\'var0\':$var0, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceID', {"var0": var0, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<double> fuFaceCaptureGetResultTongueScore(int var0, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueScore([\'var0\':$var0, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueScore', {"var0": var0, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<double> fuFaceCaptureGetResultFaceScore(int var0, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceScore([\'var0\':$var0, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceScore', {"var0": var0, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultTongueClass(int var0, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueClass([\'var0\':$var0, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueClass', {"var0": var0, "var2": var2});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<double> fuFaceCaptureGetResultFocalLength(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFocalLength([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFocalLength', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> fuFaceCaptureGetResultFaceNum(int var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceNum([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceNum', {"var0": var0});
   
   
     // handle native call
@@ -1622,13 +2870,13 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
   //endregion
 
   //region methods
-  Future<List<int>> fuSetup_batch(List<Uint8List> var0, List<Uint8List> var1, List<Uint8List> var2) async {
-    if (var0.length != var1.length || var1.length != var2.length) {
+  Future<List<int>> fuRotateImage_batch(List<com_faceunity_wrapper_faceunity_RotatedImage> var0, List<Uint8List> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<int> var6, List<int> var7) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetup_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRotateImage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1641,6 +2889,44 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
+  Future<List<int>> fuSetup__Uint8List__Uint8List_batch(List<Uint8List> var0, List<Uint8List> var1) async {
+    if (var0.length != var1.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetup__Uint8List__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<Uint8List>> fuSetupLocal_batch(List<Uint8List> var0, List<Uint8List> var1, List<Uint8List> var2) async {
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetupLocal_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>()).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<List<int>> fuCreateItemFromPackage_batch(List<Uint8List> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1648,6 +2934,63 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateItemFromPackage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuLoadAIModelFromPackage_batch(List<Uint8List> var0, List<int> var1) async {
+    if (var0.length != var1.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadAIModelFromPackage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuReleaseAIModel_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseAIModel_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuIsAIModelLoaded_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsAIModelLoaded_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1686,6 +3029,25 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyAllItems_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuDestroyLibData_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyLibData_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1850,6 +3212,25 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
+  Future<List<int>> fuItemSetParamu64_batch(List<int> var0, List<String> var1, List<int> var2) async {
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu64_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<List<int>> fuItemSetParamu8v_batch(List<int> var0, List<String> var1, List<Uint8List> var2, List<int> var3) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
@@ -1902,6 +3283,44 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
       return null;
     } else {
       final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<Float64List>> fuItemGetParamdv_batch(List<int> var0, List<String> var1) async {
+    if (var0.length != var1.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamdv_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<double>()).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<Float64List>> fuItemGetParamfv_batch(List<int> var0, List<String> var1) async {
+    if (var0.length != var1.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamfv_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<double>()).toList();
     
       return typedResult;
     }
@@ -2059,6 +3478,25 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
+  Future<List<int>> fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3, List<Int32List> var4, List<int> var5, List<int> var6, List<int> var7, List<Uint8List> var8, List<int> var9, List<int> var10) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<List<int>> fuRenderToI420Image__Uint8List__int__int__int__Int32List_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3, List<Int32List> var4) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
@@ -2154,6 +3592,25 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
+  Future<List<int>> fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3, List<Int32List> var4, List<int> var5, List<int> var6, List<int> var7, List<Uint8List> var8, List<int> var9, List<int> var10) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<List<int>> fuRenderToRgbaImage__Uint8List__int__int__int__Int32List_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3, List<Int32List> var4) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
@@ -2218,6 +3675,25 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3, List<Int32List> var4, List<int> var5, List<int> var6, List<int> var7, List<Uint8List> var8, List<int> var9, List<int> var10) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2363,6 +3839,44 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
+  Future<List<int>> fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List__int__int_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<Int32List> var6, List<int> var7, List<int> var8, List<Uint8List> var9, List<int> var10, List<int> var11) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length || var10.length != var11.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuDualInputToFBO_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<Int32List> var6, List<int> var7) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToFBO_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<List<int>> fuSetDefaultOrientation_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2408,6 +3922,25 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int__int__int_batch(List<int> var0, List<int> var1, List<int> var2, List<int> var3, List<Int32List> var4, List<int> var5, List<Uint8List> var6, List<int> var7, List<int> var8, List<int> var9, List<int> var10) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2477,13 +4010,51 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
-  Future<List<int>> fuGetFaceInfo_batch(List<int> var0, List<String> var1, List<Float64List> var2) async {
+  Future<List<int>> fuGetFaceIdentifier_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceIdentifier_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuGetFaceInfo__int__String__Float64List_batch(List<int> var0, List<String> var1, List<Float64List> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Float64List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuGetFaceInfo__int__String__Int32List_batch(List<int> var0, List<String> var1, List<Int32List> var2) async {
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2515,7 +4086,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
-  Future<void> fuTrackFace_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3) async {
+  Future<List<int>> fuTrackFace_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -2534,13 +4105,51 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
-  Future<List<int>> fuAvatarToTexture_batch(List<Float64List> var0, List<Float64List> var1, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<int> var6, List<int> var7, List<Int32List> var8, List<int> var9) async {
+  Future<List<int>> fuTrackFaceWithTongue_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFaceWithTongue_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int_batch(List<Float64List> var0, List<Float64List> var1, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<int> var6, List<int> var7, List<Int32List> var8, List<int> var9) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int_batch(List<Float64List> var0, List<Float64List> var1, List<Float64List> var2, List<Float64List> var3, List<Float64List> var4, List<int> var5, List<int> var6, List<int> var7, List<int> var8, List<Int32List> var9, List<int> var10) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2572,13 +4181,13 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
-  Future<List<int>> fuAvatarToImage_batch(List<Float64List> var0, List<Float64List> var1, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<int> var6, List<int> var7, List<Int32List> var8, List<int> var9, List<int> var10, List<int> var11, List<Uint8List> var12) async {
+  Future<List<int>> fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List_batch(List<Float64List> var0, List<Float64List> var1, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<int> var6, List<int> var7, List<Int32List> var8, List<int> var9, List<int> var10, List<int> var11, List<Uint8List> var12) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length || var10.length != var11.length || var11.length != var12.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2591,13 +4200,13 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
-  Future<List<int>> fuAvatarBindItems_batch(List<int> var0, List<Int32List> var1, List<Int32List> var2) async {
-    if (var0.length != var1.length || var1.length != var2.length) {
+  Future<List<int>> fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List_batch(List<Float64List> var0, List<Float64List> var1, List<Float64List> var2, List<Float64List> var3, List<Float64List> var4, List<int> var5, List<int> var6, List<int> var7, List<int> var8, List<Int32List> var9, List<int> var10, List<int> var11, List<int> var12, List<Uint8List> var13) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length || var10.length != var11.length || var11.length != var12.length || var12.length != var13.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarBindItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "var13": var13[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2610,13 +4219,89 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
-  Future<List<int>> fuAvatarUnbindItems_batch(List<int> var0, List<Int32List> var1) async {
-    if (var0.length != var1.length) {
+  Future<List<int>> fuAvatarToCurrentFBO_batch(List<Float64List> var0, List<Float64List> var1, List<Float64List> var2, List<Float64List> var3, List<Float64List> var4, List<int> var5, List<int> var6, List<int> var7, List<int> var8, List<Int32List> var9, List<int> var10, List<int> var11) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length || var10.length != var11.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarUnbindItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToCurrentFBO_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuReadPixelsRGBA2NV21_batch(List<int> var0, List<int> var1, List<int> var2, List<int> var3, List<Uint8List> var4) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReadPixelsRGBA2NV21_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuRenderBundles_batch(List<com_faceunity_wrapper_faceunity_AvatarInfo> var0, List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<Int32List> var5) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundles_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuRenderBundlesWithCamera_batch(List<Uint8List> var0, List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<Int32List> var6) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesWithCamera_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuRenderBundlesSplitView_batch(List<com_faceunity_wrapper_faceunity_AvatarInfo> var0, List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<Int32List> var5, List<com_faceunity_wrapper_faceunity_SplitViewInfo> var6) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesSplitView_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2674,6 +4359,25 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBindItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuUnBindItems_batch(List<int> var0, List<Int32List> var1) async {
+    if (var0.length != var1.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnBindItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2781,25 +4485,6 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
-  Future<List<int>> fuLoadExtendedARData_batch(List<Uint8List> var0) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadExtendedARData_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
-    
-      return typedResult;
-    }
-  }
-  
   Future<void> fuSetExpressionCalibration_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2819,13 +4504,13 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
-  Future<List<int>> fuLoadAnimModel_batch(List<Uint8List> var0) async {
+  Future<List<int>> fuLoadTongueModel_batch(List<Uint8List> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadAnimModel_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadTongueModel_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2864,6 +4549,44 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultRotationMode_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuSetDeviceOrientation_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDeviceOrientation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuGetCurrentRotationMode_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetCurrentRotationMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2933,6 +4656,25 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   }
   
+  Future<List<int>> fuSetMultiSamples_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMultiSamples_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<List<int>> fuSetAsyncTrackFace_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2940,6 +4682,576 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetAsyncTrackFace_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuSetTongueTracking_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetTongueTracking_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuCreateTexForItem_batch(List<int> var0, List<String> var1, List<Uint8List> var2, List<int> var3, List<int> var4) async {
+    if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateTexForItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuDeleteTexForItem_batch(List<int> var0, List<String> var1) async {
+    if (var0.length != var1.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDeleteTexForItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuSetInputCameraMatrix_batch(List<int> var0, List<int> var1, List<int> var2) async {
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetInputCameraMatrix_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuSetOutputResolution_batch(List<int> var0, List<int> var1) async {
+    if (var0.length != var1.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetOutputResolution_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuSetFaceDetParam_batch(List<String> var0, List<double> var1) async {
+    if (var0.length != var1.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceDetParam_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuSetFaceTrackParam_batch(List<String> var0, List<double> var1) async {
+    if (var0.length != var1.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceTrackParam_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fu3DBodyTrackerCreate_batch(List<Uint8List> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerCreate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fu3DBodyTrackerDestroy_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fu3DBodyTrackerRun_batch(List<int> var0, List<int> var2, List<Uint8List> var3, List<int> var4, List<int> var5, List<int> var6, List<int> var7) async {
+    if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureCreate_batch(List<Uint8List> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureCreate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuFaceCaptureDestory_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureDestory_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuFaceCaptureSetScene_batch(List<int> var0, List<int> var2) async {
+    if (var0.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuFaceCaptureSetBBOX_batch(List<int> var0, List<int> var2, List<int> var3, List<int> var4, List<int> var5) async {
+    if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<void> fuFaceCaptureReset_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureReset_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureProcessFrame_batch(List<int> var0, List<Uint8List> var2, List<int> var3, List<int> var4, List<int> var5, List<int> var6) async {
+    if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultLandmarks_batch(List<int> var0, List<int> var2, List<Float64List> var3) async {
+    if (var0.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultIdentity_batch(List<int> var0, List<int> var2, List<Float64List> var3) async {
+    if (var0.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultExpression_batch(List<int> var0, List<int> var2, List<Float64List> var3) async {
+    if (var0.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultRotation_batch(List<int> var0, List<int> var2, List<Float64List> var3) async {
+    if (var0.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultEyesRotation_batch(List<int> var0, List<int> var2, List<Float64List> var3) async {
+    if (var0.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultEyesRotation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultTranslation_batch(List<int> var0, List<int> var2, List<Float64List> var3) async {
+    if (var0.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTranslation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultTongueExp_batch(List<int> var0, List<int> var2, List<Float64List> var3) async {
+    if (var0.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueExp_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultIsFace_batch(List<int> var0, List<int> var2) async {
+    if (var0.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIsFace_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultFaceID_batch(List<int> var0, List<int> var2) async {
+    if (var0.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<double>> fuFaceCaptureGetResultTongueScore_batch(List<int> var0, List<int> var2) async {
+    if (var0.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueScore_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<double>> fuFaceCaptureGetResultFaceScore_batch(List<int> var0, List<int> var2) async {
+    if (var0.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceScore_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultTongueClass_batch(List<int> var0, List<int> var2) async {
+    if (var0.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueClass_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<double>> fuFaceCaptureGetResultFocalLength_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFocalLength_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> fuFaceCaptureGetResultFaceNum_batch(List<int> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceNum_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
