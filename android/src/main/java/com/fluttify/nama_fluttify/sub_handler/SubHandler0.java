@@ -1871,7 +1871,7 @@ public class SubHandler0 {
                 // jsonable arg
                 String var1 = (String) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
             
                 // ref
             
@@ -2298,7 +2298,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuRenderToNV21Image__int__int__int__int__Int32List__int", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -2564,7 +2564,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuRenderToI420Image__int__int__int__int__Int32List__int", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -2788,7 +2788,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__int__int__int__int__Int32List__int", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -3032,11 +3032,11 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuRenderToYUVImage__int__int__int__int__int__int__int__int__int__Int32List", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
-                long var2 = (long) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
-                long var4 = (long) ((Map<String, Object>) args).get("var4");
+                long var4 = (long) (int) ((Map<String, Object>) args).get("var4");
                 // jsonable arg
                 int var6 = (int) ((Map<String, Object>) args).get("var6");
                 // jsonable arg
@@ -3126,7 +3126,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuDualInputToTexture__int__int__int__int__int__int__Int32List", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5249,7 +5249,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -5280,7 +5280,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5356,7 +5356,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuFaceCaptureDestory", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -5387,7 +5387,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
             
@@ -5420,7 +5420,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5459,7 +5459,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuFaceCaptureReset", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
             
                 // ref
             
@@ -5490,7 +5490,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5532,7 +5532,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5568,7 +5568,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5604,7 +5604,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
@@ -5640,7 +5640,7 @@ public class SubHandler0 {
             put("com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
                 // jsonable arg
                 int var2 = (int) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
