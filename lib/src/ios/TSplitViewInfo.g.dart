@@ -42,8 +42,8 @@ class TSplitViewInfo extends NSObject  {
   //region getters
   Future<NSValue> get_in_ptr() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_in_ptr", {'refId': refId});
-    kNativeObjectPool.add(result);
-    return result;
+    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
+    return NSValue()..refId = result..tag = 'nama_fluttify';
   }
   
   Future<int> get_in_type() async {
@@ -174,70 +174,70 @@ extension TSplitViewInfo_Batch on List<TSplitViewInfo> {
   //region getters
   Future<List<NSValue>> get_in_ptr_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_in_ptr_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<NSValue>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<int>> get_in_type_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_in_type_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_out_w_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_out_w_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_out_h_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_out_h_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_view_0_ratio_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_view_0_ratio_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<double>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_margin_in_pixel_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_margin_in_pixel_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_is_vertical_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_is_vertical_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_is_image_first_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_is_image_first_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_rotation_mode_before_crop_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_rotation_mode_before_crop_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_crop_ratio_top_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_crop_ratio_top_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<double>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }

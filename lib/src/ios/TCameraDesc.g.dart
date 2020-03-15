@@ -66,7 +66,7 @@ extension TCameraDesc_Batch on List<TCameraDesc> {
   //region getters
   Future<List<int>> get_camera_id_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TCameraDesc::get_camera_id_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }

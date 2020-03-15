@@ -78,14 +78,14 @@ extension com_faceunity_wrapper_faceunity_FUImage_Batch on List<com_faceunity_wr
   //region getters
   Future<List<int>> get_tex_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_tex_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<Uint8List>> get_nv21_data_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_nv21_data_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<Uint8List>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }

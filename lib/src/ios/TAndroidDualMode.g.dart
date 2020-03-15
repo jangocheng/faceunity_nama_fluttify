@@ -42,8 +42,8 @@ class TAndroidDualMode extends NSObject  {
   //region getters
   Future<NSValue> get_p_NV21() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAndroidDualMode::get_p_NV21", {'refId': refId});
-    kNativeObjectPool.add(result);
-    return result;
+    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
+    return NSValue()..refId = result..tag = 'nama_fluttify';
   }
   
   Future<int> get_tex() async {
@@ -90,21 +90,21 @@ extension TAndroidDualMode_Batch on List<TAndroidDualMode> {
   //region getters
   Future<List<NSValue>> get_p_NV21_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAndroidDualMode::get_p_NV21_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<NSValue>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<int>> get_tex_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAndroidDualMode::get_tex_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_flags_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAndroidDualMode::get_flags_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }

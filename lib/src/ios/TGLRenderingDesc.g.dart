@@ -48,8 +48,8 @@ class TGLRenderingDesc extends NSObject  {
   
   Future<NSValue> get_param() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TGLRenderingDesc::get_param", {'refId': refId});
-    kNativeObjectPool.add(result);
-    return result;
+    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
+    return NSValue()..refId = result..tag = 'nama_fluttify';
   }
   
   //endregion
@@ -78,14 +78,14 @@ extension TGLRenderingDesc_Batch on List<TGLRenderingDesc> {
   //region getters
   Future<List<int>> get_image_output_mode_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TGLRenderingDesc::get_image_output_mode_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<NSValue>> get_param_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TGLRenderingDesc::get_param_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<NSValue>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

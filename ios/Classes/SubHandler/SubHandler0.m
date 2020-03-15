@@ -100,6 +100,253 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
+        @"FURenderer::setupWithDataDataSizeardataauthPackageauthSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+            // jsonable arg
+            int dataSize = [args[@"dataSize"] intValue];
+            // ref arg
+            NSValue* ardata = (NSValue*) HEAP[@([args[@"ardata"] integerValue])];
+            // ref arg
+            NSValue* package = (NSValue*) HEAP[@([args[@"package"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+        
+            // ref
+            FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer@%@::setupWithData(%@, %@, %@, %@, %@)", args[@"refId"], args[@"data"], args[@"dataSize"], args[@"ardata"], args[@"package"], args[@"size"]);
+            }
+        
+            // invoke native method
+            int result = [ref setupWithData: [data pointerValue] dataSize: dataSize ardata: [ardata pointerValue] authPackage: [package pointerValue] authSize: size];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+            // jsonable arg
+            int dataSize = [args[@"dataSize"] intValue];
+            // ref arg
+            NSValue* ardata = (NSValue*) HEAP[@([args[@"ardata"] integerValue])];
+            // ref arg
+            NSValue* package = (NSValue*) HEAP[@([args[@"package"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+            // jsonable arg
+            BOOL shouldCreate = [args[@"shouldCreate"] boolValue];
+        
+            // ref
+            FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer@%@::setupWithData(%@, %@, %@, %@, %@, %@)", args[@"refId"], args[@"data"], args[@"dataSize"], args[@"ardata"], args[@"package"], args[@"size"], args[@"shouldCreate"]);
+            }
+        
+            // invoke native method
+            int result = [ref setupWithData: [data pointerValue] dataSize: dataSize ardata: [ardata pointerValue] authPackage: [package pointerValue] authSize: size shouldCreateContext: shouldCreate];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::setupWithDataPathAuthPackageauthSizeshouldCreateContext": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            NSString* v3path = (NSString*) args[@"v3path"];
+            // ref arg
+            NSValue* package = (NSValue*) HEAP[@([args[@"package"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+            // jsonable arg
+            BOOL shouldCreate = [args[@"shouldCreate"] boolValue];
+        
+            // ref
+            FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer@%@::setupWithDataPath(%@, %@, %@, %@)", args[@"refId"], args[@"v3path"], args[@"package"], args[@"size"], args[@"shouldCreate"]);
+            }
+        
+            // invoke native method
+            int result = [ref setupWithDataPath: v3path authPackage: [package pointerValue] authSize: size shouldCreateContext: shouldCreate];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            NSString* v3path = (NSString*) args[@"v3path"];
+            // jsonable arg
+            NSString* offLinePath = (NSString*) args[@"offLinePath"];
+            // ref arg
+            NSValue* package = (NSValue*) HEAP[@([args[@"package"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+            // jsonable arg
+            BOOL shouldCreate = [args[@"shouldCreate"] boolValue];
+        
+            // ref
+            FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer@%@::setupLocalWithV3Path(%@, %@, %@, %@, %@)", args[@"refId"], args[@"v3path"], args[@"offLinePath"], args[@"package"], args[@"size"], args[@"shouldCreate"]);
+            }
+        
+            // invoke native method
+            NSData* result = [ref setupLocalWithV3Path: v3path offLinePath: offLinePath authPackage: [package pointerValue] authSize: size shouldCreateContext: shouldCreate];
+        
+            // result
+            // return a ref
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+            // enum arg
+            FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+            // ref arg
+            NSValue* outPtr = (NSValue*) HEAP[@([args[@"outPtr"] integerValue])];
+            // enum arg
+            FUFormat outFormat = (FUFormat) [args[@"outFormat"] integerValue];
+            // jsonable arg
+            int width = [args[@"width"] intValue];
+            // jsonable arg
+            int height = [args[@"height"] intValue];
+            // jsonable arg
+            int frameid = [args[@"frameid"] intValue];
+            // ref arg
+            NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+            // jsonable arg
+            int itemCount = [args[@"itemCount"] intValue];
+            // jsonable arg
+            BOOL flip = [args[@"flip"] boolValue];
+        
+            // ref
+            FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer@%@::renderItems(%@, %@, %@, %@, %@, %@, %@, %@, %@, %@)", args[@"refId"], args[@"inPtr"], args[@"inFormat"], args[@"outPtr"], args[@"outFormat"], args[@"width"], args[@"height"], args[@"frameid"], args[@"items"], args[@"itemCount"], args[@"flip"]);
+            }
+        
+            // invoke native method
+            int result = [ref renderItems: [inPtr pointerValue] inFormat: inFormat outPtr: [outPtr pointerValue] outFormat: outFormat width: width height: height frameId: frameid items: [items pointerValue] itemCount: itemCount flipx: flip];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+            // enum arg
+            FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+            // ref arg
+            NSValue* outPtr = (NSValue*) HEAP[@([args[@"outPtr"] integerValue])];
+            // enum arg
+            FUFormat outFormat = (FUFormat) [args[@"outFormat"] integerValue];
+            // jsonable arg
+            int width = [args[@"width"] intValue];
+            // jsonable arg
+            int height = [args[@"height"] intValue];
+            // jsonable arg
+            int frameid = [args[@"frameid"] intValue];
+            // ref arg
+            NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+            // jsonable arg
+            int itemCount = [args[@"itemCount"] intValue];
+        
+            // ref
+            FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer@%@::renderBundles(%@, %@, %@, %@, %@, %@, %@, %@, %@)", args[@"refId"], args[@"inPtr"], args[@"inFormat"], args[@"outPtr"], args[@"outFormat"], args[@"width"], args[@"height"], args[@"frameid"], args[@"items"], args[@"itemCount"]);
+            }
+        
+            // invoke native method
+            int result = [ref renderBundles: [inPtr pointerValue] inFormat: inFormat outPtr: [outPtr pointerValue] outFormat: outFormat width: width height: height frameId: frameid items: [items pointerValue] itemCount: itemCount];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+            // enum arg
+            FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+            // ref arg
+            NSValue* outPtr = (NSValue*) HEAP[@([args[@"outPtr"] integerValue])];
+            // enum arg
+            FUFormat outFormat = (FUFormat) [args[@"outFormat"] integerValue];
+            // jsonable arg
+            int width = [args[@"width"] intValue];
+            // jsonable arg
+            int height = [args[@"height"] intValue];
+            // jsonable arg
+            int frameid = [args[@"frameid"] intValue];
+            // ref arg
+            NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+            // jsonable arg
+            int itemCount = [args[@"itemCount"] intValue];
+            // list arg
+            NSArray* splitViewInfoPtrRefIdArray = (NSArray*) args[@"splitViewInfoPtr"];
+            TSplitViewInfo splitViewInfoPtr[splitViewInfoPtrRefIdArray.count];
+        
+            for (int i = 0; i < splitViewInfoPtrRefIdArray.count; i++) {
+                NSValue* splitViewInfoPtrValue = (NSValue*) HEAP[[splitViewInfoPtrRefIdArray objectAtIndex:i]];
+                TSplitViewInfo splitViewInfoPtrItem;
+                [splitViewInfoPtrValue getValue:&splitViewInfoPtrItem];
+                splitViewInfoPtr[i] = splitViewInfoPtrItem;
+            }
+        
+            // ref
+            FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer@%@::renderBundlesSplitView(%@, %@, %@, %@, %@, %@, %@, %@, %@, %@)", args[@"refId"], args[@"inPtr"], args[@"inFormat"], args[@"outPtr"], args[@"outFormat"], args[@"width"], args[@"height"], args[@"frameid"], args[@"items"], args[@"itemCount"], args[@"splitViewInfoPtr"]);
+            }
+        
+            // invoke native method
+            int result = [ref renderBundlesSplitView: [inPtr pointerValue] inFormat: inFormat outPtr: [outPtr pointerValue] outFormat: outFormat width: width height: height frameId: frameid items: [items pointerValue] itemCount: itemCount splitViewInfoPtr: splitViewInfoPtr];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
         @"FURenderer::setInputCameraMatrixFlip_yrotate_mode": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
@@ -150,6 +397,42 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
+        @"FURenderer::rotateImageInPtrinFormatwidthheightrotationModeflipXflipY": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            FURotatedImage* outImage = (FURotatedImage*) HEAP[@([args[@"outImage"] integerValue])];
+            // ref arg
+            NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+            // enum arg
+            FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+            // jsonable arg
+            int width = [args[@"width"] intValue];
+            // jsonable arg
+            int height = [args[@"height"] intValue];
+            // enum arg
+            FURotationMode rotationMode = (FURotationMode) [args[@"rotationMode"] integerValue];
+            // jsonable arg
+            BOOL flipX = [args[@"flipX"] boolValue];
+            // jsonable arg
+            BOOL flipY = [args[@"flipY"] boolValue];
+        
+            // ref
+            FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer@%@::rotateImage(%@, %@, %@, %@, %@, %@, %@, %@)", args[@"refId"], args[@"outImage"], args[@"inPtr"], args[@"inFormat"], args[@"width"], args[@"height"], args[@"rotationMode"], args[@"flipX"], args[@"flipY"]);
+            }
+        
+            // invoke native method
+            int result = [ref rotateImage: outImage inPtr: [inPtr pointerValue] inFormat: inFormat width: width height: height rotationMode: rotationMode flipX: flipX flipY: flipY];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
         @"FURenderer::onCameraChange": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
         
@@ -189,6 +472,30 @@ extern BOOL enableLog;
             // result
             // 无返回值
             NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::createItemFromPackageSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::createItemFromPackage(%@, %@)", args[@"data"], args[@"size"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer createItemFromPackage: [data pointerValue] size: size];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -254,6 +561,32 @@ extern BOOL enableLog;
             // result
             // 无返回值
             NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::loadAIModelFromPackageSizeaitype": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+            // enum arg
+            FUAITYPE type = (FUAITYPE) [args[@"type"] integerValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::loadAIModelFromPackage(%@, %@, %@)", args[@"data"], args[@"size"], args[@"type"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer loadAIModelFromPackage: [data pointerValue] size: size aitype: type];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -327,6 +660,90 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
+        @"FURenderer::itemSetParamdvWithNamevaluelength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int item = [args[@"item"] intValue];
+            // jsonable arg
+            NSString* name = (NSString*) args[@"name"];
+            // ref arg
+            NSValue* value = (NSValue*) HEAP[@([args[@"value"] integerValue])];
+            // jsonable arg
+            int length = [args[@"length"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::itemSetParamdv(%@, %@, %@, %@)", args[@"item"], args[@"name"], args[@"value"], args[@"length"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer itemSetParamdv: item withName: name value: [value pointerValue] length: length];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::itemGetParamdvWithNamebufferlength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int item = [args[@"item"] intValue];
+            // jsonable arg
+            NSString* name = (NSString*) args[@"name"];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int length = [args[@"length"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::itemGetParamdv(%@, %@, %@, %@)", args[@"item"], args[@"name"], args[@"buffer"], args[@"length"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer itemGetParamdv: item withName: name buffer: [buffer pointerValue] length: length];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::itemGetParamfvWithNamebufferlength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int item = [args[@"item"] intValue];
+            // jsonable arg
+            NSString* name = (NSString*) args[@"name"];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int length = [args[@"length"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::itemGetParamfv(%@, %@, %@, %@)", args[@"item"], args[@"name"], args[@"buffer"], args[@"length"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer itemGetParamfv: item withName: name buffer: [buffer pointerValue] length: length];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
         @"FURenderer::getDoubleParamFromItemWithName": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
@@ -375,6 +792,62 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
+        @"FURenderer::itemSetParamu8vWithNamebuffersize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int item = [args[@"item"] intValue];
+            // jsonable arg
+            NSString* name = (NSString*) args[@"name"];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::itemSetParamu8v(%@, %@, %@, %@)", args[@"item"], args[@"name"], args[@"buffer"], args[@"size"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer itemSetParamu8v: item withName: name buffer: [buffer pointerValue] size: size];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::itemGetParamu8vWithNamebuffersize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int item = [args[@"item"] intValue];
+            // jsonable arg
+            NSString* name = (NSString*) args[@"name"];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::itemGetParamu8v(%@, %@, %@, %@)", args[@"item"], args[@"name"], args[@"buffer"], args[@"size"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer itemGetParamu8v: item withName: name buffer: [buffer pointerValue] size: size];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
         @"FURenderer::isTracking": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
         
@@ -418,6 +891,90 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
+        @"FURenderer::trackFaceInputDatawidthheight": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int inputFormat = [args[@"inputFormat"] intValue];
+            // ref arg
+            NSValue* inputData = (NSValue*) HEAP[@([args[@"inputData"] integerValue])];
+            // jsonable arg
+            int width = [args[@"width"] intValue];
+            // jsonable arg
+            int height = [args[@"height"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::trackFace(%@, %@, %@, %@)", args[@"inputFormat"], args[@"inputData"], args[@"width"], args[@"height"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer trackFace: inputFormat inputData: [inputData pointerValue] width: width height: height];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::trackFaceWithTongueInputDatawidthheight": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int inputFormat = [args[@"inputFormat"] intValue];
+            // ref arg
+            NSValue* inputData = (NSValue*) HEAP[@([args[@"inputData"] integerValue])];
+            // jsonable arg
+            int width = [args[@"width"] intValue];
+            // jsonable arg
+            int height = [args[@"height"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::trackFaceWithTongue(%@, %@, %@, %@)", args[@"inputFormat"], args[@"inputData"], args[@"width"], args[@"height"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer trackFaceWithTongue: inputFormat inputData: [inputData pointerValue] width: width height: height];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::getFaceInfoNamepretnumber": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int faceId = [args[@"faceId"] intValue];
+            // jsonable arg
+            NSString* name = (NSString*) args[@"name"];
+            // ref arg
+            NSValue* pret = (NSValue*) HEAP[@([args[@"pret"] integerValue])];
+            // jsonable arg
+            int number = [args[@"number"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::getFaceInfo(%@, %@, %@, %@)", args[@"faceId"], args[@"name"], args[@"pret"], args[@"number"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer getFaceInfo: faceId name: name pret: [pret pointerValue] number: number];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
         @"FURenderer::getFaceIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
@@ -433,6 +990,114 @@ extern BOOL enableLog;
         
             // invoke native method
             int result = [FURenderer getFaceIdentifier: faceId];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::avatarBindItemsItemsitemsCountcontractscontractsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int avatarItem = [args[@"avatarItem"] intValue];
+            // ref arg
+            NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+            // jsonable arg
+            int itemsCount = [args[@"itemsCount"] intValue];
+            // ref arg
+            NSValue* contracts = (NSValue*) HEAP[@([args[@"contracts"] integerValue])];
+            // jsonable arg
+            int contractsCount = [args[@"contractsCount"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::avatarBindItems(%@, %@, %@, %@, %@)", args[@"avatarItem"], args[@"items"], args[@"itemsCount"], args[@"contracts"], args[@"contractsCount"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer avatarBindItems: avatarItem items: [items pointerValue] itemsCount: itemsCount contracts: [contracts pointerValue] contractsCount: contractsCount];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::avatarUnbindItemsItemsitemsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int avatarItem = [args[@"avatarItem"] intValue];
+            // ref arg
+            NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+            // jsonable arg
+            int itemsCount = [args[@"itemsCount"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::avatarUnbindItems(%@, %@, %@)", args[@"avatarItem"], args[@"items"], args[@"itemsCount"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer avatarUnbindItems: avatarItem items: [items pointerValue] itemsCount: itemsCount];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::bindItemsItemsitemsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int item = [args[@"item"] intValue];
+            // ref arg
+            NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+            // jsonable arg
+            int itemsCount = [args[@"itemsCount"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::bindItems(%@, %@, %@)", args[@"item"], args[@"items"], args[@"itemsCount"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer bindItems: item items: [items pointerValue] itemsCount: itemsCount];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::unBindItemsItemsitemsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // jsonable arg
+            int item = [args[@"item"] intValue];
+            // ref arg
+            NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+            // jsonable arg
+            int itemsCount = [args[@"itemsCount"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::unBindItems(%@, %@, %@)", args[@"item"], args[@"items"], args[@"itemsCount"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer unBindItems: item items: [items pointerValue] itemsCount: itemsCount];
         
             // result
             // 返回值: Value
@@ -658,6 +1323,522 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
+        @"FURenderer::loadTongueModelSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::loadTongueModel(%@, %@)", args[@"model"], args[@"size"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer loadTongueModel: [model pointerValue] size: size];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::create3DBodyTrackerSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::create3DBodyTracker(%@, %@)", args[@"model"], args[@"size"]);
+            }
+        
+            // invoke native method
+            void* result = [FURenderer create3DBodyTracker: [model pointerValue] size: size];
+        
+            // result
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::destroy3DBodyTracker": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* modelPtr = (NSValue*) HEAP[@([args[@"modelPtr"] integerValue])];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::destroy3DBodyTracker(%@)", args[@"modelPtr"]);
+            }
+        
+            // invoke native method
+            [FURenderer destroy3DBodyTracker: [modelPtr pointerValue]];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* modelPtr = (NSValue*) HEAP[@([args[@"modelPtr"] integerValue])];
+            // jsonable arg
+            int humanHandle = [args[@"humanHandle"] intValue];
+            // ref arg
+            NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+            // enum arg
+            FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+            // jsonable arg
+            int w = [args[@"w"] intValue];
+            // jsonable arg
+            int h = [args[@"h"] intValue];
+            // jsonable arg
+            int rotationMode = [args[@"rotationMode"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::run3DBodyTracker(%@, %@, %@, %@, %@, %@, %@)", args[@"modelPtr"], args[@"humanHandle"], args[@"inPtr"], args[@"inFormat"], args[@"w"], args[@"h"], args[@"rotationMode"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer run3DBodyTracker: [modelPtr pointerValue] humanHandle: humanHandle inPtr: [inPtr pointerValue] inFormat: inFormat w: w h: h rotationMode: rotationMode];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureCreateSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+            // jsonable arg
+            int size = [args[@"size"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureCreate(%@, %@)", args[@"data"], args[@"size"]);
+            }
+        
+            // invoke native method
+            void* result = [FURenderer faceCaptureCreate: [data pointerValue] size: size];
+        
+            // result
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureDestory": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureDestory(%@)", args[@"model"]);
+            }
+        
+            // invoke native method
+            [FURenderer faceCaptureDestory: [model pointerValue]];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureReset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureReset(%@)", args[@"model"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureReset: [model pointerValue]];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureProcessFrameInPtrinFormatwhrotationMode": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // ref arg
+            NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+            // enum arg
+            FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+            // jsonable arg
+            int w = [args[@"w"] intValue];
+            // jsonable arg
+            int h = [args[@"h"] intValue];
+            // jsonable arg
+            int rotationMode = [args[@"rotationMode"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureProcessFrame(%@, %@, %@, %@, %@, %@)", args[@"model"], args[@"inPtr"], args[@"inFormat"], args[@"w"], args[@"h"], args[@"rotationMode"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureProcessFrame: [model pointerValue] inPtr: [inPtr pointerValue] inFormat: inFormat w: w h: h rotationMode: rotationMode];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultLandmarksFaceNbufferlength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int length = [args[@"length"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultLandmarks(%@, %@, %@, %@)", args[@"model"], args[@"faceN"], args[@"buffer"], args[@"length"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureGetResultLandmarks: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultIdentityFaceNbufferlength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int length = [args[@"length"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultIdentity(%@, %@, %@, %@)", args[@"model"], args[@"faceN"], args[@"buffer"], args[@"length"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureGetResultIdentity: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultExpressionFaceNbufferlength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int length = [args[@"length"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultExpression(%@, %@, %@, %@)", args[@"model"], args[@"faceN"], args[@"buffer"], args[@"length"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureGetResultExpression: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultRotationFaceNbufferlength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int length = [args[@"length"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultRotation(%@, %@, %@, %@)", args[@"model"], args[@"faceN"], args[@"buffer"], args[@"length"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureGetResultRotation: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultTranslationFaceNbufferlength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int length = [args[@"length"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultTranslation(%@, %@, %@, %@)", args[@"model"], args[@"faceN"], args[@"buffer"], args[@"length"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureGetResultTranslation: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCapturGetResultTongueExpFaceNbufferlength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+            // ref arg
+            NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+            // jsonable arg
+            int length = [args[@"length"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCapturGetResultTongueExp(%@, %@, %@, %@)", args[@"model"], args[@"faceN"], args[@"buffer"], args[@"length"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCapturGetResultTongueExp: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultIsFaceFaceN": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultIsFace(%@, %@)", args[@"model"], args[@"faceN"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureGetResultIsFace: [model pointerValue] faceN: faceN];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultFaceIDFaceN": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultFaceID(%@, %@)", args[@"model"], args[@"faceN"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureGetResultFaceID: [model pointerValue] faceN: faceN];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultTongueScoreFaceN": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultTongueScore(%@, %@)", args[@"model"], args[@"faceN"]);
+            }
+        
+            // invoke native method
+            float result = [FURenderer faceCaptureGetResultTongueScore: [model pointerValue] faceN: faceN];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultTongueClassFaceN": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+            // jsonable arg
+            int faceN = [args[@"faceN"] intValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultTongueClass(%@, %@)", args[@"model"], args[@"faceN"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureGetResultTongueClass: [model pointerValue] faceN: faceN];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultFocalLength": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultFocalLength(%@)", args[@"model"]);
+            }
+        
+            // invoke native method
+            float result = [FURenderer faceCaptureGetResultFocalLength: [model pointerValue]];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"FURenderer::faceCaptureGetResultFaceNum": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: FURenderer::faceCaptureGetResultFaceNum(%@)", args[@"model"]);
+            }
+        
+            // invoke native method
+            int result = [FURenderer faceCaptureGetResultFaceNum: [model pointerValue]];
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
         @"FURenderer::namaLibDestroy": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
         
@@ -777,6 +1958,274 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
+        @"FURenderer::setupWithDataDataSizeardataauthPackageauthSize_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+                // jsonable arg
+                int dataSize = [args[@"dataSize"] intValue];
+                // ref arg
+                NSValue* ardata = (NSValue*) HEAP[@([args[@"ardata"] integerValue])];
+                // ref arg
+                NSValue* package = (NSValue*) HEAP[@([args[@"package"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+        
+                // ref
+                FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                int result = [ref setupWithData: [data pointerValue] dataSize: dataSize ardata: [ardata pointerValue] authPackage: [package pointerValue] authSize: size];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+                // jsonable arg
+                int dataSize = [args[@"dataSize"] intValue];
+                // ref arg
+                NSValue* ardata = (NSValue*) HEAP[@([args[@"ardata"] integerValue])];
+                // ref arg
+                NSValue* package = (NSValue*) HEAP[@([args[@"package"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+                // jsonable arg
+                BOOL shouldCreate = [args[@"shouldCreate"] boolValue];
+        
+                // ref
+                FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                int result = [ref setupWithData: [data pointerValue] dataSize: dataSize ardata: [ardata pointerValue] authPackage: [package pointerValue] authSize: size shouldCreateContext: shouldCreate];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::setupWithDataPathAuthPackageauthSizeshouldCreateContext_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                NSString* v3path = (NSString*) args[@"v3path"];
+                // ref arg
+                NSValue* package = (NSValue*) HEAP[@([args[@"package"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+                // jsonable arg
+                BOOL shouldCreate = [args[@"shouldCreate"] boolValue];
+        
+                // ref
+                FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                int result = [ref setupWithDataPath: v3path authPackage: [package pointerValue] authSize: size shouldCreateContext: shouldCreate];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                NSString* v3path = (NSString*) args[@"v3path"];
+                // jsonable arg
+                NSString* offLinePath = (NSString*) args[@"offLinePath"];
+                // ref arg
+                NSValue* package = (NSValue*) HEAP[@([args[@"package"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+                // jsonable arg
+                BOOL shouldCreate = [args[@"shouldCreate"] boolValue];
+        
+                // ref
+                FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                NSData* result = [ref setupLocalWithV3Path: v3path offLinePath: offLinePath authPackage: [package pointerValue] authSize: size shouldCreateContext: shouldCreate];
+        
+                // result
+                // return a ref
+                HEAP[@((result).hash)] = result;
+                NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+                // enum arg
+                FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+                // ref arg
+                NSValue* outPtr = (NSValue*) HEAP[@([args[@"outPtr"] integerValue])];
+                // enum arg
+                FUFormat outFormat = (FUFormat) [args[@"outFormat"] integerValue];
+                // jsonable arg
+                int width = [args[@"width"] intValue];
+                // jsonable arg
+                int height = [args[@"height"] intValue];
+                // jsonable arg
+                int frameid = [args[@"frameid"] intValue];
+                // ref arg
+                NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+                // jsonable arg
+                int itemCount = [args[@"itemCount"] intValue];
+                // jsonable arg
+                BOOL flip = [args[@"flip"] boolValue];
+        
+                // ref
+                FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                int result = [ref renderItems: [inPtr pointerValue] inFormat: inFormat outPtr: [outPtr pointerValue] outFormat: outFormat width: width height: height frameId: frameid items: [items pointerValue] itemCount: itemCount flipx: flip];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+                // enum arg
+                FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+                // ref arg
+                NSValue* outPtr = (NSValue*) HEAP[@([args[@"outPtr"] integerValue])];
+                // enum arg
+                FUFormat outFormat = (FUFormat) [args[@"outFormat"] integerValue];
+                // jsonable arg
+                int width = [args[@"width"] intValue];
+                // jsonable arg
+                int height = [args[@"height"] intValue];
+                // jsonable arg
+                int frameid = [args[@"frameid"] intValue];
+                // ref arg
+                NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+                // jsonable arg
+                int itemCount = [args[@"itemCount"] intValue];
+        
+                // ref
+                FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                int result = [ref renderBundles: [inPtr pointerValue] inFormat: inFormat outPtr: [outPtr pointerValue] outFormat: outFormat width: width height: height frameId: frameid items: [items pointerValue] itemCount: itemCount];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+                // enum arg
+                FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+                // ref arg
+                NSValue* outPtr = (NSValue*) HEAP[@([args[@"outPtr"] integerValue])];
+                // enum arg
+                FUFormat outFormat = (FUFormat) [args[@"outFormat"] integerValue];
+                // jsonable arg
+                int width = [args[@"width"] intValue];
+                // jsonable arg
+                int height = [args[@"height"] intValue];
+                // jsonable arg
+                int frameid = [args[@"frameid"] intValue];
+                // ref arg
+                NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+                // jsonable arg
+                int itemCount = [args[@"itemCount"] intValue];
+                // list arg
+                NSArray* splitViewInfoPtrRefIdArray = (NSArray*) args[@"splitViewInfoPtr"];
+                TSplitViewInfo splitViewInfoPtr[splitViewInfoPtrRefIdArray.count];
+        
+                for (int i = 0; i < splitViewInfoPtrRefIdArray.count; i++) {
+                    NSValue* splitViewInfoPtrValue = (NSValue*) HEAP[[splitViewInfoPtrRefIdArray objectAtIndex:i]];
+                    TSplitViewInfo splitViewInfoPtrItem;
+                    [splitViewInfoPtrValue getValue:&splitViewInfoPtrItem];
+                    splitViewInfoPtr[i] = splitViewInfoPtrItem;
+                }
+        
+                // ref
+                FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                int result = [ref renderBundlesSplitView: [inPtr pointerValue] inFormat: inFormat outPtr: [outPtr pointerValue] outFormat: outFormat width: width height: height frameId: frameid items: [items pointerValue] itemCount: itemCount splitViewInfoPtr: splitViewInfoPtr];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
         @"FURenderer::setInputCameraMatrixFlip_yrotate_mode_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -833,6 +2282,45 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
+        @"FURenderer::rotateImageInPtrinFormatwidthheightrotationModeflipXflipY_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                FURotatedImage* outImage = (FURotatedImage*) HEAP[@([args[@"outImage"] integerValue])];
+                // ref arg
+                NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+                // enum arg
+                FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+                // jsonable arg
+                int width = [args[@"width"] intValue];
+                // jsonable arg
+                int height = [args[@"height"] intValue];
+                // enum arg
+                FURotationMode rotationMode = (FURotationMode) [args[@"rotationMode"] integerValue];
+                // jsonable arg
+                BOOL flipX = [args[@"flipX"] boolValue];
+                // jsonable arg
+                BOOL flipY = [args[@"flipY"] boolValue];
+        
+                // ref
+                FURenderer* ref = (FURenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                int result = [ref rotateImage: outImage inPtr: [inPtr pointerValue] inFormat: inFormat width: width height: height rotationMode: rotationMode flipX: flipX flipY: flipY];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
         @"FURenderer::onCameraChange_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -875,6 +2363,33 @@ extern BOOL enableLog;
                 // result
                 // 无返回值
                 NSString* jsonableResult = @"success";
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::createItemFromPackageSize_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer createItemFromPackage: [data pointerValue] size: size];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
         
                 [resultList addObject:jsonableResult];
             }
@@ -949,6 +2464,35 @@ extern BOOL enableLog;
                 // result
                 // 无返回值
                 NSString* jsonableResult = @"success";
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::loadAIModelFromPackageSizeaitype_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+                // enum arg
+                FUAITYPE type = (FUAITYPE) [args[@"type"] integerValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer loadAIModelFromPackage: [data pointerValue] size: size aitype: type];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1034,6 +2578,99 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
+        @"FURenderer::itemSetParamdvWithNamevaluelength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int item = [args[@"item"] intValue];
+                // jsonable arg
+                NSString* name = (NSString*) args[@"name"];
+                // ref arg
+                NSValue* value = (NSValue*) HEAP[@([args[@"value"] integerValue])];
+                // jsonable arg
+                int length = [args[@"length"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer itemSetParamdv: item withName: name value: [value pointerValue] length: length];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::itemGetParamdvWithNamebufferlength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int item = [args[@"item"] intValue];
+                // jsonable arg
+                NSString* name = (NSString*) args[@"name"];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int length = [args[@"length"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer itemGetParamdv: item withName: name buffer: [buffer pointerValue] length: length];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::itemGetParamfvWithNamebufferlength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int item = [args[@"item"] intValue];
+                // jsonable arg
+                NSString* name = (NSString*) args[@"name"];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int length = [args[@"length"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer itemGetParamfv: item withName: name buffer: [buffer pointerValue] length: length];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
         @"FURenderer::getDoubleParamFromItemWithName_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -1082,6 +2719,68 @@ extern BOOL enableLog;
                 // result
                 // 返回值: jsonable
                 id jsonableResult = result;
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::itemSetParamu8vWithNamebuffersize_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int item = [args[@"item"] intValue];
+                // jsonable arg
+                NSString* name = (NSString*) args[@"name"];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer itemSetParamu8v: item withName: name buffer: [buffer pointerValue] size: size];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::itemGetParamu8vWithNamebuffersize_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int item = [args[@"item"] intValue];
+                // jsonable arg
+                NSString* name = (NSString*) args[@"name"];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer itemGetParamu8v: item withName: name buffer: [buffer pointerValue] size: size];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1137,6 +2836,99 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
+        @"FURenderer::trackFaceInputDatawidthheight_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int inputFormat = [args[@"inputFormat"] intValue];
+                // ref arg
+                NSValue* inputData = (NSValue*) HEAP[@([args[@"inputData"] integerValue])];
+                // jsonable arg
+                int width = [args[@"width"] intValue];
+                // jsonable arg
+                int height = [args[@"height"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer trackFace: inputFormat inputData: [inputData pointerValue] width: width height: height];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::trackFaceWithTongueInputDatawidthheight_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int inputFormat = [args[@"inputFormat"] intValue];
+                // ref arg
+                NSValue* inputData = (NSValue*) HEAP[@([args[@"inputData"] integerValue])];
+                // jsonable arg
+                int width = [args[@"width"] intValue];
+                // jsonable arg
+                int height = [args[@"height"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer trackFaceWithTongue: inputFormat inputData: [inputData pointerValue] width: width height: height];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::getFaceInfoNamepretnumber_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int faceId = [args[@"faceId"] intValue];
+                // jsonable arg
+                NSString* name = (NSString*) args[@"name"];
+                // ref arg
+                NSValue* pret = (NSValue*) HEAP[@([args[@"pret"] integerValue])];
+                // jsonable arg
+                int number = [args[@"number"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer getFaceInfo: faceId name: name pret: [pret pointerValue] number: number];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
         @"FURenderer::getFaceIdentifier_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -1152,6 +2944,126 @@ extern BOOL enableLog;
         
                 // invoke native method
                 int result = [FURenderer getFaceIdentifier: faceId];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::avatarBindItemsItemsitemsCountcontractscontractsCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int avatarItem = [args[@"avatarItem"] intValue];
+                // ref arg
+                NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+                // jsonable arg
+                int itemsCount = [args[@"itemsCount"] intValue];
+                // ref arg
+                NSValue* contracts = (NSValue*) HEAP[@([args[@"contracts"] integerValue])];
+                // jsonable arg
+                int contractsCount = [args[@"contractsCount"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer avatarBindItems: avatarItem items: [items pointerValue] itemsCount: itemsCount contracts: [contracts pointerValue] contractsCount: contractsCount];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::avatarUnbindItemsItemsitemsCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int avatarItem = [args[@"avatarItem"] intValue];
+                // ref arg
+                NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+                // jsonable arg
+                int itemsCount = [args[@"itemsCount"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer avatarUnbindItems: avatarItem items: [items pointerValue] itemsCount: itemsCount];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::bindItemsItemsitemsCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int item = [args[@"item"] intValue];
+                // ref arg
+                NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+                // jsonable arg
+                int itemsCount = [args[@"itemsCount"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer bindItems: item items: [items pointerValue] itemsCount: itemsCount];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::unBindItemsItemsitemsCount_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // jsonable arg
+                int item = [args[@"item"] intValue];
+                // ref arg
+                NSValue* items = (NSValue*) HEAP[@([args[@"items"] integerValue])];
+                // jsonable arg
+                int itemsCount = [args[@"itemsCount"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer unBindItems: item items: [items pointerValue] itemsCount: itemsCount];
         
                 // result
                 // 返回值: Value
@@ -1410,6 +3322,582 @@ extern BOOL enableLog;
         
             methodResult(resultList);
         },
+        @"FURenderer::loadTongueModelSize_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer loadTongueModel: [model pointerValue] size: size];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::create3DBodyTrackerSize_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                void* result = [FURenderer create3DBodyTracker: [model pointerValue] size: size];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::destroy3DBodyTracker_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* modelPtr = (NSValue*) HEAP[@([args[@"modelPtr"] integerValue])];
+        
+                // ref
+        
+        
+                // invoke native method
+                [FURenderer destroy3DBodyTracker: [modelPtr pointerValue]];
+        
+                // result
+                // 无返回值
+                NSString* jsonableResult = @"success";
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* modelPtr = (NSValue*) HEAP[@([args[@"modelPtr"] integerValue])];
+                // jsonable arg
+                int humanHandle = [args[@"humanHandle"] intValue];
+                // ref arg
+                NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+                // enum arg
+                FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+                // jsonable arg
+                int w = [args[@"w"] intValue];
+                // jsonable arg
+                int h = [args[@"h"] intValue];
+                // jsonable arg
+                int rotationMode = [args[@"rotationMode"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer run3DBodyTracker: [modelPtr pointerValue] humanHandle: humanHandle inPtr: [inPtr pointerValue] inFormat: inFormat w: w h: h rotationMode: rotationMode];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureCreateSize_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* data = (NSValue*) HEAP[@([args[@"data"] integerValue])];
+                // jsonable arg
+                int size = [args[@"size"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                void* result = [FURenderer faceCaptureCreate: [data pointerValue] size: size];
+        
+                // result
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureDestory_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+        
+                // ref
+        
+        
+                // invoke native method
+                [FURenderer faceCaptureDestory: [model pointerValue]];
+        
+                // result
+                // 无返回值
+                NSString* jsonableResult = @"success";
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureReset_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureReset: [model pointerValue]];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureProcessFrameInPtrinFormatwhrotationMode_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // ref arg
+                NSValue* inPtr = (NSValue*) HEAP[@([args[@"inPtr"] integerValue])];
+                // enum arg
+                FUFormat inFormat = (FUFormat) [args[@"inFormat"] integerValue];
+                // jsonable arg
+                int w = [args[@"w"] intValue];
+                // jsonable arg
+                int h = [args[@"h"] intValue];
+                // jsonable arg
+                int rotationMode = [args[@"rotationMode"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureProcessFrame: [model pointerValue] inPtr: [inPtr pointerValue] inFormat: inFormat w: w h: h rotationMode: rotationMode];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultLandmarksFaceNbufferlength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int length = [args[@"length"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureGetResultLandmarks: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultIdentityFaceNbufferlength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int length = [args[@"length"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureGetResultIdentity: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultExpressionFaceNbufferlength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int length = [args[@"length"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureGetResultExpression: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultRotationFaceNbufferlength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int length = [args[@"length"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureGetResultRotation: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultTranslationFaceNbufferlength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int length = [args[@"length"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureGetResultTranslation: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCapturGetResultTongueExpFaceNbufferlength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+                // ref arg
+                NSValue* buffer = (NSValue*) HEAP[@([args[@"buffer"] integerValue])];
+                // jsonable arg
+                int length = [args[@"length"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCapturGetResultTongueExp: [model pointerValue] faceN: faceN buffer: [buffer pointerValue] length: length];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultIsFaceFaceN_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureGetResultIsFace: [model pointerValue] faceN: faceN];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultFaceIDFaceN_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureGetResultFaceID: [model pointerValue] faceN: faceN];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultTongueScoreFaceN_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                float result = [FURenderer faceCaptureGetResultTongueScore: [model pointerValue] faceN: faceN];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultTongueClassFaceN_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+                // jsonable arg
+                int faceN = [args[@"faceN"] intValue];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureGetResultTongueClass: [model pointerValue] faceN: faceN];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultFocalLength_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+        
+                // ref
+        
+        
+                // invoke native method
+                float result = [FURenderer faceCaptureGetResultFocalLength: [model pointerValue]];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"FURenderer::faceCaptureGetResultFaceNum_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+        
+                // args
+                // ref arg
+                NSValue* model = (NSValue*) HEAP[@([args[@"model"] integerValue])];
+        
+                // ref
+        
+        
+                // invoke native method
+                int result = [FURenderer faceCaptureGetResultFaceNum: [model pointerValue]];
+        
+                // result
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
         @"FURenderer::namaLibDestroy_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -1445,6 +3933,7 @@ extern BOOL enableLog;
             TCameraDesc ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.camera_id;
         
             // 返回值: Value
@@ -1464,11 +3953,13 @@ extern BOOL enableLog;
             TAndroidDualMode ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             void* result = ref.p_NV21;
         
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1484,6 +3975,7 @@ extern BOOL enableLog;
             TAndroidDualMode ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.tex;
         
             // 返回值: Value
@@ -1503,6 +3995,7 @@ extern BOOL enableLog;
             TAndroidDualMode ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.flags;
         
             // 返回值: Value
@@ -1522,11 +4015,13 @@ extern BOOL enableLog;
             TNV12Buffer ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             void* result = ref.p_Y;
         
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1542,11 +4037,13 @@ extern BOOL enableLog;
             TNV12Buffer ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             void* result = ref.p_CbCr;
         
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1562,6 +4059,7 @@ extern BOOL enableLog;
             TNV12Buffer ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.stride_Y;
         
             // 返回值: Value
@@ -1581,6 +4079,7 @@ extern BOOL enableLog;
             TNV12Buffer ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.stride_CbCr;
         
             // 返回值: Value
@@ -1600,11 +4099,13 @@ extern BOOL enableLog;
             TIOSDualInput ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             void* result = ref.p_BGRA;
         
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1620,11 +4121,13 @@ extern BOOL enableLog;
             TIOSDualInput ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             void* result = ref.p_Y;
         
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1640,11 +4143,13 @@ extern BOOL enableLog;
             TIOSDualInput ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             void* result = ref.p_CbCr;
         
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1660,6 +4165,7 @@ extern BOOL enableLog;
             TIOSDualInput ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.stride_BGRA;
         
             // 返回值: Value
@@ -1679,6 +4185,7 @@ extern BOOL enableLog;
             TIOSDualInput ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.stride_Y;
         
             // 返回值: Value
@@ -1698,6 +4205,7 @@ extern BOOL enableLog;
             TIOSDualInput ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.stride_CbCr;
         
             // 返回值: Value
@@ -1717,6 +4225,7 @@ extern BOOL enableLog;
             TIOSDualInput ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.tex_handle;
         
             // 返回值: Value
@@ -1736,6 +4245,7 @@ extern BOOL enableLog;
             TIOSDualInput ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.format;
         
             // 返回值: Value
@@ -1755,6 +4265,7 @@ extern BOOL enableLog;
             TSPECFBO ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.fbo;
         
             // 返回值: Value
@@ -1774,6 +4285,7 @@ extern BOOL enableLog;
             TSPECFBO ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.tex;
         
             // 返回值: Value
@@ -1793,6 +4305,7 @@ extern BOOL enableLog;
             TGLRenderingDesc ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.image_output_mode;
         
             // 返回值: Value
@@ -1812,11 +4325,13 @@ extern BOOL enableLog;
             TGLRenderingDesc ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             void* result = ref.param;
         
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1832,10 +4347,13 @@ extern BOOL enableLog;
             TAvatarInfo ref;
             [dataValue getValue:&ref];
         
-            float result = ref.p_translation;
+            // invoke native method
+            float* result = ref.p_translation;
         
-            // 返回值: Value
-            id jsonableResult = @(result);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1851,10 +4369,13 @@ extern BOOL enableLog;
             TAvatarInfo ref;
             [dataValue getValue:&ref];
         
-            float result = ref.p_rotation;
+            // invoke native method
+            float* result = ref.p_rotation;
         
-            // 返回值: Value
-            id jsonableResult = @(result);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1870,10 +4391,13 @@ extern BOOL enableLog;
             TAvatarInfo ref;
             [dataValue getValue:&ref];
         
-            float result = ref.p_expression;
+            // invoke native method
+            float* result = ref.p_expression;
         
-            // 返回值: Value
-            id jsonableResult = @(result);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1889,10 +4413,13 @@ extern BOOL enableLog;
             TAvatarInfo ref;
             [dataValue getValue:&ref];
         
-            float result = ref.rotation_mode;
+            // invoke native method
+            float* result = ref.rotation_mode;
         
-            // 返回值: Value
-            id jsonableResult = @(result);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1908,10 +4435,13 @@ extern BOOL enableLog;
             TAvatarInfo ref;
             [dataValue getValue:&ref];
         
-            float result = ref.pupil_pos;
+            // invoke native method
+            float* result = ref.pupil_pos;
         
-            // 返回值: Value
-            id jsonableResult = @(result);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1927,6 +4457,7 @@ extern BOOL enableLog;
             TAvatarInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.is_valid;
         
             // 返回值: Value
@@ -1946,11 +4477,13 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             void* result = ref.in_ptr;
         
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -1966,6 +4499,7 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.in_type;
         
             // 返回值: Value
@@ -1985,6 +4519,7 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.out_w;
         
             // 返回值: Value
@@ -2004,6 +4539,7 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.out_h;
         
             // 返回值: Value
@@ -2023,6 +4559,7 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             float result = ref.view_0_ratio;
         
             // 返回值: Value
@@ -2042,6 +4579,7 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.margin_in_pixel;
         
             // 返回值: Value
@@ -2061,6 +4599,7 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.is_vertical;
         
             // 返回值: Value
@@ -2080,6 +4619,7 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.is_image_first;
         
             // 返回值: Value
@@ -2099,6 +4639,7 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             int result = ref.rotation_mode_before_crop;
         
             // 返回值: Value
@@ -2118,6 +4659,7 @@ extern BOOL enableLog;
             TSplitViewInfo ref;
             [dataValue getValue:&ref];
         
+            // invoke native method
             float result = ref.crop_ratio_top;
         
             // 返回值: Value
@@ -2135,11 +4677,13 @@ extern BOOL enableLog;
             // ref object
             FURotatedImage* ref = (FURotatedImage*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
+            // invoke native method
             void* result = ref.mData;
         
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
+            // return a (value)*
+            NSValue* resultValue = [NSValue valueWithPointer:result];
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -2153,6 +4697,7 @@ extern BOOL enableLog;
             // ref object
             FURotatedImage* ref = (FURotatedImage*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
+            // invoke native method
             int result = ref.mWidth;
         
             // 返回值: Value
@@ -2170,6 +4715,7 @@ extern BOOL enableLog;
             // ref object
             FURotatedImage* ref = (FURotatedImage*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
+            // invoke native method
             int result = ref.mHeight;
         
             // 返回值: Value
@@ -2213,9 +4759,10 @@ extern BOOL enableLog;
         
                 void* result = ref.p_NV21;
         
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2280,9 +4827,10 @@ extern BOOL enableLog;
         
                 void* result = ref.p_Y;
         
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2303,9 +4851,10 @@ extern BOOL enableLog;
         
                 void* result = ref.p_CbCr;
         
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2370,9 +4919,10 @@ extern BOOL enableLog;
         
                 void* result = ref.p_BGRA;
         
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2393,9 +4943,10 @@ extern BOOL enableLog;
         
                 void* result = ref.p_Y;
         
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2416,9 +4967,10 @@ extern BOOL enableLog;
         
                 void* result = ref.p_CbCr;
         
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                // return a (value)*
+                NSValue* resultValue = [NSValue valueWithPointer:result];
+                HEAP[@((resultValue).hash)] = resultValue;
+                NSNumber* jsonableResult = @((resultValue).hash);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2556,1682 +5108,6 @@ extern BOOL enableLog;
             }
         
             methodResult(resultList);
-        },
-        
-        @"TSPECFBO::get_tex_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSPECFBO ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.tex;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TGLRenderingDesc::get_image_output_mode_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TGLRenderingDesc ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.image_output_mode;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TGLRenderingDesc::get_param_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TGLRenderingDesc ref;
-                [dataValue getValue:&ref];
-        
-                void* result = ref.param;
-        
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TAvatarInfo::get_p_translation_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAvatarInfo ref;
-                [dataValue getValue:&ref];
-        
-                float result = ref.p_translation;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TAvatarInfo::get_p_rotation_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAvatarInfo ref;
-                [dataValue getValue:&ref];
-        
-                float result = ref.p_rotation;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TAvatarInfo::get_p_expression_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAvatarInfo ref;
-                [dataValue getValue:&ref];
-        
-                float result = ref.p_expression;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TAvatarInfo::get_rotation_mode_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAvatarInfo ref;
-                [dataValue getValue:&ref];
-        
-                float result = ref.rotation_mode;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TAvatarInfo::get_pupil_pos_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAvatarInfo ref;
-                [dataValue getValue:&ref];
-        
-                float result = ref.pupil_pos;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TAvatarInfo::get_is_valid_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAvatarInfo ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.is_valid;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_in_ptr_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                void* result = ref.in_ptr;
-        
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_in_type_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.in_type;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_out_w_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.out_w;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_out_h_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.out_h;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_view_0_ratio_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                float result = ref.view_0_ratio;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_margin_in_pixel_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.margin_in_pixel;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_is_vertical_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.is_vertical;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_is_image_first_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.is_image_first;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_rotation_mode_before_crop_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                int result = ref.rotation_mode_before_crop;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TSplitViewInfo::get_crop_ratio_top_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSplitViewInfo ref;
-                [dataValue getValue:&ref];
-        
-                float result = ref.crop_ratio_top;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"FURotatedImage::get_mData_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                FURotatedImage* ref = (FURotatedImage*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                void* result = ref.mData;
-        
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"FURotatedImage::get_mWidth_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                FURotatedImage* ref = (FURotatedImage*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                int result = ref.mWidth;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"FURotatedImage::get_mHeight_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // ref object
-                FURotatedImage* ref = (FURotatedImage*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                int result = ref.mHeight;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"TCameraDesc::set_camera_id": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TCameraDesc::set_camera_id");
-            }
-        
-            // args
-            // jsonable arg
-            int camera_id = [args[@"camera_id"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TCameraDesc ref;
-            [dataValue getValue:&ref];
-        
-            ref.camera_id = camera_id;
-            methodResult(@"success");
-        },
-        
-        @"TAndroidDualMode::set_p_NV21": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TAndroidDualMode::set_p_NV21");
-            }
-        
-            // args
-            // ref arg
-            void* p_NV21 = (void*) HEAP[@([args[@"p_NV21"] integerValue])];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TAndroidDualMode ref;
-            [dataValue getValue:&ref];
-        
-            ref.p_NV21 = p_NV21;
-            methodResult(@"success");
-        },
-        
-        @"TAndroidDualMode::set_tex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TAndroidDualMode::set_tex");
-            }
-        
-            // args
-            // jsonable arg
-            int tex = [args[@"tex"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TAndroidDualMode ref;
-            [dataValue getValue:&ref];
-        
-            ref.tex = tex;
-            methodResult(@"success");
-        },
-        
-        @"TAndroidDualMode::set_flags": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TAndroidDualMode::set_flags");
-            }
-        
-            // args
-            // jsonable arg
-            int flags = [args[@"flags"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TAndroidDualMode ref;
-            [dataValue getValue:&ref];
-        
-            ref.flags = flags;
-            methodResult(@"success");
-        },
-        
-        @"TNV12Buffer::set_p_Y": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TNV12Buffer::set_p_Y");
-            }
-        
-            // args
-            // ref arg
-            void* p_Y = (void*) HEAP[@([args[@"p_Y"] integerValue])];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TNV12Buffer ref;
-            [dataValue getValue:&ref];
-        
-            ref.p_Y = p_Y;
-            methodResult(@"success");
-        },
-        
-        @"TNV12Buffer::set_p_CbCr": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TNV12Buffer::set_p_CbCr");
-            }
-        
-            // args
-            // ref arg
-            void* p_CbCr = (void*) HEAP[@([args[@"p_CbCr"] integerValue])];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TNV12Buffer ref;
-            [dataValue getValue:&ref];
-        
-            ref.p_CbCr = p_CbCr;
-            methodResult(@"success");
-        },
-        
-        @"TNV12Buffer::set_stride_Y": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TNV12Buffer::set_stride_Y");
-            }
-        
-            // args
-            // jsonable arg
-            int stride_Y = [args[@"stride_Y"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TNV12Buffer ref;
-            [dataValue getValue:&ref];
-        
-            ref.stride_Y = stride_Y;
-            methodResult(@"success");
-        },
-        
-        @"TNV12Buffer::set_stride_CbCr": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TNV12Buffer::set_stride_CbCr");
-            }
-        
-            // args
-            // jsonable arg
-            int stride_CbCr = [args[@"stride_CbCr"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TNV12Buffer ref;
-            [dataValue getValue:&ref];
-        
-            ref.stride_CbCr = stride_CbCr;
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_p_BGRA": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TIOSDualInput::set_p_BGRA");
-            }
-        
-            // args
-            // ref arg
-            void* p_BGRA = (void*) HEAP[@([args[@"p_BGRA"] integerValue])];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TIOSDualInput ref;
-            [dataValue getValue:&ref];
-        
-            ref.p_BGRA = p_BGRA;
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_p_Y": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TIOSDualInput::set_p_Y");
-            }
-        
-            // args
-            // ref arg
-            void* p_Y = (void*) HEAP[@([args[@"p_Y"] integerValue])];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TIOSDualInput ref;
-            [dataValue getValue:&ref];
-        
-            ref.p_Y = p_Y;
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_p_CbCr": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TIOSDualInput::set_p_CbCr");
-            }
-        
-            // args
-            // ref arg
-            void* p_CbCr = (void*) HEAP[@([args[@"p_CbCr"] integerValue])];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TIOSDualInput ref;
-            [dataValue getValue:&ref];
-        
-            ref.p_CbCr = p_CbCr;
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_stride_BGRA": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TIOSDualInput::set_stride_BGRA");
-            }
-        
-            // args
-            // jsonable arg
-            int stride_BGRA = [args[@"stride_BGRA"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TIOSDualInput ref;
-            [dataValue getValue:&ref];
-        
-            ref.stride_BGRA = stride_BGRA;
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_stride_Y": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TIOSDualInput::set_stride_Y");
-            }
-        
-            // args
-            // jsonable arg
-            int stride_Y = [args[@"stride_Y"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TIOSDualInput ref;
-            [dataValue getValue:&ref];
-        
-            ref.stride_Y = stride_Y;
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_stride_CbCr": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TIOSDualInput::set_stride_CbCr");
-            }
-        
-            // args
-            // jsonable arg
-            int stride_CbCr = [args[@"stride_CbCr"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TIOSDualInput ref;
-            [dataValue getValue:&ref];
-        
-            ref.stride_CbCr = stride_CbCr;
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_tex_handle": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TIOSDualInput::set_tex_handle");
-            }
-        
-            // args
-            // jsonable arg
-            int tex_handle = [args[@"tex_handle"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TIOSDualInput ref;
-            [dataValue getValue:&ref];
-        
-            ref.tex_handle = tex_handle;
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_format": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TIOSDualInput::set_format");
-            }
-        
-            // args
-            // jsonable arg
-            int format = [args[@"format"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TIOSDualInput ref;
-            [dataValue getValue:&ref];
-        
-            ref.format = format;
-            methodResult(@"success");
-        },
-        
-        @"TSPECFBO::set_fbo": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSPECFBO::set_fbo");
-            }
-        
-            // args
-            // jsonable arg
-            int fbo = [args[@"fbo"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSPECFBO ref;
-            [dataValue getValue:&ref];
-        
-            ref.fbo = fbo;
-            methodResult(@"success");
-        },
-        
-        @"TSPECFBO::set_tex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSPECFBO::set_tex");
-            }
-        
-            // args
-            // jsonable arg
-            int tex = [args[@"tex"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSPECFBO ref;
-            [dataValue getValue:&ref];
-        
-            ref.tex = tex;
-            methodResult(@"success");
-        },
-        
-        @"TGLRenderingDesc::set_image_output_mode": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TGLRenderingDesc::set_image_output_mode");
-            }
-        
-            // args
-            // jsonable arg
-            int image_output_mode = [args[@"image_output_mode"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TGLRenderingDesc ref;
-            [dataValue getValue:&ref];
-        
-            ref.image_output_mode = image_output_mode;
-            methodResult(@"success");
-        },
-        
-        @"TGLRenderingDesc::set_param": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TGLRenderingDesc::set_param");
-            }
-        
-            // args
-            // ref arg
-            void* param = (void*) HEAP[@([args[@"param"] integerValue])];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TGLRenderingDesc ref;
-            [dataValue getValue:&ref];
-        
-            ref.param = param;
-            methodResult(@"success");
-        },
-        
-        @"TAvatarInfo::set_p_translation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TAvatarInfo::set_p_translation");
-            }
-        
-            // args
-            // jsonable arg
-            float p_translation = [args[@"p_translation"] floatValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TAvatarInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.p_translation = p_translation;
-            methodResult(@"success");
-        },
-        
-        @"TAvatarInfo::set_p_rotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TAvatarInfo::set_p_rotation");
-            }
-        
-            // args
-            // jsonable arg
-            float p_rotation = [args[@"p_rotation"] floatValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TAvatarInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.p_rotation = p_rotation;
-            methodResult(@"success");
-        },
-        
-        @"TAvatarInfo::set_p_expression": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TAvatarInfo::set_p_expression");
-            }
-        
-            // args
-            // jsonable arg
-            float p_expression = [args[@"p_expression"] floatValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TAvatarInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.p_expression = p_expression;
-            methodResult(@"success");
-        },
-        
-        @"TAvatarInfo::set_rotation_mode": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TAvatarInfo::set_rotation_mode");
-            }
-        
-            // args
-            // jsonable arg
-            float rotation_mode = [args[@"rotation_mode"] floatValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TAvatarInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.rotation_mode = rotation_mode;
-            methodResult(@"success");
-        },
-        
-        @"TAvatarInfo::set_pupil_pos": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TAvatarInfo::set_pupil_pos");
-            }
-        
-            // args
-            // jsonable arg
-            float pupil_pos = [args[@"pupil_pos"] floatValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TAvatarInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.pupil_pos = pupil_pos;
-            methodResult(@"success");
-        },
-        
-        @"TAvatarInfo::set_is_valid": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TAvatarInfo::set_is_valid");
-            }
-        
-            // args
-            // jsonable arg
-            int is_valid = [args[@"is_valid"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TAvatarInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.is_valid = is_valid;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_in_ptr": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_in_ptr");
-            }
-        
-            // args
-            // ref arg
-            void* in_ptr = (void*) HEAP[@([args[@"in_ptr"] integerValue])];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.in_ptr = in_ptr;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_in_type": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_in_type");
-            }
-        
-            // args
-            // jsonable arg
-            int in_type = [args[@"in_type"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.in_type = in_type;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_out_w": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_out_w");
-            }
-        
-            // args
-            // jsonable arg
-            int out_w = [args[@"out_w"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.out_w = out_w;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_out_h": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_out_h");
-            }
-        
-            // args
-            // jsonable arg
-            int out_h = [args[@"out_h"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.out_h = out_h;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_view_0_ratio": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_view_0_ratio");
-            }
-        
-            // args
-            // jsonable arg
-            float view_0_ratio = [args[@"view_0_ratio"] floatValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.view_0_ratio = view_0_ratio;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_margin_in_pixel": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_margin_in_pixel");
-            }
-        
-            // args
-            // jsonable arg
-            int margin_in_pixel = [args[@"margin_in_pixel"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.margin_in_pixel = margin_in_pixel;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_is_vertical": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_is_vertical");
-            }
-        
-            // args
-            // jsonable arg
-            int is_vertical = [args[@"is_vertical"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.is_vertical = is_vertical;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_is_image_first": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_is_image_first");
-            }
-        
-            // args
-            // jsonable arg
-            int is_image_first = [args[@"is_image_first"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.is_image_first = is_image_first;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_rotation_mode_before_crop": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_rotation_mode_before_crop");
-            }
-        
-            // args
-            // jsonable arg
-            int rotation_mode_before_crop = [args[@"rotation_mode_before_crop"] intValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.rotation_mode_before_crop = rotation_mode_before_crop;
-            methodResult(@"success");
-        },
-        
-        @"TSplitViewInfo::set_crop_ratio_top": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"TSplitViewInfo::set_crop_ratio_top");
-            }
-        
-            // args
-            // jsonable arg
-            float crop_ratio_top = [args[@"crop_ratio_top"] floatValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            TSplitViewInfo ref;
-            [dataValue getValue:&ref];
-        
-            ref.crop_ratio_top = crop_ratio_top;
-            methodResult(@"success");
-        },
-        
-        @"FURotatedImage::set_mData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"FURotatedImage::set_mData");
-            }
-        
-            // args
-            // ref arg
-            void* mData = (void*) HEAP[@([args[@"mData"] integerValue])];
-        
-            // ref
-            FURotatedImage* ref = (FURotatedImage*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.mData = mData;
-            methodResult(@"success");
-        },
-        
-        @"FURotatedImage::set_mWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"FURotatedImage::set_mWidth");
-            }
-        
-            // args
-            // jsonable arg
-            int mWidth = [args[@"mWidth"] intValue];
-        
-            // ref
-            FURotatedImage* ref = (FURotatedImage*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.mWidth = mWidth;
-            methodResult(@"success");
-        },
-        
-        @"FURotatedImage::set_mHeight": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"FURotatedImage::set_mHeight");
-            }
-        
-            // args
-            // jsonable arg
-            int mHeight = [args[@"mHeight"] intValue];
-        
-            // ref
-            FURotatedImage* ref = (FURotatedImage*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.mHeight = mHeight;
-            methodResult(@"success");
-        },
-        
-        @"TCameraDesc::set_camera_id_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int camera_id = [args[@"camera_id"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TCameraDesc ref;
-                [dataValue getValue:&ref];
-        
-                ref.camera_id = camera_id;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TAndroidDualMode::set_p_NV21_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                void* p_NV21 = (void*) HEAP[@([args[@"p_NV21"] integerValue])];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAndroidDualMode ref;
-                [dataValue getValue:&ref];
-        
-                ref.p_NV21 = p_NV21;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TAndroidDualMode::set_tex_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int tex = [args[@"tex"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAndroidDualMode ref;
-                [dataValue getValue:&ref];
-        
-                ref.tex = tex;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TAndroidDualMode::set_flags_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int flags = [args[@"flags"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAndroidDualMode ref;
-                [dataValue getValue:&ref];
-        
-                ref.flags = flags;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TNV12Buffer::set_p_Y_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                void* p_Y = (void*) HEAP[@([args[@"p_Y"] integerValue])];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TNV12Buffer ref;
-                [dataValue getValue:&ref];
-        
-                ref.p_Y = p_Y;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TNV12Buffer::set_p_CbCr_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                void* p_CbCr = (void*) HEAP[@([args[@"p_CbCr"] integerValue])];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TNV12Buffer ref;
-                [dataValue getValue:&ref];
-        
-                ref.p_CbCr = p_CbCr;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TNV12Buffer::set_stride_Y_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int stride_Y = [args[@"stride_Y"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TNV12Buffer ref;
-                [dataValue getValue:&ref];
-        
-                ref.stride_Y = stride_Y;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TNV12Buffer::set_stride_CbCr_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int stride_CbCr = [args[@"stride_CbCr"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TNV12Buffer ref;
-                [dataValue getValue:&ref];
-        
-                ref.stride_CbCr = stride_CbCr;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_p_BGRA_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                void* p_BGRA = (void*) HEAP[@([args[@"p_BGRA"] integerValue])];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TIOSDualInput ref;
-                [dataValue getValue:&ref];
-        
-                ref.p_BGRA = p_BGRA;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_p_Y_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                void* p_Y = (void*) HEAP[@([args[@"p_Y"] integerValue])];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TIOSDualInput ref;
-                [dataValue getValue:&ref];
-        
-                ref.p_Y = p_Y;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_p_CbCr_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                void* p_CbCr = (void*) HEAP[@([args[@"p_CbCr"] integerValue])];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TIOSDualInput ref;
-                [dataValue getValue:&ref];
-        
-                ref.p_CbCr = p_CbCr;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_stride_BGRA_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int stride_BGRA = [args[@"stride_BGRA"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TIOSDualInput ref;
-                [dataValue getValue:&ref];
-        
-                ref.stride_BGRA = stride_BGRA;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_stride_Y_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int stride_Y = [args[@"stride_Y"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TIOSDualInput ref;
-                [dataValue getValue:&ref];
-        
-                ref.stride_Y = stride_Y;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_stride_CbCr_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int stride_CbCr = [args[@"stride_CbCr"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TIOSDualInput ref;
-                [dataValue getValue:&ref];
-        
-                ref.stride_CbCr = stride_CbCr;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_tex_handle_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int tex_handle = [args[@"tex_handle"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TIOSDualInput ref;
-                [dataValue getValue:&ref];
-        
-                ref.tex_handle = tex_handle;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TIOSDualInput::set_format_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int format = [args[@"format"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TIOSDualInput ref;
-                [dataValue getValue:&ref];
-        
-                ref.format = format;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TSPECFBO::set_fbo_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int fbo = [args[@"fbo"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSPECFBO ref;
-                [dataValue getValue:&ref];
-        
-                ref.fbo = fbo;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TSPECFBO::set_tex_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int tex = [args[@"tex"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TSPECFBO ref;
-                [dataValue getValue:&ref];
-        
-                ref.tex = tex;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TGLRenderingDesc::set_image_output_mode_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                int image_output_mode = [args[@"image_output_mode"] intValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TGLRenderingDesc ref;
-                [dataValue getValue:&ref];
-        
-                ref.image_output_mode = image_output_mode;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TGLRenderingDesc::set_param_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // ref arg
-                void* param = (void*) HEAP[@([args[@"param"] integerValue])];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TGLRenderingDesc ref;
-                [dataValue getValue:&ref];
-        
-                ref.param = param;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TAvatarInfo::set_p_translation_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                float p_translation = [args[@"p_translation"] floatValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAvatarInfo ref;
-                [dataValue getValue:&ref];
-        
-                ref.p_translation = p_translation;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TAvatarInfo::set_p_rotation_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                float p_rotation = [args[@"p_rotation"] floatValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAvatarInfo ref;
-                [dataValue getValue:&ref];
-        
-                ref.p_rotation = p_rotation;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"TAvatarInfo::set_p_expression_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
-        
-                // args
-                // jsonable arg
-                float p_expression = [args[@"p_expression"] floatValue];
-        
-                // ref
-                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-                TAvatarInfo ref;
-                [dataValue getValue:&ref];
-        
-                ref.p_expression = p_expression;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
         },
         
     };

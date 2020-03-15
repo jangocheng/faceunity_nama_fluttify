@@ -42,14 +42,14 @@ class TNV12Buffer extends NSObject  {
   //region getters
   Future<NSValue> get_p_Y() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_p_Y", {'refId': refId});
-    kNativeObjectPool.add(result);
-    return result;
+    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
+    return NSValue()..refId = result..tag = 'nama_fluttify';
   }
   
   Future<NSValue> get_p_CbCr() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_p_CbCr", {'refId': refId});
-    kNativeObjectPool.add(result);
-    return result;
+    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
+    return NSValue()..refId = result..tag = 'nama_fluttify';
   }
   
   Future<int> get_stride_Y() async {
@@ -102,28 +102,28 @@ extension TNV12Buffer_Batch on List<TNV12Buffer> {
   //region getters
   Future<List<NSValue>> get_p_Y_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_p_Y_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<NSValue>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<NSValue>> get_p_CbCr_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_p_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<NSValue>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<int>> get_stride_Y_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_stride_Y_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_stride_CbCr_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_stride_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }

@@ -114,6 +114,160 @@ class FURenderer extends NSObject  {
     }
   }
   
+  Future<int> setupWithDataDataSizeardataauthPackageauthSize(NSValue data, int dataSize, NSValue ardata, NSValue package, int size) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::setupWithData([\'dataSize\':$dataSize, \'size\':$size])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSize', {"data": data.refId, "dataSize": dataSize, "ardata": ardata.refId, "package": package.refId, "size": size, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<int> setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext(NSValue data, int dataSize, NSValue ardata, NSValue package, int size, bool shouldCreate) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::setupWithData([\'dataSize\':$dataSize, \'size\':$size, \'shouldCreate\':$shouldCreate])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext', {"data": data.refId, "dataSize": dataSize, "ardata": ardata.refId, "package": package.refId, "size": size, "shouldCreate": shouldCreate, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<int> setupWithDataPathAuthPackageauthSizeshouldCreateContext(String v3path, NSValue package, int size, bool shouldCreate) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::setupWithDataPath([\'v3path\':$v3path, \'size\':$size, \'shouldCreate\':$shouldCreate])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataPathAuthPackageauthSizeshouldCreateContext', {"v3path": v3path, "package": package.refId, "size": size, "shouldCreate": shouldCreate, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<NSData> setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext(String v3path, String offLinePath, NSValue package, int size, bool shouldCreate) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::setupLocalWithV3Path([\'v3path\':$v3path, \'offLinePath\':$offLinePath, \'size\':$size, \'shouldCreate\':$shouldCreate])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext', {"v3path": v3path, "offLinePath": offLinePath, "package": package.refId, "size": size, "shouldCreate": shouldCreate, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSData()..refId = result..tag = 'nama_fluttify');
+      return NSData()..refId = result..tag = 'nama_fluttify';
+    }
+  }
+  
+  Future<int> renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx(NSValue inPtr, FUFormat inFormat, NSValue outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue items, int itemCount, bool flip) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::renderItems([\'width\':$width, \'height\':$height, \'frameid\':$frameid, \'itemCount\':$itemCount, \'flip\':$flip])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx', {"inPtr": inPtr.refId, "inFormat": inFormat.index, "outPtr": outPtr.refId, "outFormat": outFormat.index, "width": width, "height": height, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "flip": flip, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<int> renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount(NSValue inPtr, FUFormat inFormat, NSValue outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue items, int itemCount) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::renderBundles([\'width\':$width, \'height\':$height, \'frameid\':$frameid, \'itemCount\':$itemCount])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount', {"inPtr": inPtr.refId, "inFormat": inFormat.index, "outPtr": outPtr.refId, "outFormat": outFormat.index, "width": width, "height": height, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<int> renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr(NSValue inPtr, FUFormat inFormat, NSValue outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue items, int itemCount, List<TSplitViewInfo> splitViewInfoPtr) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::renderBundlesSplitView([\'width\':$width, \'height\':$height, \'frameid\':$frameid, \'itemCount\':$itemCount])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr', {"inPtr": inPtr.refId, "inFormat": inFormat.index, "outPtr": outPtr.refId, "outFormat": outFormat.index, "width": width, "height": height, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "splitViewInfoPtr": splitViewInfoPtr.map((it) => it.refId).toList(), "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<void> setInputCameraMatrixFlip_yrotate_mode(int flip_x, int flip_y, int rotate_mode) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -158,6 +312,28 @@ class FURenderer extends NSObject  {
     }
   }
   
+  Future<int> rotateImageInPtrinFormatwidthheightrotationModeflipXflipY(FURotatedImage outImage, NSValue inPtr, FUFormat inFormat, int width, int height, FURotationMode rotationMode, bool flipX, bool flipY) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::rotateImage([\'width\':$width, \'height\':$height, \'flipX\':$flipX, \'flipY\':$flipY])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::rotateImageInPtrinFormatwidthheightrotationModeflipXflipY', {"outImage": outImage.refId, "inPtr": inPtr.refId, "inFormat": inFormat.index, "width": width, "height": height, "rotationMode": rotationMode.index, "flipX": flipX, "flipY": flipY, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<void> onCameraChange() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -188,6 +364,28 @@ class FURenderer extends NSObject  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::OnDeviceLost', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> createItemFromPackageSize(NSValue data, int size) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::createItemFromPackage([\'size\':$size])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::createItemFromPackageSize', {"data": data.refId, "size": size});
   
   
     // handle native call
@@ -268,6 +466,28 @@ class FURenderer extends NSObject  {
     }
   }
   
+  static Future<int> loadAIModelFromPackageSizeaitype(NSValue data, int size, FUAITYPE type) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::loadAIModelFromPackage([\'size\':$size])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::loadAIModelFromPackageSizeaitype', {"data": data.refId, "size": size, "type": type.index});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<int> releaseAIModel(FUAITYPE type) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -334,6 +554,72 @@ class FURenderer extends NSObject  {
     }
   }
   
+  static Future<int> itemSetParamdvWithNamevaluelength(int item, String name, NSValue value, int length) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::itemSetParamdv([\'item\':$item, \'name\':$name, \'length\':$length])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamdvWithNamevaluelength', {"item": item, "name": name, "value": value.refId, "length": length});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> itemGetParamdvWithNamebufferlength(int item, String name, NSValue buffer, int length) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::itemGetParamdv([\'item\':$item, \'name\':$name, \'length\':$length])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamdvWithNamebufferlength', {"item": item, "name": name, "buffer": buffer.refId, "length": length});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> itemGetParamfvWithNamebufferlength(int item, String name, NSValue buffer, int length) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::itemGetParamfv([\'item\':$item, \'name\':$name, \'length\':$length])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamfvWithNamebufferlength', {"item": item, "name": name, "buffer": buffer.refId, "length": length});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<double> getDoubleParamFromItemWithName(int item, String name) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -364,6 +650,50 @@ class FURenderer extends NSObject  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getStringParamFromItemWithName', {"item": item, "name": name});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> itemSetParamu8vWithNamebuffersize(int item, String name, NSValue buffer, int size) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::itemSetParamu8v([\'item\':$item, \'name\':$name, \'size\':$size])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamu8vWithNamebuffersize', {"item": item, "name": name, "buffer": buffer.refId, "size": size});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> itemGetParamu8vWithNamebuffersize(int item, String name, NSValue buffer, int size) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::itemGetParamu8v([\'item\':$item, \'name\':$name, \'size\':$size])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamu8vWithNamebuffersize', {"item": item, "name": name, "buffer": buffer.refId, "size": size});
   
   
     // handle native call
@@ -422,6 +752,72 @@ class FURenderer extends NSObject  {
     }
   }
   
+  static Future<int> trackFaceInputDatawidthheight(int inputFormat, NSValue inputData, int width, int height) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::trackFace([\'inputFormat\':$inputFormat, \'width\':$width, \'height\':$height])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::trackFaceInputDatawidthheight', {"inputFormat": inputFormat, "inputData": inputData.refId, "width": width, "height": height});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> trackFaceWithTongueInputDatawidthheight(int inputFormat, NSValue inputData, int width, int height) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::trackFaceWithTongue([\'inputFormat\':$inputFormat, \'width\':$width, \'height\':$height])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::trackFaceWithTongueInputDatawidthheight', {"inputFormat": inputFormat, "inputData": inputData.refId, "width": width, "height": height});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> getFaceInfoNamepretnumber(int faceId, String name, NSValue pret, int number) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::getFaceInfo([\'faceId\':$faceId, \'name\':$name, \'number\':$number])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getFaceInfoNamepretnumber', {"faceId": faceId, "name": name, "pret": pret.refId, "number": number});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<int> getFaceIdentifier(int faceId) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -430,6 +826,94 @@ class FURenderer extends NSObject  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getFaceIdentifier', {"faceId": faceId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> avatarBindItemsItemsitemsCountcontractscontractsCount(int avatarItem, NSValue items, int itemsCount, NSValue contracts, int contractsCount) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::avatarBindItems([\'avatarItem\':$avatarItem, \'itemsCount\':$itemsCount, \'contractsCount\':$contractsCount])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::avatarBindItemsItemsitemsCountcontractscontractsCount', {"avatarItem": avatarItem, "items": items.refId, "itemsCount": itemsCount, "contracts": contracts.refId, "contractsCount": contractsCount});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> avatarUnbindItemsItemsitemsCount(int avatarItem, NSValue items, int itemsCount) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::avatarUnbindItems([\'avatarItem\':$avatarItem, \'itemsCount\':$itemsCount])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::avatarUnbindItemsItemsitemsCount', {"avatarItem": avatarItem, "items": items.refId, "itemsCount": itemsCount});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> bindItemsItemsitemsCount(int item, NSValue items, int itemsCount) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::bindItems([\'item\':$item, \'itemsCount\':$itemsCount])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::bindItemsItemsitemsCount', {"item": item, "items": items.refId, "itemsCount": itemsCount});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> unBindItemsItemsitemsCount(int item, NSValue items, int itemsCount) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::unBindItems([\'item\':$item, \'itemsCount\':$itemsCount])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::unBindItemsItemsitemsCount', {"item": item, "items": items.refId, "itemsCount": itemsCount});
   
   
     // handle native call
@@ -664,6 +1148,446 @@ class FURenderer extends NSObject  {
     }
   }
   
+  static Future<int> loadTongueModelSize(NSValue model, int size) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::loadTongueModel([\'size\':$size])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::loadTongueModelSize', {"model": model.refId, "size": size});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<NSValue> create3DBodyTrackerSize(NSValue model, int size) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::create3DBodyTracker([\'size\':$size])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::create3DBodyTrackerSize', {"model": model.refId, "size": size});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
+      return NSValue()..refId = result..tag = 'nama_fluttify';
+    }
+  }
+  
+  static Future<void> destroy3DBodyTracker(NSValue modelPtr) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::destroy3DBodyTracker([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::destroy3DBodyTracker', {"modelPtr": modelPtr.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode(NSValue modelPtr, int humanHandle, NSValue inPtr, FUFormat inFormat, int w, int h, int rotationMode) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::run3DBodyTracker([\'humanHandle\':$humanHandle, \'w\':$w, \'h\':$h, \'rotationMode\':$rotationMode])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode', {"modelPtr": modelPtr.refId, "humanHandle": humanHandle, "inPtr": inPtr.refId, "inFormat": inFormat.index, "w": w, "h": h, "rotationMode": rotationMode});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<NSValue> faceCaptureCreateSize(NSValue data, int size) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureCreate([\'size\':$size])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureCreateSize', {"data": data.refId, "size": size});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
+      return NSValue()..refId = result..tag = 'nama_fluttify';
+    }
+  }
+  
+  static Future<void> faceCaptureDestory(NSValue model) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureDestory([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureDestory', {"model": model.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureReset(NSValue model) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureReset([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureReset', {"model": model.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureProcessFrameInPtrinFormatwhrotationMode(NSValue model, NSValue inPtr, FUFormat inFormat, int w, int h, int rotationMode) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureProcessFrame([\'w\':$w, \'h\':$h, \'rotationMode\':$rotationMode])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureProcessFrameInPtrinFormatwhrotationMode', {"model": model.refId, "inPtr": inPtr.refId, "inFormat": inFormat.index, "w": w, "h": h, "rotationMode": rotationMode});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureGetResultLandmarksFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultLandmarks([\'faceN\':$faceN, \'length\':$length])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultLandmarksFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureGetResultIdentityFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultIdentity([\'faceN\':$faceN, \'length\':$length])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIdentityFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureGetResultExpressionFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultExpression([\'faceN\':$faceN, \'length\':$length])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultExpressionFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureGetResultRotationFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultRotation([\'faceN\':$faceN, \'length\':$length])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultRotationFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureGetResultTranslationFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultTranslation([\'faceN\':$faceN, \'length\':$length])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTranslationFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCapturGetResultTongueExpFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCapturGetResultTongueExp([\'faceN\':$faceN, \'length\':$length])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCapturGetResultTongueExpFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureGetResultIsFaceFaceN(NSValue model, int faceN) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultIsFace([\'faceN\':$faceN])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIsFaceFaceN', {"model": model.refId, "faceN": faceN});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureGetResultFaceIDFaceN(NSValue model, int faceN) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultFaceID([\'faceN\':$faceN])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceIDFaceN', {"model": model.refId, "faceN": faceN});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<double> faceCaptureGetResultTongueScoreFaceN(NSValue model, int faceN) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultTongueScore([\'faceN\':$faceN])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueScoreFaceN', {"model": model.refId, "faceN": faceN});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureGetResultTongueClassFaceN(NSValue model, int faceN) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultTongueClass([\'faceN\':$faceN])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueClassFaceN', {"model": model.refId, "faceN": faceN});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<double> faceCaptureGetResultFocalLength(NSValue model) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultFocalLength([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFocalLength', {"model": model.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  static Future<int> faceCaptureGetResultFaceNum(NSValue model) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer::faceCaptureGetResultFaceNum([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceNum', {"model": model.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   static Future<void> namaLibDestroy() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -756,6 +1680,139 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
+  Future<List<int>> setupWithDataDataSizeardataauthPackageauthSize_batch(List<NSValue> data, List<int> dataSize, List<NSValue> ardata, List<NSValue> package, List<int> size) async {
+    if (data.length != dataSize.length || dataSize.length != ardata.length || ardata.length != package.length || package.length != size.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSize_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "dataSize": dataSize[i], "ardata": ardata[i].refId, "package": package[i].refId, "size": size[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext_batch(List<NSValue> data, List<int> dataSize, List<NSValue> ardata, List<NSValue> package, List<int> size, List<bool> shouldCreate) async {
+    if (data.length != dataSize.length || dataSize.length != ardata.length || ardata.length != package.length || package.length != size.length || size.length != shouldCreate.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "dataSize": dataSize[i], "ardata": ardata[i].refId, "package": package[i].refId, "size": size[i], "shouldCreate": shouldCreate[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> setupWithDataPathAuthPackageauthSizeshouldCreateContext_batch(List<String> v3path, List<NSValue> package, List<int> size, List<bool> shouldCreate) async {
+    if (v3path.length != package.length || package.length != size.length || size.length != shouldCreate.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataPathAuthPackageauthSizeshouldCreateContext_batch', [for (int i = 0; i < this.length; i++) {"v3path": v3path[i], "package": package[i].refId, "size": size[i], "shouldCreate": shouldCreate[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSData>> setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext_batch(List<String> v3path, List<String> offLinePath, List<NSValue> package, List<int> size, List<bool> shouldCreate) async {
+    if (v3path.length != offLinePath.length || offLinePath.length != package.length || package.length != size.length || size.length != shouldCreate.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext_batch', [for (int i = 0; i < this.length; i++) {"v3path": v3path[i], "offLinePath": offLinePath[i], "package": package[i].refId, "size": size[i], "shouldCreate": shouldCreate[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSData()..refId = result..tag = 'nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx_batch(List<NSValue> inPtr, List<FUFormat> inFormat, List<NSValue> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue> items, List<int> itemCount, List<bool> flip) async {
+    if (inPtr.length != inFormat.length || inFormat.length != outPtr.length || outPtr.length != outFormat.length || outFormat.length != width.length || width.length != height.length || height.length != frameid.length || frameid.length != items.length || items.length != itemCount.length || itemCount.length != flip.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx_batch', [for (int i = 0; i < this.length; i++) {"inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "outPtr": outPtr[i].refId, "outFormat": outFormat[i].index, "width": width[i], "height": height[i], "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "flip": flip[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount_batch(List<NSValue> inPtr, List<FUFormat> inFormat, List<NSValue> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue> items, List<int> itemCount) async {
+    if (inPtr.length != inFormat.length || inFormat.length != outPtr.length || outPtr.length != outFormat.length || outFormat.length != width.length || width.length != height.length || height.length != frameid.length || frameid.length != items.length || items.length != itemCount.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount_batch', [for (int i = 0; i < this.length; i++) {"inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "outPtr": outPtr[i].refId, "outFormat": outFormat[i].index, "width": width[i], "height": height[i], "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr_batch(List<NSValue> inPtr, List<FUFormat> inFormat, List<NSValue> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue> items, List<int> itemCount, List<List<TSplitViewInfo>> splitViewInfoPtr) async {
+    if (inPtr.length != inFormat.length || inFormat.length != outPtr.length || outPtr.length != outFormat.length || outFormat.length != width.length || width.length != height.length || height.length != frameid.length || frameid.length != items.length || items.length != itemCount.length || itemCount.length != splitViewInfoPtr.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr_batch', [for (int i = 0; i < this.length; i++) {"inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "outPtr": outPtr[i].refId, "outFormat": outFormat[i].index, "width": width[i], "height": height[i], "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "splitViewInfoPtr": splitViewInfoPtr[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<void> setInputCameraMatrixFlip_yrotate_mode_batch(List<int> flip_x, List<int> flip_y, List<int> rotate_mode) async {
     if (flip_x.length != flip_y.length || flip_y.length != rotate_mode.length) {
       return Future.error('all args must have same length!');
@@ -794,6 +1851,25 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
+  Future<List<int>> rotateImageInPtrinFormatwidthheightrotationModeflipXflipY_batch(List<FURotatedImage> outImage, List<NSValue> inPtr, List<FUFormat> inFormat, List<int> width, List<int> height, List<FURotationMode> rotationMode, List<bool> flipX, List<bool> flipY) async {
+    if (outImage.length != inPtr.length || inPtr.length != inFormat.length || inFormat.length != width.length || width.length != height.length || height.length != rotationMode.length || rotationMode.length != flipX.length || flipX.length != flipY.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::rotateImageInPtrinFormatwidthheightrotationModeflipXflipY_batch', [for (int i = 0; i < this.length; i++) {"outImage": outImage[i].refId, "inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "width": width[i], "height": height[i], "rotationMode": rotationMode[i].index, "flipX": flipX[i], "flipY": flipY[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<void> onCameraChange_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -820,6 +1896,25 @@ extension FURenderer_Batch on List<FURenderer> {
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::OnDeviceLost_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> createItemFromPackageSize_batch(List<NSValue> data, List<int> size) async {
+    if (data.length != size.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::createItemFromPackageSize_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "size": size[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -889,6 +1984,25 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
+  Future<List<int>> loadAIModelFromPackageSizeaitype_batch(List<NSValue> data, List<int> size, List<FUAITYPE> type) async {
+    if (data.length != size.length || size.length != type.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::loadAIModelFromPackageSizeaitype_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "size": size[i], "type": type[i].index, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<List<int>> releaseAIModel_batch(List<FUAITYPE> type) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -946,6 +2060,63 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
+  Future<List<int>> itemSetParamdvWithNamevaluelength_batch(List<int> item, List<String> name, List<NSValue> value, List<int> length) async {
+    if (item.length != name.length || name.length != value.length || value.length != length.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamdvWithNamevaluelength_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "value": value[i].refId, "length": length[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> itemGetParamdvWithNamebufferlength_batch(List<int> item, List<String> name, List<NSValue> buffer, List<int> length) async {
+    if (item.length != name.length || name.length != buffer.length || buffer.length != length.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamdvWithNamebufferlength_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> itemGetParamfvWithNamebufferlength_batch(List<int> item, List<String> name, List<NSValue> buffer, List<int> length) async {
+    if (item.length != name.length || name.length != buffer.length || buffer.length != length.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamfvWithNamebufferlength_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<List<double>> getDoubleParamFromItemWithName_batch(List<int> item, List<String> name) async {
     if (item.length != name.length) {
       return Future.error('all args must have same length!');
@@ -972,6 +2143,44 @@ extension FURenderer_Batch on List<FURenderer> {
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getStringParamFromItemWithName_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> itemSetParamu8vWithNamebuffersize_batch(List<int> item, List<String> name, List<NSValue> buffer, List<int> size) async {
+    if (item.length != name.length || name.length != buffer.length || buffer.length != size.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamu8vWithNamebuffersize_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "size": size[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> itemGetParamu8vWithNamebuffersize_batch(List<int> item, List<String> name, List<NSValue> buffer, List<int> size) async {
+    if (item.length != name.length || name.length != buffer.length || buffer.length != size.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamu8vWithNamebuffersize_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "size": size[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1022,6 +2231,63 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
+  Future<List<int>> trackFaceInputDatawidthheight_batch(List<int> inputFormat, List<NSValue> inputData, List<int> width, List<int> height) async {
+    if (inputFormat.length != inputData.length || inputData.length != width.length || width.length != height.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::trackFaceInputDatawidthheight_batch', [for (int i = 0; i < this.length; i++) {"inputFormat": inputFormat[i], "inputData": inputData[i].refId, "width": width[i], "height": height[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> trackFaceWithTongueInputDatawidthheight_batch(List<int> inputFormat, List<NSValue> inputData, List<int> width, List<int> height) async {
+    if (inputFormat.length != inputData.length || inputData.length != width.length || width.length != height.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::trackFaceWithTongueInputDatawidthheight_batch', [for (int i = 0; i < this.length; i++) {"inputFormat": inputFormat[i], "inputData": inputData[i].refId, "width": width[i], "height": height[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> getFaceInfoNamepretnumber_batch(List<int> faceId, List<String> name, List<NSValue> pret, List<int> number) async {
+    if (faceId.length != name.length || name.length != pret.length || pret.length != number.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getFaceInfoNamepretnumber_batch', [for (int i = 0; i < this.length; i++) {"faceId": faceId[i], "name": name[i], "pret": pret[i].refId, "number": number[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
   Future<List<int>> getFaceIdentifier_batch(List<int> faceId) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1029,6 +2295,82 @@ extension FURenderer_Batch on List<FURenderer> {
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getFaceIdentifier_batch', [for (int i = 0; i < this.length; i++) {"faceId": faceId[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> avatarBindItemsItemsitemsCountcontractscontractsCount_batch(List<int> avatarItem, List<NSValue> items, List<int> itemsCount, List<NSValue> contracts, List<int> contractsCount) async {
+    if (avatarItem.length != items.length || items.length != itemsCount.length || itemsCount.length != contracts.length || contracts.length != contractsCount.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::avatarBindItemsItemsitemsCountcontractscontractsCount_batch', [for (int i = 0; i < this.length; i++) {"avatarItem": avatarItem[i], "items": items[i].refId, "itemsCount": itemsCount[i], "contracts": contracts[i].refId, "contractsCount": contractsCount[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> avatarUnbindItemsItemsitemsCount_batch(List<int> avatarItem, List<NSValue> items, List<int> itemsCount) async {
+    if (avatarItem.length != items.length || items.length != itemsCount.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::avatarUnbindItemsItemsitemsCount_batch', [for (int i = 0; i < this.length; i++) {"avatarItem": avatarItem[i], "items": items[i].refId, "itemsCount": itemsCount[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> bindItemsItemsitemsCount_batch(List<int> item, List<NSValue> items, List<int> itemsCount) async {
+    if (item.length != items.length || items.length != itemsCount.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::bindItemsItemsitemsCount_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "items": items[i].refId, "itemsCount": itemsCount[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> unBindItemsItemsitemsCount_batch(List<int> item, List<NSValue> items, List<int> itemsCount) async {
+    if (item.length != items.length || items.length != itemsCount.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::unBindItemsItemsitemsCount_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "items": items[i].refId, "itemsCount": itemsCount[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1219,6 +2561,386 @@ extension FURenderer_Batch on List<FURenderer> {
   
     // invoke native method
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setTongueTrackingEnable_batch', [for (int i = 0; i < this.length; i++) {"enable": enable[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> loadTongueModelSize_batch(List<NSValue> model, List<int> size) async {
+    if (model.length != size.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::loadTongueModelSize_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "size": size[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue>> create3DBodyTrackerSize_batch(List<NSValue> model, List<int> size) async {
+    if (model.length != size.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::create3DBodyTrackerSize_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "size": size[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<void> destroy3DBodyTracker_batch(List<NSValue> modelPtr) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::destroy3DBodyTracker_batch', [for (int i = 0; i < this.length; i++) {"modelPtr": modelPtr[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode_batch(List<NSValue> modelPtr, List<int> humanHandle, List<NSValue> inPtr, List<FUFormat> inFormat, List<int> w, List<int> h, List<int> rotationMode) async {
+    if (modelPtr.length != humanHandle.length || humanHandle.length != inPtr.length || inPtr.length != inFormat.length || inFormat.length != w.length || w.length != h.length || h.length != rotationMode.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode_batch', [for (int i = 0; i < this.length; i++) {"modelPtr": modelPtr[i].refId, "humanHandle": humanHandle[i], "inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "w": w[i], "h": h[i], "rotationMode": rotationMode[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue>> faceCaptureCreateSize_batch(List<NSValue> data, List<int> size) async {
+    if (data.length != size.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureCreateSize_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "size": size[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<void> faceCaptureDestory_batch(List<NSValue> model) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureDestory_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureReset_batch(List<NSValue> model) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureReset_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureProcessFrameInPtrinFormatwhrotationMode_batch(List<NSValue> model, List<NSValue> inPtr, List<FUFormat> inFormat, List<int> w, List<int> h, List<int> rotationMode) async {
+    if (model.length != inPtr.length || inPtr.length != inFormat.length || inFormat.length != w.length || w.length != h.length || h.length != rotationMode.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureProcessFrameInPtrinFormatwhrotationMode_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "w": w[i], "h": h[i], "rotationMode": rotationMode[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureGetResultLandmarksFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+    if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultLandmarksFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureGetResultIdentityFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+    if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIdentityFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureGetResultExpressionFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+    if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultExpressionFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureGetResultRotationFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+    if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultRotationFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureGetResultTranslationFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+    if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTranslationFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCapturGetResultTongueExpFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+    if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCapturGetResultTongueExpFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureGetResultIsFaceFaceN_batch(List<NSValue> model, List<int> faceN) async {
+    if (model.length != faceN.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIsFaceFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureGetResultFaceIDFaceN_batch(List<NSValue> model, List<int> faceN) async {
+    if (model.length != faceN.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceIDFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<double>> faceCaptureGetResultTongueScoreFaceN_batch(List<NSValue> model, List<int> faceN) async {
+    if (model.length != faceN.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueScoreFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureGetResultTongueClassFaceN_batch(List<NSValue> model, List<int> faceN) async {
+    if (model.length != faceN.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueClassFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<double>> faceCaptureGetResultFocalLength_batch(List<NSValue> model) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFocalLength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => result).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  Future<List<int>> faceCaptureGetResultFaceNum_batch(List<NSValue> model) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceNum_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
