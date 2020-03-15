@@ -114,7 +114,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  Future<int> setupWithDataDataSizeardataauthPackageauthSize(NSValue data, int dataSize, NSValue ardata, NSValue package, int size) async {
+  Future<int> setupWithDataDataSizeardataauthPackageauthSize(NSValue/* void* */ data, int dataSize, NSValue/* void* */ ardata, NSValue/* void* */ package, int size) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer@$refId::setupWithData([\'dataSize\':$dataSize, \'size\':$size])');
@@ -136,7 +136,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  Future<int> setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext(NSValue data, int dataSize, NSValue ardata, NSValue package, int size, bool shouldCreate) async {
+  Future<int> setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext(NSValue/* void* */ data, int dataSize, NSValue/* void* */ ardata, NSValue/* void* */ package, int size, bool shouldCreate) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer@$refId::setupWithData([\'dataSize\':$dataSize, \'size\':$size, \'shouldCreate\':$shouldCreate])');
@@ -158,7 +158,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  Future<int> setupWithDataPathAuthPackageauthSizeshouldCreateContext(String v3path, NSValue package, int size, bool shouldCreate) async {
+  Future<int> setupWithDataPathAuthPackageauthSizeshouldCreateContext(String v3path, NSValue/* void* */ package, int size, bool shouldCreate) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer@$refId::setupWithDataPath([\'v3path\':$v3path, \'size\':$size, \'shouldCreate\':$shouldCreate])');
@@ -180,7 +180,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  Future<NSData> setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext(String v3path, String offLinePath, NSValue package, int size, bool shouldCreate) async {
+  Future<NSData> setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext(String v3path, String offLinePath, NSValue/* void* */ package, int size, bool shouldCreate) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer@$refId::setupLocalWithV3Path([\'v3path\':$v3path, \'offLinePath\':$offLinePath, \'size\':$size, \'shouldCreate\':$shouldCreate])');
@@ -202,7 +202,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  Future<int> renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx(NSValue inPtr, FUFormat inFormat, NSValue outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue items, int itemCount, bool flip) async {
+  Future<int> renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx(NSValue/* void* */ inPtr, FUFormat inFormat, NSValue/* void* */ outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue/* int* */ items, int itemCount, bool flip) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer@$refId::renderItems([\'width\':$width, \'height\':$height, \'frameid\':$frameid, \'itemCount\':$itemCount, \'flip\':$flip])');
@@ -224,7 +224,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  Future<int> renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount(NSValue inPtr, FUFormat inFormat, NSValue outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue items, int itemCount) async {
+  Future<int> renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount(NSValue/* void* */ inPtr, FUFormat inFormat, NSValue/* void* */ outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue/* int* */ items, int itemCount) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer@$refId::renderBundles([\'width\':$width, \'height\':$height, \'frameid\':$frameid, \'itemCount\':$itemCount])');
@@ -246,7 +246,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  Future<int> renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr(NSValue inPtr, FUFormat inFormat, NSValue outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue items, int itemCount, List<TSplitViewInfo> splitViewInfoPtr) async {
+  Future<int> renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr(NSValue/* void* */ inPtr, FUFormat inFormat, NSValue/* void* */ outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue/* int* */ items, int itemCount, List<TSplitViewInfo> splitViewInfoPtr) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer@$refId::renderBundlesSplitView([\'width\':$width, \'height\':$height, \'frameid\':$frameid, \'itemCount\':$itemCount])');
@@ -312,7 +312,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  Future<int> rotateImageInPtrinFormatwidthheightrotationModeflipXflipY(FURotatedImage outImage, NSValue inPtr, FUFormat inFormat, int width, int height, FURotationMode rotationMode, bool flipX, bool flipY) async {
+  Future<int> rotateImageInPtrinFormatwidthheightrotationModeflipXflipY(FURotatedImage outImage, NSValue/* void* */ inPtr, FUFormat inFormat, int width, int height, FURotationMode rotationMode, bool flipX, bool flipY) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer@$refId::rotateImage([\'width\':$width, \'height\':$height, \'flipX\':$flipX, \'flipY\':$flipY])');
@@ -378,7 +378,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> createItemFromPackageSize(NSValue data, int size) async {
+  static Future<int> createItemFromPackageSize(NSValue/* void* */ data, int size) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::createItemFromPackage([\'size\':$size])');
@@ -466,7 +466,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> loadAIModelFromPackageSizeaitype(NSValue data, int size, FUAITYPE type) async {
+  static Future<int> loadAIModelFromPackageSizeaitype(NSValue/* void* */ data, int size, FUAITYPE type) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::loadAIModelFromPackage([\'size\':$size])');
@@ -554,7 +554,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> itemSetParamdvWithNamevaluelength(int item, String name, NSValue value, int length) async {
+  static Future<int> itemSetParamdvWithNamevaluelength(int item, String name, NSValue/* double* */ value, int length) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::itemSetParamdv([\'item\':$item, \'name\':$name, \'length\':$length])');
@@ -576,7 +576,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> itemGetParamdvWithNamebufferlength(int item, String name, NSValue buffer, int length) async {
+  static Future<int> itemGetParamdvWithNamebufferlength(int item, String name, NSValue/* double* */ buffer, int length) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::itemGetParamdv([\'item\':$item, \'name\':$name, \'length\':$length])');
@@ -598,7 +598,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> itemGetParamfvWithNamebufferlength(int item, String name, NSValue buffer, int length) async {
+  static Future<int> itemGetParamfvWithNamebufferlength(int item, String name, NSValue/* float* */ buffer, int length) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::itemGetParamfv([\'item\':$item, \'name\':$name, \'length\':$length])');
@@ -664,7 +664,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> itemSetParamu8vWithNamebuffersize(int item, String name, NSValue buffer, int size) async {
+  static Future<int> itemSetParamu8vWithNamebuffersize(int item, String name, NSValue/* void* */ buffer, int size) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::itemSetParamu8v([\'item\':$item, \'name\':$name, \'size\':$size])');
@@ -686,7 +686,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> itemGetParamu8vWithNamebuffersize(int item, String name, NSValue buffer, int size) async {
+  static Future<int> itemGetParamu8vWithNamebuffersize(int item, String name, NSValue/* void* */ buffer, int size) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::itemGetParamu8v([\'item\':$item, \'name\':$name, \'size\':$size])');
@@ -752,7 +752,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> trackFaceInputDatawidthheight(int inputFormat, NSValue inputData, int width, int height) async {
+  static Future<int> trackFaceInputDatawidthheight(int inputFormat, NSValue/* void* */ inputData, int width, int height) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::trackFace([\'inputFormat\':$inputFormat, \'width\':$width, \'height\':$height])');
@@ -774,7 +774,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> trackFaceWithTongueInputDatawidthheight(int inputFormat, NSValue inputData, int width, int height) async {
+  static Future<int> trackFaceWithTongueInputDatawidthheight(int inputFormat, NSValue/* void* */ inputData, int width, int height) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::trackFaceWithTongue([\'inputFormat\':$inputFormat, \'width\':$width, \'height\':$height])');
@@ -796,7 +796,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> getFaceInfoNamepretnumber(int faceId, String name, NSValue pret, int number) async {
+  static Future<int> getFaceInfoNamepretnumber(int faceId, String name, NSValue/* float* */ pret, int number) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::getFaceInfo([\'faceId\':$faceId, \'name\':$name, \'number\':$number])');
@@ -840,7 +840,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> avatarBindItemsItemsitemsCountcontractscontractsCount(int avatarItem, NSValue items, int itemsCount, NSValue contracts, int contractsCount) async {
+  static Future<int> avatarBindItemsItemsitemsCountcontractscontractsCount(int avatarItem, NSValue/* int* */ items, int itemsCount, NSValue/* int* */ contracts, int contractsCount) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::avatarBindItems([\'avatarItem\':$avatarItem, \'itemsCount\':$itemsCount, \'contractsCount\':$contractsCount])');
@@ -862,7 +862,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> avatarUnbindItemsItemsitemsCount(int avatarItem, NSValue items, int itemsCount) async {
+  static Future<int> avatarUnbindItemsItemsitemsCount(int avatarItem, NSValue/* int* */ items, int itemsCount) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::avatarUnbindItems([\'avatarItem\':$avatarItem, \'itemsCount\':$itemsCount])');
@@ -884,7 +884,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> bindItemsItemsitemsCount(int item, NSValue items, int itemsCount) async {
+  static Future<int> bindItemsItemsitemsCount(int item, NSValue/* int* */ items, int itemsCount) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::bindItems([\'item\':$item, \'itemsCount\':$itemsCount])');
@@ -906,7 +906,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> unBindItemsItemsitemsCount(int item, NSValue items, int itemsCount) async {
+  static Future<int> unBindItemsItemsitemsCount(int item, NSValue/* int* */ items, int itemsCount) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::unBindItems([\'item\':$item, \'itemsCount\':$itemsCount])');
@@ -1148,7 +1148,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> loadTongueModelSize(NSValue model, int size) async {
+  static Future<int> loadTongueModelSize(NSValue/* void* */ model, int size) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::loadTongueModel([\'size\':$size])');
@@ -1170,7 +1170,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<NSValue> create3DBodyTrackerSize(NSValue model, int size) async {
+  static Future<NSValue/* void* */> create3DBodyTrackerSize(NSValue/* void* */ model, int size) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::create3DBodyTracker([\'size\':$size])');
@@ -1187,12 +1187,12 @@ class FURenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
-      return NSValue()..refId = result..tag = 'nama_fluttify';
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
     }
   }
   
-  static Future<void> destroy3DBodyTracker(NSValue modelPtr) async {
+  static Future<void> destroy3DBodyTracker(NSValue/* void* */ modelPtr) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::destroy3DBodyTracker([])');
@@ -1214,7 +1214,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode(NSValue modelPtr, int humanHandle, NSValue inPtr, FUFormat inFormat, int w, int h, int rotationMode) async {
+  static Future<int> run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode(NSValue/* void* */ modelPtr, int humanHandle, NSValue/* void* */ inPtr, FUFormat inFormat, int w, int h, int rotationMode) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::run3DBodyTracker([\'humanHandle\':$humanHandle, \'w\':$w, \'h\':$h, \'rotationMode\':$rotationMode])');
@@ -1236,7 +1236,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<NSValue> faceCaptureCreateSize(NSValue data, int size) async {
+  static Future<NSValue/* void* */> faceCaptureCreateSize(NSValue/* void* */ data, int size) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureCreate([\'size\':$size])');
@@ -1253,12 +1253,12 @@ class FURenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
-      return NSValue()..refId = result..tag = 'nama_fluttify';
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
     }
   }
   
-  static Future<void> faceCaptureDestory(NSValue model) async {
+  static Future<void> faceCaptureDestory(NSValue/* void* */ model) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureDestory([])');
@@ -1280,7 +1280,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureReset(NSValue model) async {
+  static Future<int> faceCaptureReset(NSValue/* void* */ model) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureReset([])');
@@ -1302,7 +1302,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureProcessFrameInPtrinFormatwhrotationMode(NSValue model, NSValue inPtr, FUFormat inFormat, int w, int h, int rotationMode) async {
+  static Future<int> faceCaptureProcessFrameInPtrinFormatwhrotationMode(NSValue/* void* */ model, NSValue/* void* */ inPtr, FUFormat inFormat, int w, int h, int rotationMode) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureProcessFrame([\'w\':$w, \'h\':$h, \'rotationMode\':$rotationMode])');
@@ -1324,7 +1324,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureGetResultLandmarksFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+  static Future<int> faceCaptureGetResultLandmarksFaceNbufferlength(NSValue/* void* */ model, int faceN, NSValue/* float* */ buffer, int length) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultLandmarks([\'faceN\':$faceN, \'length\':$length])');
@@ -1346,7 +1346,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureGetResultIdentityFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+  static Future<int> faceCaptureGetResultIdentityFaceNbufferlength(NSValue/* void* */ model, int faceN, NSValue/* float* */ buffer, int length) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultIdentity([\'faceN\':$faceN, \'length\':$length])');
@@ -1368,7 +1368,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureGetResultExpressionFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+  static Future<int> faceCaptureGetResultExpressionFaceNbufferlength(NSValue/* void* */ model, int faceN, NSValue/* float* */ buffer, int length) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultExpression([\'faceN\':$faceN, \'length\':$length])');
@@ -1390,7 +1390,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureGetResultRotationFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+  static Future<int> faceCaptureGetResultRotationFaceNbufferlength(NSValue/* void* */ model, int faceN, NSValue/* float* */ buffer, int length) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultRotation([\'faceN\':$faceN, \'length\':$length])');
@@ -1412,7 +1412,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureGetResultTranslationFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+  static Future<int> faceCaptureGetResultTranslationFaceNbufferlength(NSValue/* void* */ model, int faceN, NSValue/* float* */ buffer, int length) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultTranslation([\'faceN\':$faceN, \'length\':$length])');
@@ -1434,7 +1434,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCapturGetResultTongueExpFaceNbufferlength(NSValue model, int faceN, NSValue buffer, int length) async {
+  static Future<int> faceCapturGetResultTongueExpFaceNbufferlength(NSValue/* void* */ model, int faceN, NSValue/* float* */ buffer, int length) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCapturGetResultTongueExp([\'faceN\':$faceN, \'length\':$length])');
@@ -1456,7 +1456,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureGetResultIsFaceFaceN(NSValue model, int faceN) async {
+  static Future<int> faceCaptureGetResultIsFaceFaceN(NSValue/* void* */ model, int faceN) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultIsFace([\'faceN\':$faceN])');
@@ -1478,7 +1478,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureGetResultFaceIDFaceN(NSValue model, int faceN) async {
+  static Future<int> faceCaptureGetResultFaceIDFaceN(NSValue/* void* */ model, int faceN) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultFaceID([\'faceN\':$faceN])');
@@ -1500,7 +1500,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<double> faceCaptureGetResultTongueScoreFaceN(NSValue model, int faceN) async {
+  static Future<double> faceCaptureGetResultTongueScoreFaceN(NSValue/* void* */ model, int faceN) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultTongueScore([\'faceN\':$faceN])');
@@ -1522,7 +1522,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureGetResultTongueClassFaceN(NSValue model, int faceN) async {
+  static Future<int> faceCaptureGetResultTongueClassFaceN(NSValue/* void* */ model, int faceN) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultTongueClass([\'faceN\':$faceN])');
@@ -1544,7 +1544,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<double> faceCaptureGetResultFocalLength(NSValue model) async {
+  static Future<double> faceCaptureGetResultFocalLength(NSValue/* void* */ model) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultFocalLength([])');
@@ -1566,7 +1566,7 @@ class FURenderer extends NSObject  {
     }
   }
   
-  static Future<int> faceCaptureGetResultFaceNum(NSValue model) async {
+  static Future<int> faceCaptureGetResultFaceNum(NSValue/* void* */ model) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: FURenderer::faceCaptureGetResultFaceNum([])');
@@ -1680,7 +1680,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> setupWithDataDataSizeardataauthPackageauthSize_batch(List<NSValue> data, List<int> dataSize, List<NSValue> ardata, List<NSValue> package, List<int> size) async {
+  Future<List<int>> setupWithDataDataSizeardataauthPackageauthSize_batch(List<NSValue/* void* */> data, List<int> dataSize, List<NSValue/* void* */> ardata, List<NSValue/* void* */> package, List<int> size) async {
     if (data.length != dataSize.length || dataSize.length != ardata.length || ardata.length != package.length || package.length != size.length) {
       return Future.error('all args must have same length!');
     }
@@ -1699,7 +1699,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext_batch(List<NSValue> data, List<int> dataSize, List<NSValue> ardata, List<NSValue> package, List<int> size, List<bool> shouldCreate) async {
+  Future<List<int>> setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext_batch(List<NSValue/* void* */> data, List<int> dataSize, List<NSValue/* void* */> ardata, List<NSValue/* void* */> package, List<int> size, List<bool> shouldCreate) async {
     if (data.length != dataSize.length || dataSize.length != ardata.length || ardata.length != package.length || package.length != size.length || size.length != shouldCreate.length) {
       return Future.error('all args must have same length!');
     }
@@ -1718,7 +1718,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> setupWithDataPathAuthPackageauthSizeshouldCreateContext_batch(List<String> v3path, List<NSValue> package, List<int> size, List<bool> shouldCreate) async {
+  Future<List<int>> setupWithDataPathAuthPackageauthSizeshouldCreateContext_batch(List<String> v3path, List<NSValue/* void* */> package, List<int> size, List<bool> shouldCreate) async {
     if (v3path.length != package.length || package.length != size.length || size.length != shouldCreate.length) {
       return Future.error('all args must have same length!');
     }
@@ -1737,7 +1737,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<NSData>> setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext_batch(List<String> v3path, List<String> offLinePath, List<NSValue> package, List<int> size, List<bool> shouldCreate) async {
+  Future<List<NSData>> setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext_batch(List<String> v3path, List<String> offLinePath, List<NSValue/* void* */> package, List<int> size, List<bool> shouldCreate) async {
     if (v3path.length != offLinePath.length || offLinePath.length != package.length || package.length != size.length || size.length != shouldCreate.length) {
       return Future.error('all args must have same length!');
     }
@@ -1756,7 +1756,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx_batch(List<NSValue> inPtr, List<FUFormat> inFormat, List<NSValue> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue> items, List<int> itemCount, List<bool> flip) async {
+  Future<List<int>> renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx_batch(List<NSValue/* void* */> inPtr, List<FUFormat> inFormat, List<NSValue/* void* */> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue/* int* */> items, List<int> itemCount, List<bool> flip) async {
     if (inPtr.length != inFormat.length || inFormat.length != outPtr.length || outPtr.length != outFormat.length || outFormat.length != width.length || width.length != height.length || height.length != frameid.length || frameid.length != items.length || items.length != itemCount.length || itemCount.length != flip.length) {
       return Future.error('all args must have same length!');
     }
@@ -1775,7 +1775,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount_batch(List<NSValue> inPtr, List<FUFormat> inFormat, List<NSValue> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue> items, List<int> itemCount) async {
+  Future<List<int>> renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount_batch(List<NSValue/* void* */> inPtr, List<FUFormat> inFormat, List<NSValue/* void* */> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue/* int* */> items, List<int> itemCount) async {
     if (inPtr.length != inFormat.length || inFormat.length != outPtr.length || outPtr.length != outFormat.length || outFormat.length != width.length || width.length != height.length || height.length != frameid.length || frameid.length != items.length || items.length != itemCount.length) {
       return Future.error('all args must have same length!');
     }
@@ -1794,7 +1794,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr_batch(List<NSValue> inPtr, List<FUFormat> inFormat, List<NSValue> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue> items, List<int> itemCount, List<List<TSplitViewInfo>> splitViewInfoPtr) async {
+  Future<List<int>> renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr_batch(List<NSValue/* void* */> inPtr, List<FUFormat> inFormat, List<NSValue/* void* */> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue/* int* */> items, List<int> itemCount, List<List<TSplitViewInfo>> splitViewInfoPtr) async {
     if (inPtr.length != inFormat.length || inFormat.length != outPtr.length || outPtr.length != outFormat.length || outFormat.length != width.length || width.length != height.length || height.length != frameid.length || frameid.length != items.length || items.length != itemCount.length || itemCount.length != splitViewInfoPtr.length) {
       return Future.error('all args must have same length!');
     }
@@ -1851,7 +1851,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> rotateImageInPtrinFormatwidthheightrotationModeflipXflipY_batch(List<FURotatedImage> outImage, List<NSValue> inPtr, List<FUFormat> inFormat, List<int> width, List<int> height, List<FURotationMode> rotationMode, List<bool> flipX, List<bool> flipY) async {
+  Future<List<int>> rotateImageInPtrinFormatwidthheightrotationModeflipXflipY_batch(List<FURotatedImage> outImage, List<NSValue/* void* */> inPtr, List<FUFormat> inFormat, List<int> width, List<int> height, List<FURotationMode> rotationMode, List<bool> flipX, List<bool> flipY) async {
     if (outImage.length != inPtr.length || inPtr.length != inFormat.length || inFormat.length != width.length || width.length != height.length || height.length != rotationMode.length || rotationMode.length != flipX.length || flipX.length != flipY.length) {
       return Future.error('all args must have same length!');
     }
@@ -1908,7 +1908,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> createItemFromPackageSize_batch(List<NSValue> data, List<int> size) async {
+  Future<List<int>> createItemFromPackageSize_batch(List<NSValue/* void* */> data, List<int> size) async {
     if (data.length != size.length) {
       return Future.error('all args must have same length!');
     }
@@ -1984,7 +1984,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> loadAIModelFromPackageSizeaitype_batch(List<NSValue> data, List<int> size, List<FUAITYPE> type) async {
+  Future<List<int>> loadAIModelFromPackageSizeaitype_batch(List<NSValue/* void* */> data, List<int> size, List<FUAITYPE> type) async {
     if (data.length != size.length || size.length != type.length) {
       return Future.error('all args must have same length!');
     }
@@ -2060,7 +2060,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> itemSetParamdvWithNamevaluelength_batch(List<int> item, List<String> name, List<NSValue> value, List<int> length) async {
+  Future<List<int>> itemSetParamdvWithNamevaluelength_batch(List<int> item, List<String> name, List<NSValue/* double* */> value, List<int> length) async {
     if (item.length != name.length || name.length != value.length || value.length != length.length) {
       return Future.error('all args must have same length!');
     }
@@ -2079,7 +2079,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> itemGetParamdvWithNamebufferlength_batch(List<int> item, List<String> name, List<NSValue> buffer, List<int> length) async {
+  Future<List<int>> itemGetParamdvWithNamebufferlength_batch(List<int> item, List<String> name, List<NSValue/* double* */> buffer, List<int> length) async {
     if (item.length != name.length || name.length != buffer.length || buffer.length != length.length) {
       return Future.error('all args must have same length!');
     }
@@ -2098,7 +2098,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> itemGetParamfvWithNamebufferlength_batch(List<int> item, List<String> name, List<NSValue> buffer, List<int> length) async {
+  Future<List<int>> itemGetParamfvWithNamebufferlength_batch(List<int> item, List<String> name, List<NSValue/* float* */> buffer, List<int> length) async {
     if (item.length != name.length || name.length != buffer.length || buffer.length != length.length) {
       return Future.error('all args must have same length!');
     }
@@ -2155,7 +2155,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> itemSetParamu8vWithNamebuffersize_batch(List<int> item, List<String> name, List<NSValue> buffer, List<int> size) async {
+  Future<List<int>> itemSetParamu8vWithNamebuffersize_batch(List<int> item, List<String> name, List<NSValue/* void* */> buffer, List<int> size) async {
     if (item.length != name.length || name.length != buffer.length || buffer.length != size.length) {
       return Future.error('all args must have same length!');
     }
@@ -2174,7 +2174,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> itemGetParamu8vWithNamebuffersize_batch(List<int> item, List<String> name, List<NSValue> buffer, List<int> size) async {
+  Future<List<int>> itemGetParamu8vWithNamebuffersize_batch(List<int> item, List<String> name, List<NSValue/* void* */> buffer, List<int> size) async {
     if (item.length != name.length || name.length != buffer.length || buffer.length != size.length) {
       return Future.error('all args must have same length!');
     }
@@ -2231,7 +2231,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> trackFaceInputDatawidthheight_batch(List<int> inputFormat, List<NSValue> inputData, List<int> width, List<int> height) async {
+  Future<List<int>> trackFaceInputDatawidthheight_batch(List<int> inputFormat, List<NSValue/* void* */> inputData, List<int> width, List<int> height) async {
     if (inputFormat.length != inputData.length || inputData.length != width.length || width.length != height.length) {
       return Future.error('all args must have same length!');
     }
@@ -2250,7 +2250,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> trackFaceWithTongueInputDatawidthheight_batch(List<int> inputFormat, List<NSValue> inputData, List<int> width, List<int> height) async {
+  Future<List<int>> trackFaceWithTongueInputDatawidthheight_batch(List<int> inputFormat, List<NSValue/* void* */> inputData, List<int> width, List<int> height) async {
     if (inputFormat.length != inputData.length || inputData.length != width.length || width.length != height.length) {
       return Future.error('all args must have same length!');
     }
@@ -2269,7 +2269,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> getFaceInfoNamepretnumber_batch(List<int> faceId, List<String> name, List<NSValue> pret, List<int> number) async {
+  Future<List<int>> getFaceInfoNamepretnumber_batch(List<int> faceId, List<String> name, List<NSValue/* float* */> pret, List<int> number) async {
     if (faceId.length != name.length || name.length != pret.length || pret.length != number.length) {
       return Future.error('all args must have same length!');
     }
@@ -2307,7 +2307,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> avatarBindItemsItemsitemsCountcontractscontractsCount_batch(List<int> avatarItem, List<NSValue> items, List<int> itemsCount, List<NSValue> contracts, List<int> contractsCount) async {
+  Future<List<int>> avatarBindItemsItemsitemsCountcontractscontractsCount_batch(List<int> avatarItem, List<NSValue/* int* */> items, List<int> itemsCount, List<NSValue/* int* */> contracts, List<int> contractsCount) async {
     if (avatarItem.length != items.length || items.length != itemsCount.length || itemsCount.length != contracts.length || contracts.length != contractsCount.length) {
       return Future.error('all args must have same length!');
     }
@@ -2326,7 +2326,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> avatarUnbindItemsItemsitemsCount_batch(List<int> avatarItem, List<NSValue> items, List<int> itemsCount) async {
+  Future<List<int>> avatarUnbindItemsItemsitemsCount_batch(List<int> avatarItem, List<NSValue/* int* */> items, List<int> itemsCount) async {
     if (avatarItem.length != items.length || items.length != itemsCount.length) {
       return Future.error('all args must have same length!');
     }
@@ -2345,7 +2345,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> bindItemsItemsitemsCount_batch(List<int> item, List<NSValue> items, List<int> itemsCount) async {
+  Future<List<int>> bindItemsItemsitemsCount_batch(List<int> item, List<NSValue/* int* */> items, List<int> itemsCount) async {
     if (item.length != items.length || items.length != itemsCount.length) {
       return Future.error('all args must have same length!');
     }
@@ -2364,7 +2364,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> unBindItemsItemsitemsCount_batch(List<int> item, List<NSValue> items, List<int> itemsCount) async {
+  Future<List<int>> unBindItemsItemsitemsCount_batch(List<int> item, List<NSValue/* int* */> items, List<int> itemsCount) async {
     if (item.length != items.length || items.length != itemsCount.length) {
       return Future.error('all args must have same length!');
     }
@@ -2573,7 +2573,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> loadTongueModelSize_batch(List<NSValue> model, List<int> size) async {
+  Future<List<int>> loadTongueModelSize_batch(List<NSValue/* void* */> model, List<int> size) async {
     if (model.length != size.length) {
       return Future.error('all args must have same length!');
     }
@@ -2592,7 +2592,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<NSValue>> create3DBodyTrackerSize_batch(List<NSValue> model, List<int> size) async {
+  Future<List<NSValue/* void* */>> create3DBodyTrackerSize_batch(List<NSValue/* void* */> model, List<int> size) async {
     if (model.length != size.length) {
       return Future.error('all args must have same length!');
     }
@@ -2605,13 +2605,13 @@ extension FURenderer_Batch on List<FURenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
   }
   
-  Future<void> destroy3DBodyTracker_batch(List<NSValue> modelPtr) async {
+  Future<void> destroy3DBodyTracker_batch(List<NSValue/* void* */> modelPtr) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2630,7 +2630,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode_batch(List<NSValue> modelPtr, List<int> humanHandle, List<NSValue> inPtr, List<FUFormat> inFormat, List<int> w, List<int> h, List<int> rotationMode) async {
+  Future<List<int>> run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode_batch(List<NSValue/* void* */> modelPtr, List<int> humanHandle, List<NSValue/* void* */> inPtr, List<FUFormat> inFormat, List<int> w, List<int> h, List<int> rotationMode) async {
     if (modelPtr.length != humanHandle.length || humanHandle.length != inPtr.length || inPtr.length != inFormat.length || inFormat.length != w.length || w.length != h.length || h.length != rotationMode.length) {
       return Future.error('all args must have same length!');
     }
@@ -2649,7 +2649,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<NSValue>> faceCaptureCreateSize_batch(List<NSValue> data, List<int> size) async {
+  Future<List<NSValue/* void* */>> faceCaptureCreateSize_batch(List<NSValue/* void* */> data, List<int> size) async {
     if (data.length != size.length) {
       return Future.error('all args must have same length!');
     }
@@ -2662,13 +2662,13 @@ extension FURenderer_Batch on List<FURenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
   }
   
-  Future<void> faceCaptureDestory_batch(List<NSValue> model) async {
+  Future<void> faceCaptureDestory_batch(List<NSValue/* void* */> model) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2687,7 +2687,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureReset_batch(List<NSValue> model) async {
+  Future<List<int>> faceCaptureReset_batch(List<NSValue/* void* */> model) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2706,7 +2706,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureProcessFrameInPtrinFormatwhrotationMode_batch(List<NSValue> model, List<NSValue> inPtr, List<FUFormat> inFormat, List<int> w, List<int> h, List<int> rotationMode) async {
+  Future<List<int>> faceCaptureProcessFrameInPtrinFormatwhrotationMode_batch(List<NSValue/* void* */> model, List<NSValue/* void* */> inPtr, List<FUFormat> inFormat, List<int> w, List<int> h, List<int> rotationMode) async {
     if (model.length != inPtr.length || inPtr.length != inFormat.length || inFormat.length != w.length || w.length != h.length || h.length != rotationMode.length) {
       return Future.error('all args must have same length!');
     }
@@ -2725,7 +2725,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureGetResultLandmarksFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+  Future<List<int>> faceCaptureGetResultLandmarksFaceNbufferlength_batch(List<NSValue/* void* */> model, List<int> faceN, List<NSValue/* float* */> buffer, List<int> length) async {
     if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
       return Future.error('all args must have same length!');
     }
@@ -2744,7 +2744,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureGetResultIdentityFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+  Future<List<int>> faceCaptureGetResultIdentityFaceNbufferlength_batch(List<NSValue/* void* */> model, List<int> faceN, List<NSValue/* float* */> buffer, List<int> length) async {
     if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
       return Future.error('all args must have same length!');
     }
@@ -2763,7 +2763,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureGetResultExpressionFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+  Future<List<int>> faceCaptureGetResultExpressionFaceNbufferlength_batch(List<NSValue/* void* */> model, List<int> faceN, List<NSValue/* float* */> buffer, List<int> length) async {
     if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
       return Future.error('all args must have same length!');
     }
@@ -2782,7 +2782,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureGetResultRotationFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+  Future<List<int>> faceCaptureGetResultRotationFaceNbufferlength_batch(List<NSValue/* void* */> model, List<int> faceN, List<NSValue/* float* */> buffer, List<int> length) async {
     if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
       return Future.error('all args must have same length!');
     }
@@ -2801,7 +2801,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureGetResultTranslationFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+  Future<List<int>> faceCaptureGetResultTranslationFaceNbufferlength_batch(List<NSValue/* void* */> model, List<int> faceN, List<NSValue/* float* */> buffer, List<int> length) async {
     if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
       return Future.error('all args must have same length!');
     }
@@ -2820,7 +2820,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCapturGetResultTongueExpFaceNbufferlength_batch(List<NSValue> model, List<int> faceN, List<NSValue> buffer, List<int> length) async {
+  Future<List<int>> faceCapturGetResultTongueExpFaceNbufferlength_batch(List<NSValue/* void* */> model, List<int> faceN, List<NSValue/* float* */> buffer, List<int> length) async {
     if (model.length != faceN.length || faceN.length != buffer.length || buffer.length != length.length) {
       return Future.error('all args must have same length!');
     }
@@ -2839,7 +2839,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureGetResultIsFaceFaceN_batch(List<NSValue> model, List<int> faceN) async {
+  Future<List<int>> faceCaptureGetResultIsFaceFaceN_batch(List<NSValue/* void* */> model, List<int> faceN) async {
     if (model.length != faceN.length) {
       return Future.error('all args must have same length!');
     }
@@ -2858,7 +2858,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureGetResultFaceIDFaceN_batch(List<NSValue> model, List<int> faceN) async {
+  Future<List<int>> faceCaptureGetResultFaceIDFaceN_batch(List<NSValue/* void* */> model, List<int> faceN) async {
     if (model.length != faceN.length) {
       return Future.error('all args must have same length!');
     }
@@ -2877,7 +2877,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<double>> faceCaptureGetResultTongueScoreFaceN_batch(List<NSValue> model, List<int> faceN) async {
+  Future<List<double>> faceCaptureGetResultTongueScoreFaceN_batch(List<NSValue/* void* */> model, List<int> faceN) async {
     if (model.length != faceN.length) {
       return Future.error('all args must have same length!');
     }
@@ -2896,7 +2896,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureGetResultTongueClassFaceN_batch(List<NSValue> model, List<int> faceN) async {
+  Future<List<int>> faceCaptureGetResultTongueClassFaceN_batch(List<NSValue/* void* */> model, List<int> faceN) async {
     if (model.length != faceN.length) {
       return Future.error('all args must have same length!');
     }
@@ -2915,7 +2915,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<double>> faceCaptureGetResultFocalLength_batch(List<NSValue> model) async {
+  Future<List<double>> faceCaptureGetResultFocalLength_batch(List<NSValue/* void* */> model) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2934,7 +2934,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
-  Future<List<int>> faceCaptureGetResultFaceNum_batch(List<NSValue> model) async {
+  Future<List<int>> faceCaptureGetResultFaceNum_batch(List<NSValue/* void* */> model) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

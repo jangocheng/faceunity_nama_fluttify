@@ -40,10 +40,10 @@ class TAndroidDualMode extends NSObject  {
   //endregion
 
   //region getters
-  Future<NSValue> get_p_NV21() async {
+  Future<NSValue/* void* */> get_p_NV21() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAndroidDualMode::get_p_NV21", {'refId': refId});
-    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
-    return NSValue()..refId = result..tag = 'nama_fluttify';
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
   }
   
   Future<int> get_tex() async {
@@ -61,7 +61,7 @@ class TAndroidDualMode extends NSObject  {
   //endregion
 
   //region setters
-  Future<void> set_p_NV21(NSValue p_NV21) async {
+  Future<void> set_p_NV21(NSValue/* void* */ p_NV21) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAndroidDualMode::set_p_NV21', {'refId': refId, "p_NV21": p_NV21.refId});
   
   
@@ -88,9 +88,9 @@ class TAndroidDualMode extends NSObject  {
 
 extension TAndroidDualMode_Batch on List<TAndroidDualMode> {
   //region getters
-  Future<List<NSValue>> get_p_NV21_batch() async {
+  Future<List<NSValue/* void* */>> get_p_NV21_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAndroidDualMode::get_p_NV21_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -112,7 +112,7 @@ extension TAndroidDualMode_Batch on List<TAndroidDualMode> {
   //endregion
 
   //region setters
-  Future<void> set_p_NV21_batch(List<NSValue> p_NV21) async {
+  Future<void> set_p_NV21_batch(List<NSValue/* void* */> p_NV21) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAndroidDualMode::set_p_NV21_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_NV21": p_NV21[i].refId}]);
   
   

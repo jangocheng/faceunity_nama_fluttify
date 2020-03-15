@@ -40,10 +40,10 @@ class TSplitViewInfo extends NSObject  {
   //endregion
 
   //region getters
-  Future<NSValue> get_in_ptr() async {
+  Future<NSValue/* void* */> get_in_ptr() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_in_ptr", {'refId': refId});
-    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
-    return NSValue()..refId = result..tag = 'nama_fluttify';
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
   }
   
   Future<int> get_in_type() async {
@@ -103,7 +103,7 @@ class TSplitViewInfo extends NSObject  {
   //endregion
 
   //region setters
-  Future<void> set_in_ptr(NSValue in_ptr) async {
+  Future<void> set_in_ptr(NSValue/* void* */ in_ptr) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TSplitViewInfo::set_in_ptr', {'refId': refId, "in_ptr": in_ptr.refId});
   
   
@@ -172,9 +172,9 @@ class TSplitViewInfo extends NSObject  {
 
 extension TSplitViewInfo_Batch on List<TSplitViewInfo> {
   //region getters
-  Future<List<NSValue>> get_in_ptr_batch() async {
+  Future<List<NSValue/* void* */>> get_in_ptr_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSplitViewInfo::get_in_ptr_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -245,7 +245,7 @@ extension TSplitViewInfo_Batch on List<TSplitViewInfo> {
   //endregion
 
   //region setters
-  Future<void> set_in_ptr_batch(List<NSValue> in_ptr) async {
+  Future<void> set_in_ptr_batch(List<NSValue/* void* */> in_ptr) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TSplitViewInfo::set_in_ptr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "in_ptr": in_ptr[i].refId}]);
   
   

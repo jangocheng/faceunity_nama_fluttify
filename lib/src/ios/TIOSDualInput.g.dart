@@ -40,22 +40,22 @@ class TIOSDualInput extends NSObject  {
   //endregion
 
   //region getters
-  Future<NSValue> get_p_BGRA() async {
+  Future<NSValue/* void* */> get_p_BGRA() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_BGRA", {'refId': refId});
-    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
-    return NSValue()..refId = result..tag = 'nama_fluttify';
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
   }
   
-  Future<NSValue> get_p_Y() async {
+  Future<NSValue/* void* */> get_p_Y() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_Y", {'refId': refId});
-    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
-    return NSValue()..refId = result..tag = 'nama_fluttify';
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
   }
   
-  Future<NSValue> get_p_CbCr() async {
+  Future<NSValue/* void* */> get_p_CbCr() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_CbCr", {'refId': refId});
-    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
-    return NSValue()..refId = result..tag = 'nama_fluttify';
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
   }
   
   Future<int> get_stride_BGRA() async {
@@ -91,19 +91,19 @@ class TIOSDualInput extends NSObject  {
   //endregion
 
   //region setters
-  Future<void> set_p_BGRA(NSValue p_BGRA) async {
+  Future<void> set_p_BGRA(NSValue/* void* */ p_BGRA) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_BGRA', {'refId': refId, "p_BGRA": p_BGRA.refId});
   
   
   }
   
-  Future<void> set_p_Y(NSValue p_Y) async {
+  Future<void> set_p_Y(NSValue/* void* */ p_Y) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_Y', {'refId': refId, "p_Y": p_Y.refId});
   
   
   }
   
-  Future<void> set_p_CbCr(NSValue p_CbCr) async {
+  Future<void> set_p_CbCr(NSValue/* void* */ p_CbCr) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_CbCr', {'refId': refId, "p_CbCr": p_CbCr.refId});
   
   
@@ -148,23 +148,23 @@ class TIOSDualInput extends NSObject  {
 
 extension TIOSDualInput_Batch on List<TIOSDualInput> {
   //region getters
-  Future<List<NSValue>> get_p_BGRA_batch() async {
+  Future<List<NSValue/* void* */>> get_p_BGRA_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_BGRA_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
-  Future<List<NSValue>> get_p_Y_batch() async {
+  Future<List<NSValue/* void* */>> get_p_Y_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_Y_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
-  Future<List<NSValue>> get_p_CbCr_batch() async {
+  Future<List<NSValue/* void* */>> get_p_CbCr_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -207,19 +207,19 @@ extension TIOSDualInput_Batch on List<TIOSDualInput> {
   //endregion
 
   //region setters
-  Future<void> set_p_BGRA_batch(List<NSValue> p_BGRA) async {
+  Future<void> set_p_BGRA_batch(List<NSValue/* void* */> p_BGRA) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_BGRA_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_BGRA": p_BGRA[i].refId}]);
   
   
   }
   
-  Future<void> set_p_Y_batch(List<NSValue> p_Y) async {
+  Future<void> set_p_Y_batch(List<NSValue/* void* */> p_Y) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_Y": p_Y[i].refId}]);
   
   
   }
   
-  Future<void> set_p_CbCr_batch(List<NSValue> p_CbCr) async {
+  Future<void> set_p_CbCr_batch(List<NSValue/* void* */> p_CbCr) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_CbCr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_CbCr": p_CbCr[i].refId}]);
   
   

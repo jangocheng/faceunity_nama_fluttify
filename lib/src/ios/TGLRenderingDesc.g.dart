@@ -46,10 +46,10 @@ class TGLRenderingDesc extends NSObject  {
     return result;
   }
   
-  Future<NSValue> get_param() async {
+  Future<NSValue/* void* */> get_param() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TGLRenderingDesc::get_param", {'refId': refId});
-    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
-    return NSValue()..refId = result..tag = 'nama_fluttify';
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
   }
   
   //endregion
@@ -61,7 +61,7 @@ class TGLRenderingDesc extends NSObject  {
   
   }
   
-  Future<void> set_param(NSValue param) async {
+  Future<void> set_param(NSValue/* void* */ param) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TGLRenderingDesc::set_param', {'refId': refId, "param": param.refId});
   
   
@@ -83,9 +83,9 @@ extension TGLRenderingDesc_Batch on List<TGLRenderingDesc> {
     return typedResult;
   }
   
-  Future<List<NSValue>> get_param_batch() async {
+  Future<List<NSValue/* void* */>> get_param_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TGLRenderingDesc::get_param_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -99,7 +99,7 @@ extension TGLRenderingDesc_Batch on List<TGLRenderingDesc> {
   
   }
   
-  Future<void> set_param_batch(List<NSValue> param) async {
+  Future<void> set_param_batch(List<NSValue/* void* */> param) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TGLRenderingDesc::set_param_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "param": param[i].refId}]);
   
   

@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
-Future<void> fu3DBodyTrackerDestroy(NSValue model_ptr) async {
+Future<void> fu3DBodyTrackerDestroy(NSValue/* void* */ model_ptr) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fu3DBodyTrackerDestroy::fu3DBodyTrackerDestroy([])');
@@ -34,7 +34,7 @@ Future<void> fu3DBodyTrackerDestroy(NSValue model_ptr) async {
   }
 }
 
-Future<int> fu3DBodyTrackerRun(NSValue model_ptr, int human_handle, NSValue img, int w, int h, int fu_image_format, int rotation_mode) async {
+Future<int> fu3DBodyTrackerRun(NSValue/* void* */ model_ptr, int human_handle, NSValue/* void* */ img, int w, int h, int fu_image_format, int rotation_mode) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fu3DBodyTrackerRun::fu3DBodyTrackerRun([\'human_handle\':$human_handle, \'w\':$w, \'h\':$h, \'fu_image_format\':$fu_image_format, \'rotation_mode\':$rotation_mode])');
@@ -56,7 +56,7 @@ Future<int> fu3DBodyTrackerRun(NSValue model_ptr, int human_handle, NSValue img,
   }
 }
 
-Future<int> fuFaceCaptureDestory(NSValue model_ptr) async {
+Future<int> fuFaceCaptureDestory(NSValue/* void* */ model_ptr) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureDestory::fuFaceCaptureDestory([])');
@@ -78,7 +78,7 @@ Future<int> fuFaceCaptureDestory(NSValue model_ptr) async {
   }
 }
 
-Future<int> fuFaceCaptureSetScene(NSValue model_ptr, int scene_type) async {
+Future<int> fuFaceCaptureSetScene(NSValue/* void* */ model_ptr, int scene_type) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureSetScene::fuFaceCaptureSetScene([\'scene_type\':$scene_type])');
@@ -100,7 +100,7 @@ Future<int> fuFaceCaptureSetScene(NSValue model_ptr, int scene_type) async {
   }
 }
 
-Future<int> fuFaceCaptureSetBBOX(NSValue model_ptr, int cx, int cy, int sx, int sy) async {
+Future<int> fuFaceCaptureSetBBOX(NSValue/* void* */ model_ptr, int cx, int cy, int sx, int sy) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureSetBBOX::fuFaceCaptureSetBBOX([\'cx\':$cx, \'cy\':$cy, \'sx\':$sx, \'sy\':$sy])');
@@ -122,7 +122,7 @@ Future<int> fuFaceCaptureSetBBOX(NSValue model_ptr, int cx, int cy, int sx, int 
   }
 }
 
-Future<int> fuFaceCaptureReset(NSValue model_ptr) async {
+Future<int> fuFaceCaptureReset(NSValue/* void* */ model_ptr) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureReset::fuFaceCaptureReset([])');
@@ -144,7 +144,7 @@ Future<int> fuFaceCaptureReset(NSValue model_ptr) async {
   }
 }
 
-Future<int> fuFaceCaptureProcessFrame(NSValue manager_ptr_addr, NSValue image_data, int image_w, int image_h, int fu_image_format, int rotate_mode) async {
+Future<int> fuFaceCaptureProcessFrame(NSValue/* void* */ manager_ptr_addr, NSValue/* void* */ image_data, int image_w, int image_h, int fu_image_format, int rotate_mode) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureProcessFrame::fuFaceCaptureProcessFrame([\'image_w\':$image_w, \'image_h\':$image_h, \'fu_image_format\':$fu_image_format, \'rotate_mode\':$rotate_mode])');
@@ -166,7 +166,7 @@ Future<int> fuFaceCaptureProcessFrame(NSValue manager_ptr_addr, NSValue image_da
   }
 }
 
-Future<int> fuFaceCaptureGetResultIsFace(NSValue manager_ptr_addr, int face_n) async {
+Future<int> fuFaceCaptureGetResultIsFace(NSValue/* void* */ manager_ptr_addr, int face_n) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureGetResultIsFace::fuFaceCaptureGetResultIsFace([\'face_n\':$face_n])');
@@ -188,7 +188,7 @@ Future<int> fuFaceCaptureGetResultIsFace(NSValue manager_ptr_addr, int face_n) a
   }
 }
 
-Future<int> fuFaceCaptureGetResultFaceID(NSValue manager_ptr_addr, int face_n) async {
+Future<int> fuFaceCaptureGetResultFaceID(NSValue/* void* */ manager_ptr_addr, int face_n) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureGetResultFaceID::fuFaceCaptureGetResultFaceID([\'face_n\':$face_n])');
@@ -210,7 +210,7 @@ Future<int> fuFaceCaptureGetResultFaceID(NSValue manager_ptr_addr, int face_n) a
   }
 }
 
-Future<double> fuFaceCaptureGetResultFocalLength(NSValue manager_ptr_addr) async {
+Future<double> fuFaceCaptureGetResultFocalLength(NSValue/* void* */ manager_ptr_addr) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureGetResultFocalLength::fuFaceCaptureGetResultFocalLength([])');
@@ -232,7 +232,7 @@ Future<double> fuFaceCaptureGetResultFocalLength(NSValue manager_ptr_addr) async
   }
 }
 
-Future<int> fuFaceCaptureGetResultFaceNum(NSValue manager_ptr_addr) async {
+Future<int> fuFaceCaptureGetResultFaceNum(NSValue/* void* */ manager_ptr_addr) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureGetResultFaceNum::fuFaceCaptureGetResultFaceNum([])');
@@ -254,7 +254,7 @@ Future<int> fuFaceCaptureGetResultFaceNum(NSValue manager_ptr_addr) async {
   }
 }
 
-Future<double> fuFaceCaptureGetResultTongueScore(NSValue manager_ptr_addr, int face_n) async {
+Future<double> fuFaceCaptureGetResultTongueScore(NSValue/* void* */ manager_ptr_addr, int face_n) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureGetResultTongueScore::fuFaceCaptureGetResultTongueScore([\'face_n\':$face_n])');
@@ -276,7 +276,7 @@ Future<double> fuFaceCaptureGetResultTongueScore(NSValue manager_ptr_addr, int f
   }
 }
 
-Future<double> fuFaceCaptureGetResultFaceScore(NSValue manager_ptr_addr, int face_n) async {
+Future<double> fuFaceCaptureGetResultFaceScore(NSValue/* void* */ manager_ptr_addr, int face_n) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureGetResultFaceScore::fuFaceCaptureGetResultFaceScore([\'face_n\':$face_n])');
@@ -298,7 +298,7 @@ Future<double> fuFaceCaptureGetResultFaceScore(NSValue manager_ptr_addr, int fac
   }
 }
 
-Future<int> fuFaceCaptureGetResultTongueClass(NSValue manager_ptr_addr, int face_n) async {
+Future<int> fuFaceCaptureGetResultTongueClass(NSValue/* void* */ manager_ptr_addr, int face_n) async {
   // print log
   if (fluttifyLogEnabled) {
     print('fluttify-dart: fuFaceCaptureGetResultTongueClass::fuFaceCaptureGetResultTongueClass([\'face_n\':$face_n])');

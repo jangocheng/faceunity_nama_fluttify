@@ -40,10 +40,10 @@ class FURotatedImage extends NSObject  {
   //endregion
 
   //region getters
-  Future<NSValue> get_mData() async {
+  Future<NSValue/* void* */> get_mData() async {
     final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("FURotatedImage::get_mData", {'refId': refId});
-    kNativeObjectPool.add(NSValue()..refId = result..tag = 'nama_fluttify');
-    return NSValue()..refId = result..tag = 'nama_fluttify';
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
   }
   
   Future<int> get_mWidth() async {
@@ -61,7 +61,7 @@ class FURotatedImage extends NSObject  {
   //endregion
 
   //region setters
-  Future<void> set_mData(NSValue mData) async {
+  Future<void> set_mData(NSValue/* void* */ mData) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::set_mData', {'refId': refId, "mData": mData.refId});
   
   
@@ -109,9 +109,9 @@ class FURotatedImage extends NSObject  {
 
 extension FURotatedImage_Batch on List<FURotatedImage> {
   //region getters
-  Future<List<NSValue>> get_mData_batch() async {
+  Future<List<NSValue/* void* */>> get_mData_batch() async {
     final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("FURotatedImage::get_mData_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue()..refId = result..tag = 'nama_fluttify').toList();
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -133,7 +133,7 @@ extension FURotatedImage_Batch on List<FURotatedImage> {
   //endregion
 
   //region setters
-  Future<void> set_mData_batch(List<NSValue> mData) async {
+  Future<void> set_mData_batch(List<NSValue/* void* */> mData) async {
     await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::set_mData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mData": mData[i].refId}]);
   
   
