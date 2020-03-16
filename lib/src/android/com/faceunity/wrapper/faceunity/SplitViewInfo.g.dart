@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class com_faceunity_wrapper_faceunity_SplitViewInfo extends java_lang_Object  {
 
   //region creators
   static Future<com_faceunity_wrapper_faceunity_SplitViewInfo> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity_SplitViewInfo__');
-    final object = com_faceunity_wrapper_faceunity_SplitViewInfo()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity_SplitViewInfo__');
+    final object = com_faceunity_wrapper_faceunity_SplitViewInfo()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class com_faceunity_wrapper_faceunity_SplitViewInfo extends java_lang_Object  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity_SplitViewInfo__', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity_SplitViewInfo__', {'length': length});
   
-    final List<com_faceunity_wrapper_faceunity_SplitViewInfo> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity_SplitViewInfo()..refId = result..tag = 'nama_fluttify').toList();
+    final List<com_faceunity_wrapper_faceunity_SplitViewInfo> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity_SplitViewInfo()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,61 +41,61 @@ class com_faceunity_wrapper_faceunity_SplitViewInfo extends java_lang_Object  {
 
   //region getters
   Future<Uint8List> get_mImage() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mImage", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mImage", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_mTex() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mTex", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mTex", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_mOutW() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mOutW", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mOutW", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_mOutH() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mOutH", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mOutH", {'refId': refId});
   
     return result;
   }
   
   Future<double> get_mView0Ratio() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mView0Ratio", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mView0Ratio", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_mMarginInPixel() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mMarginInPixel", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mMarginInPixel", {'refId': refId});
   
     return result;
   }
   
   Future<bool> get_mIsVertical() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mIsVertical", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mIsVertical", {'refId': refId});
   
     return result;
   }
   
   Future<bool> get_mIsImageFirst() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mIsImageFirst", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mIsImageFirst", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_mRotationModeBeforeCrop() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mRotationModeBeforeCrop", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mRotationModeBeforeCrop", {'refId': refId});
   
     return result;
   }
   
   Future<double> get_mCropRatioTop() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mCropRatioTop", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mCropRatioTop", {'refId': refId});
   
     return result;
   }
@@ -104,61 +104,61 @@ class com_faceunity_wrapper_faceunity_SplitViewInfo extends java_lang_Object  {
 
   //region setters
   Future<void> set_mImage(Uint8List mImage) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mImage', {'refId': refId, "mImage": mImage});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mImage', {'refId': refId, "mImage": mImage});
   
   
   }
   
   Future<void> set_mTex(int mTex) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mTex', {'refId': refId, "mTex": mTex});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mTex', {'refId': refId, "mTex": mTex});
   
   
   }
   
   Future<void> set_mOutW(int mOutW) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mOutW', {'refId': refId, "mOutW": mOutW});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mOutW', {'refId': refId, "mOutW": mOutW});
   
   
   }
   
   Future<void> set_mOutH(int mOutH) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mOutH', {'refId': refId, "mOutH": mOutH});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mOutH', {'refId': refId, "mOutH": mOutH});
   
   
   }
   
   Future<void> set_mView0Ratio(double mView0Ratio) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mView0Ratio', {'refId': refId, "mView0Ratio": mView0Ratio});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mView0Ratio', {'refId': refId, "mView0Ratio": mView0Ratio});
   
   
   }
   
   Future<void> set_mMarginInPixel(int mMarginInPixel) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mMarginInPixel', {'refId': refId, "mMarginInPixel": mMarginInPixel});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mMarginInPixel', {'refId': refId, "mMarginInPixel": mMarginInPixel});
   
   
   }
   
   Future<void> set_mIsVertical(bool mIsVertical) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mIsVertical', {'refId': refId, "mIsVertical": mIsVertical});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mIsVertical', {'refId': refId, "mIsVertical": mIsVertical});
   
   
   }
   
   Future<void> set_mIsImageFirst(bool mIsImageFirst) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mIsImageFirst', {'refId': refId, "mIsImageFirst": mIsImageFirst});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mIsImageFirst', {'refId': refId, "mIsImageFirst": mIsImageFirst});
   
   
   }
   
   Future<void> set_mRotationModeBeforeCrop(int mRotationModeBeforeCrop) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mRotationModeBeforeCrop', {'refId': refId, "mRotationModeBeforeCrop": mRotationModeBeforeCrop});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mRotationModeBeforeCrop', {'refId': refId, "mRotationModeBeforeCrop": mRotationModeBeforeCrop});
   
   
   }
   
   Future<void> set_mCropRatioTop(double mCropRatioTop) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mCropRatioTop', {'refId': refId, "mCropRatioTop": mCropRatioTop});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mCropRatioTop', {'refId': refId, "mCropRatioTop": mCropRatioTop});
   
   
   }
@@ -173,70 +173,70 @@ class com_faceunity_wrapper_faceunity_SplitViewInfo extends java_lang_Object  {
 extension com_faceunity_wrapper_faceunity_SplitViewInfo_Batch on List<com_faceunity_wrapper_faceunity_SplitViewInfo> {
   //region getters
   Future<List<Uint8List>> get_mImage_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mImage_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mImage_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_mTex_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mTex_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mTex_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_mOutW_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mOutW_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mOutW_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_mOutH_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mOutH_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mOutH_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_mView0Ratio_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mView0Ratio_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mView0Ratio_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_mMarginInPixel_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mMarginInPixel_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mMarginInPixel_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<bool>> get_mIsVertical_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mIsVertical_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mIsVertical_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<bool>> get_mIsImageFirst_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mIsImageFirst_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mIsImageFirst_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_mRotationModeBeforeCrop_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mRotationModeBeforeCrop_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mRotationModeBeforeCrop_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_mCropRatioTop_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mCropRatioTop_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.SplitViewInfo::get_mCropRatioTop_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -246,61 +246,61 @@ extension com_faceunity_wrapper_faceunity_SplitViewInfo_Batch on List<com_faceun
 
   //region setters
   Future<void> set_mImage_batch(List<Uint8List> mImage) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mImage_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mImage": mImage[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mImage_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mImage": mImage[i]}]);
   
   
   }
   
   Future<void> set_mTex_batch(List<int> mTex) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mTex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mTex": mTex[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mTex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mTex": mTex[i]}]);
   
   
   }
   
   Future<void> set_mOutW_batch(List<int> mOutW) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mOutW_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mOutW": mOutW[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mOutW_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mOutW": mOutW[i]}]);
   
   
   }
   
   Future<void> set_mOutH_batch(List<int> mOutH) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mOutH_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mOutH": mOutH[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mOutH_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mOutH": mOutH[i]}]);
   
   
   }
   
   Future<void> set_mView0Ratio_batch(List<double> mView0Ratio) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mView0Ratio_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mView0Ratio": mView0Ratio[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mView0Ratio_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mView0Ratio": mView0Ratio[i]}]);
   
   
   }
   
   Future<void> set_mMarginInPixel_batch(List<int> mMarginInPixel) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mMarginInPixel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mMarginInPixel": mMarginInPixel[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mMarginInPixel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mMarginInPixel": mMarginInPixel[i]}]);
   
   
   }
   
   Future<void> set_mIsVertical_batch(List<bool> mIsVertical) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mIsVertical_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mIsVertical": mIsVertical[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mIsVertical_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mIsVertical": mIsVertical[i]}]);
   
   
   }
   
   Future<void> set_mIsImageFirst_batch(List<bool> mIsImageFirst) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mIsImageFirst_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mIsImageFirst": mIsImageFirst[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mIsImageFirst_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mIsImageFirst": mIsImageFirst[i]}]);
   
   
   }
   
   Future<void> set_mRotationModeBeforeCrop_batch(List<int> mRotationModeBeforeCrop) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mRotationModeBeforeCrop_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mRotationModeBeforeCrop": mRotationModeBeforeCrop[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mRotationModeBeforeCrop_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mRotationModeBeforeCrop": mRotationModeBeforeCrop[i]}]);
   
   
   }
   
   Future<void> set_mCropRatioTop_batch(List<double> mCropRatioTop) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mCropRatioTop_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCropRatioTop": mCropRatioTop[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.SplitViewInfo::set_mCropRatioTop_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCropRatioTop": mCropRatioTop[i]}]);
   
   
   }

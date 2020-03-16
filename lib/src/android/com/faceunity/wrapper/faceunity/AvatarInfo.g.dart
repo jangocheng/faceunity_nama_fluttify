@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class com_faceunity_wrapper_faceunity_AvatarInfo extends java_lang_Object  {
 
   //region creators
   static Future<com_faceunity_wrapper_faceunity_AvatarInfo> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity_AvatarInfo__');
-    final object = com_faceunity_wrapper_faceunity_AvatarInfo()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity_AvatarInfo__');
+    final object = com_faceunity_wrapper_faceunity_AvatarInfo()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class com_faceunity_wrapper_faceunity_AvatarInfo extends java_lang_Object  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity_AvatarInfo__', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity_AvatarInfo__', {'length': length});
   
-    final List<com_faceunity_wrapper_faceunity_AvatarInfo> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity_AvatarInfo()..refId = result..tag = 'nama_fluttify').toList();
+    final List<com_faceunity_wrapper_faceunity_AvatarInfo> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity_AvatarInfo()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,37 +41,37 @@ class com_faceunity_wrapper_faceunity_AvatarInfo extends java_lang_Object  {
 
   //region getters
   Future<Float64List> get_mTranslation() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mTranslation", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mTranslation", {'refId': refId});
   
     return result;
   }
   
   Future<Float64List> get_mRotation() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mRotation", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mRotation", {'refId': refId});
   
     return result;
   }
   
   Future<Float64List> get_mExpression() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mExpression", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mExpression", {'refId': refId});
   
     return result;
   }
   
   Future<Float64List> get_mRotationMode() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mRotationMode", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mRotationMode", {'refId': refId});
   
     return result;
   }
   
   Future<Float64List> get_mPupilPos() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mPupilPos", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mPupilPos", {'refId': refId});
   
     return result;
   }
   
   Future<bool> get_mIsValid() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mIsValid", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mIsValid", {'refId': refId});
   
     return result;
   }
@@ -80,37 +80,37 @@ class com_faceunity_wrapper_faceunity_AvatarInfo extends java_lang_Object  {
 
   //region setters
   Future<void> set_mTranslation(Float64List mTranslation) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mTranslation', {'refId': refId, "mTranslation": mTranslation});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mTranslation', {'refId': refId, "mTranslation": mTranslation});
   
   
   }
   
   Future<void> set_mRotation(Float64List mRotation) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mRotation', {'refId': refId, "mRotation": mRotation});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mRotation', {'refId': refId, "mRotation": mRotation});
   
   
   }
   
   Future<void> set_mExpression(Float64List mExpression) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mExpression', {'refId': refId, "mExpression": mExpression});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mExpression', {'refId': refId, "mExpression": mExpression});
   
   
   }
   
   Future<void> set_mRotationMode(Float64List mRotationMode) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mRotationMode', {'refId': refId, "mRotationMode": mRotationMode});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mRotationMode', {'refId': refId, "mRotationMode": mRotationMode});
   
   
   }
   
   Future<void> set_mPupilPos(Float64List mPupilPos) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mPupilPos', {'refId': refId, "mPupilPos": mPupilPos});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mPupilPos', {'refId': refId, "mPupilPos": mPupilPos});
   
   
   }
   
   Future<void> set_mIsValid(bool mIsValid) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mIsValid', {'refId': refId, "mIsValid": mIsValid});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mIsValid', {'refId': refId, "mIsValid": mIsValid});
   
   
   }
@@ -125,42 +125,42 @@ class com_faceunity_wrapper_faceunity_AvatarInfo extends java_lang_Object  {
 extension com_faceunity_wrapper_faceunity_AvatarInfo_Batch on List<com_faceunity_wrapper_faceunity_AvatarInfo> {
   //region getters
   Future<List<Float64List>> get_mTranslation_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mTranslation_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mTranslation_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<Float64List>> get_mRotation_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mRotation_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mRotation_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<Float64List>> get_mExpression_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mExpression_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mExpression_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<Float64List>> get_mRotationMode_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mRotationMode_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mRotationMode_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<Float64List>> get_mPupilPos_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mPupilPos_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mPupilPos_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<bool>> get_mIsValid_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mIsValid_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.AvatarInfo::get_mIsValid_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -170,37 +170,37 @@ extension com_faceunity_wrapper_faceunity_AvatarInfo_Batch on List<com_faceunity
 
   //region setters
   Future<void> set_mTranslation_batch(List<Float64List> mTranslation) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mTranslation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mTranslation": mTranslation[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mTranslation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mTranslation": mTranslation[i]}]);
   
   
   }
   
   Future<void> set_mRotation_batch(List<Float64List> mRotation) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mRotation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mRotation": mRotation[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mRotation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mRotation": mRotation[i]}]);
   
   
   }
   
   Future<void> set_mExpression_batch(List<Float64List> mExpression) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mExpression_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mExpression": mExpression[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mExpression_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mExpression": mExpression[i]}]);
   
   
   }
   
   Future<void> set_mRotationMode_batch(List<Float64List> mRotationMode) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mRotationMode_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mRotationMode": mRotationMode[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mRotationMode_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mRotationMode": mRotationMode[i]}]);
   
   
   }
   
   Future<void> set_mPupilPos_batch(List<Float64List> mPupilPos) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mPupilPos_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mPupilPos": mPupilPos[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mPupilPos_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mPupilPos": mPupilPos[i]}]);
   
   
   }
   
   Future<void> set_mIsValid_batch(List<bool> mIsValid) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mIsValid_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mIsValid": mIsValid[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.AvatarInfo::set_mIsValid_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mIsValid": mIsValid[i]}]);
   
   
   }

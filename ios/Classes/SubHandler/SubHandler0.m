@@ -11,7 +11,7 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 // 日志打印开关
 extern BOOL enableLog;
 
-@implementation NamaFluttifyPlugin (SubHandler0)
+@implementation FaceunityNamaFluttifyPlugin (SubHandler0)
 - (NSDictionary<NSString*, Handler>*) getSubHandler0 {
     return @{
         @"FURotatedImage::init": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {

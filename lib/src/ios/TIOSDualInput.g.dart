@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class TIOSDualInput extends NSObject  {
 
   //region creators
   static Future<TIOSDualInput> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createTIOSDualInput');
-    final object = TIOSDualInput()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createTIOSDualInput');
+    final object = TIOSDualInput()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class TIOSDualInput extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchTIOSDualInput', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchTIOSDualInput', {'length': length});
   
-    final List<TIOSDualInput> typedResult = resultBatch.map((result) => TIOSDualInput()..refId = result..tag = 'nama_fluttify').toList();
+    final List<TIOSDualInput> typedResult = resultBatch.map((result) => TIOSDualInput()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,49 +41,49 @@ class TIOSDualInput extends NSObject  {
 
   //region getters
   Future<NSValue/* void* */> get_p_BGRA() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_BGRA", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_p_BGRA", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<NSValue/* void* */> get_p_Y() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_Y", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_p_Y", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<NSValue/* void* */> get_p_CbCr() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_CbCr", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_p_CbCr", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<int> get_stride_BGRA() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_stride_BGRA", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_stride_BGRA", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_stride_Y() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_stride_Y", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_stride_Y", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_stride_CbCr() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_stride_CbCr", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_stride_CbCr", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_tex_handle() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_tex_handle", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_tex_handle", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_format() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_format", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_format", {'refId': refId});
   
     return result;
   }
@@ -92,49 +92,49 @@ class TIOSDualInput extends NSObject  {
 
   //region setters
   Future<void> set_p_BGRA(NSValue/* void* */ p_BGRA) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_BGRA', {'refId': refId, "p_BGRA": p_BGRA.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_p_BGRA', {'refId': refId, "p_BGRA": p_BGRA.refId});
   
   
   }
   
   Future<void> set_p_Y(NSValue/* void* */ p_Y) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_Y', {'refId': refId, "p_Y": p_Y.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_p_Y', {'refId': refId, "p_Y": p_Y.refId});
   
   
   }
   
   Future<void> set_p_CbCr(NSValue/* void* */ p_CbCr) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_CbCr', {'refId': refId, "p_CbCr": p_CbCr.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_p_CbCr', {'refId': refId, "p_CbCr": p_CbCr.refId});
   
   
   }
   
   Future<void> set_stride_BGRA(int stride_BGRA) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_stride_BGRA', {'refId': refId, "stride_BGRA": stride_BGRA});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_stride_BGRA', {'refId': refId, "stride_BGRA": stride_BGRA});
   
   
   }
   
   Future<void> set_stride_Y(int stride_Y) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_stride_Y', {'refId': refId, "stride_Y": stride_Y});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_stride_Y', {'refId': refId, "stride_Y": stride_Y});
   
   
   }
   
   Future<void> set_stride_CbCr(int stride_CbCr) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_stride_CbCr', {'refId': refId, "stride_CbCr": stride_CbCr});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_stride_CbCr', {'refId': refId, "stride_CbCr": stride_CbCr});
   
   
   }
   
   Future<void> set_tex_handle(int tex_handle) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_tex_handle', {'refId': refId, "tex_handle": tex_handle});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_tex_handle', {'refId': refId, "tex_handle": tex_handle});
   
   
   }
   
   Future<void> set_format(int format) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_format', {'refId': refId, "format": format});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_format', {'refId': refId, "format": format});
   
   
   }
@@ -149,56 +149,56 @@ class TIOSDualInput extends NSObject  {
 extension TIOSDualInput_Batch on List<TIOSDualInput> {
   //region getters
   Future<List<NSValue/* void* */>> get_p_BGRA_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_BGRA_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_p_BGRA_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<NSValue/* void* */>> get_p_Y_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_Y_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_p_Y_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<NSValue/* void* */>> get_p_CbCr_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_p_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_p_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<int>> get_stride_BGRA_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_stride_BGRA_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_stride_BGRA_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_stride_Y_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_stride_Y_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_stride_Y_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_stride_CbCr_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_stride_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_stride_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_tex_handle_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_tex_handle_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_tex_handle_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_format_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TIOSDualInput::get_format_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TIOSDualInput::get_format_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -208,49 +208,49 @@ extension TIOSDualInput_Batch on List<TIOSDualInput> {
 
   //region setters
   Future<void> set_p_BGRA_batch(List<NSValue/* void* */> p_BGRA) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_BGRA_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_BGRA": p_BGRA[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_p_BGRA_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_BGRA": p_BGRA[i].refId}]);
   
   
   }
   
   Future<void> set_p_Y_batch(List<NSValue/* void* */> p_Y) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_Y": p_Y[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_p_Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_Y": p_Y[i].refId}]);
   
   
   }
   
   Future<void> set_p_CbCr_batch(List<NSValue/* void* */> p_CbCr) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_p_CbCr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_CbCr": p_CbCr[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_p_CbCr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_CbCr": p_CbCr[i].refId}]);
   
   
   }
   
   Future<void> set_stride_BGRA_batch(List<int> stride_BGRA) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_stride_BGRA_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_BGRA": stride_BGRA[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_stride_BGRA_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_BGRA": stride_BGRA[i]}]);
   
   
   }
   
   Future<void> set_stride_Y_batch(List<int> stride_Y) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_stride_Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_Y": stride_Y[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_stride_Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_Y": stride_Y[i]}]);
   
   
   }
   
   Future<void> set_stride_CbCr_batch(List<int> stride_CbCr) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_stride_CbCr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_CbCr": stride_CbCr[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_stride_CbCr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_CbCr": stride_CbCr[i]}]);
   
   
   }
   
   Future<void> set_tex_handle_batch(List<int> tex_handle) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_tex_handle_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tex_handle": tex_handle[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_tex_handle_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tex_handle": tex_handle[i]}]);
   
   
   }
   
   Future<void> set_format_batch(List<int> format) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TIOSDualInput::set_format_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "format": format[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TIOSDualInput::set_format_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "format": format[i]}]);
   
   
   }

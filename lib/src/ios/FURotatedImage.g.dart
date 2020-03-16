@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class FURotatedImage extends NSObject  {
 
   //region creators
   static Future<FURotatedImage> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createFURotatedImage');
-    final object = FURotatedImage()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createFURotatedImage');
+    final object = FURotatedImage()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class FURotatedImage extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchFURotatedImage', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchFURotatedImage', {'length': length});
   
-    final List<FURotatedImage> typedResult = resultBatch.map((result) => FURotatedImage()..refId = result..tag = 'nama_fluttify').toList();
+    final List<FURotatedImage> typedResult = resultBatch.map((result) => FURotatedImage()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,19 +41,19 @@ class FURotatedImage extends NSObject  {
 
   //region getters
   Future<NSValue/* void* */> get_mData() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("FURotatedImage::get_mData", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("FURotatedImage::get_mData", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<int> get_mWidth() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("FURotatedImage::get_mWidth", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("FURotatedImage::get_mWidth", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_mHeight() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("FURotatedImage::get_mHeight", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("FURotatedImage::get_mHeight", {'refId': refId});
   
     return result;
   }
@@ -62,19 +62,19 @@ class FURotatedImage extends NSObject  {
 
   //region setters
   Future<void> set_mData(NSValue/* void* */ mData) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::set_mData', {'refId': refId, "mData": mData.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURotatedImage::set_mData', {'refId': refId, "mData": mData.refId});
   
   
   }
   
   Future<void> set_mWidth(int mWidth) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::set_mWidth', {'refId': refId, "mWidth": mWidth});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURotatedImage::set_mWidth', {'refId': refId, "mWidth": mWidth});
   
   
   }
   
   Future<void> set_mHeight(int mHeight) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::set_mHeight', {'refId': refId, "mHeight": mHeight});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURotatedImage::set_mHeight', {'refId': refId, "mHeight": mHeight});
   
   
   }
@@ -89,7 +89,7 @@ class FURotatedImage extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::init', {"refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURotatedImage::init', {"refId": refId});
   
   
     // handle native call
@@ -99,8 +99,8 @@ class FURotatedImage extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(FURotatedImage()..refId = result..tag = 'nama_fluttify');
-      return FURotatedImage()..refId = result..tag = 'nama_fluttify';
+      kNativeObjectPool.add(FURotatedImage()..refId = result..tag = 'faceunity_nama_fluttify');
+      return FURotatedImage()..refId = result..tag = 'faceunity_nama_fluttify';
     }
   }
   
@@ -110,21 +110,21 @@ class FURotatedImage extends NSObject  {
 extension FURotatedImage_Batch on List<FURotatedImage> {
   //region getters
   Future<List<NSValue/* void* */>> get_mData_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("FURotatedImage::get_mData_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("FURotatedImage::get_mData_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<int>> get_mWidth_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("FURotatedImage::get_mWidth_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("FURotatedImage::get_mWidth_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_mHeight_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("FURotatedImage::get_mHeight_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("FURotatedImage::get_mHeight_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -134,19 +134,19 @@ extension FURotatedImage_Batch on List<FURotatedImage> {
 
   //region setters
   Future<void> set_mData_batch(List<NSValue/* void* */> mData) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::set_mData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mData": mData[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURotatedImage::set_mData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mData": mData[i].refId}]);
   
   
   }
   
   Future<void> set_mWidth_batch(List<int> mWidth) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::set_mWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mWidth": mWidth[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURotatedImage::set_mWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mWidth": mWidth[i]}]);
   
   
   }
   
   Future<void> set_mHeight_batch(List<int> mHeight) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::set_mHeight_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHeight": mHeight[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURotatedImage::set_mHeight_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHeight": mHeight[i]}]);
   
   
   }
@@ -160,14 +160,14 @@ extension FURotatedImage_Batch on List<FURotatedImage> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURotatedImage::init_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURotatedImage::init_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => FURotatedImage()..refId = result..tag = 'nama_fluttify').toList();
+      final typedResult = (resultBatch as List).map((result) => FURotatedImage()..refId = result..tag = 'faceunity_nama_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

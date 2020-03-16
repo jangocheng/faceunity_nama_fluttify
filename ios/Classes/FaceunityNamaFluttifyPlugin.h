@@ -8,7 +8,7 @@
 
 typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, id, FlutterResult);
 
-@interface NamaFluttifyPlugin : NSObject<FlutterPlugin>
+@interface FaceunityNamaFluttifyPlugin : NSObject<FlutterPlugin>
 
 - (instancetype) initWithFlutterPluginRegistrar: (NSObject <FlutterPluginRegistrar> *) registrar;
 

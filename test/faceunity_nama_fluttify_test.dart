@@ -1,9 +1,9 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:nama_fluttify/nama_fluttify.dart';
+import 'package:faceunity_nama_fluttify/faceunity_nama_fluttify.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('nama_fluttify');
+  const MethodChannel channel = MethodChannel('faceunity_nama_fluttify');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -18,6 +18,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await NamaFluttify.platformVersion, '42');
+    expect(await FaceunityNamaFluttify.platformVersion, '42');
   });
 }

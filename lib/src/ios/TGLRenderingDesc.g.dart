@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class TGLRenderingDesc extends NSObject  {
 
   //region creators
   static Future<TGLRenderingDesc> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createTGLRenderingDesc');
-    final object = TGLRenderingDesc()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createTGLRenderingDesc');
+    final object = TGLRenderingDesc()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class TGLRenderingDesc extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchTGLRenderingDesc', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchTGLRenderingDesc', {'length': length});
   
-    final List<TGLRenderingDesc> typedResult = resultBatch.map((result) => TGLRenderingDesc()..refId = result..tag = 'nama_fluttify').toList();
+    final List<TGLRenderingDesc> typedResult = resultBatch.map((result) => TGLRenderingDesc()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,28 +41,28 @@ class TGLRenderingDesc extends NSObject  {
 
   //region getters
   Future<int> get_image_output_mode() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TGLRenderingDesc::get_image_output_mode", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TGLRenderingDesc::get_image_output_mode", {'refId': refId});
   
     return result;
   }
   
   Future<NSValue/* void* */> get_param() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TGLRenderingDesc::get_param", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TGLRenderingDesc::get_param", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   //endregion
 
   //region setters
   Future<void> set_image_output_mode(int image_output_mode) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TGLRenderingDesc::set_image_output_mode', {'refId': refId, "image_output_mode": image_output_mode});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TGLRenderingDesc::set_image_output_mode', {'refId': refId, "image_output_mode": image_output_mode});
   
   
   }
   
   Future<void> set_param(NSValue/* void* */ param) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TGLRenderingDesc::set_param', {'refId': refId, "param": param.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TGLRenderingDesc::set_param', {'refId': refId, "param": param.refId});
   
   
   }
@@ -77,15 +77,15 @@ class TGLRenderingDesc extends NSObject  {
 extension TGLRenderingDesc_Batch on List<TGLRenderingDesc> {
   //region getters
   Future<List<int>> get_image_output_mode_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TGLRenderingDesc::get_image_output_mode_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TGLRenderingDesc::get_image_output_mode_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<NSValue/* void* */>> get_param_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TGLRenderingDesc::get_param_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TGLRenderingDesc::get_param_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -94,13 +94,13 @@ extension TGLRenderingDesc_Batch on List<TGLRenderingDesc> {
 
   //region setters
   Future<void> set_image_output_mode_batch(List<int> image_output_mode) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TGLRenderingDesc::set_image_output_mode_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "image_output_mode": image_output_mode[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TGLRenderingDesc::set_image_output_mode_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "image_output_mode": image_output_mode[i]}]);
   
   
   }
   
   Future<void> set_param_batch(List<NSValue/* void* */> param) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TGLRenderingDesc::set_param_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "param": param[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TGLRenderingDesc::set_param_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "param": param[i].refId}]);
   
   
   }

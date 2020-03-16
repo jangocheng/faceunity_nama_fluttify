@@ -1,5 +1,5 @@
-name: nama_fluttify
-description: An `Nama` Plugin, Powered By `Fluttify`, A Compiler Generating Dart Bindings For Native SDK.
+name: faceunity_nama_fluttify
+description: An `Faceunity Nama(美颜)` Plugin, Powered By `Fluttify`, A Compiler Generating Dart Bindings For Native SDK.
 version: 0.0.1
 author: yohom <yohombao@qq.com>
 homepage: https://fluttify.com
@@ -22,7 +22,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.fluttify.nama_fluttify
-        pluginClass: NamaFluttifyPlugin
+        package: com.fluttify.faceunity_nama_fluttify
+        pluginClass: FaceunityNamaFluttifyPlugin
       ios:
-        pluginClass: NamaFluttifyPlugin
+        pluginClass: FaceunityNamaFluttifyPlugin

@@ -1,4 +1,4 @@
-group 'com.fluttify.nama_fluttify'
+group 'com.fluttify.faceunity_nama_fluttify'
 version '1.0-SNAPSHOT'
 
 buildscript {

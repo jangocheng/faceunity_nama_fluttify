@@ -1,6 +1,6 @@
-# nama_fluttify_example
+# faceunity_nama_fluttify_example
 
-Demonstrates how to use the nama_fluttify plugin.
+Demonstrates how to use the faceunity_nama_fluttify plugin.
 
 ## Getting Started
 

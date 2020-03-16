@@ -2,9 +2,9 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'nama_fluttify'
+  s.name             = 'faceunity_nama_fluttify'
   s.version          = '0.0.1'
-  s.summary          = 'An `Nama` Plugin, Powered By `Fluttify`, A Compiler Generating Dart Bindings For Native SDK.'
+  s.summary          = 'An `Faceunity Nama(美颜)` Plugin, Powered By `Fluttify`, A Compiler Generating Dart Bindings For Native SDK.'
   s.description      = <<-DESC
 A new flutter plugin project.
                        DESC
@@ -38,7 +38,7 @@ A new flutter plugin project.
   # resources
   s.resources = 'Vendor/*.framework/*.bundle'
   # s.resource_bundles = {
-  #   'nama_fluttify' => ['Vendor/*.framework/*.bundle']
+  #   'faceunity_nama_fluttify' => ['Vendor/*.framework/*.bundle']
   # }
 end
 

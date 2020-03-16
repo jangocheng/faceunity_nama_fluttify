@@ -1,4 +1,4 @@
-package com.fluttify.nama_fluttify_example;
+package com.fluttify.faceunity_nama_fluttify_example;
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity;

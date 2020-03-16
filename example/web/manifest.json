@@ -1,11 +1,11 @@
 {
-    "name": "nama_fluttify_example",
-    "short_name": "nama_fluttify_example",
+    "name": "faceunity_nama_fluttify_example",
+    "short_name": "faceunity_nama_fluttify_example",
     "start_url": ".",
     "display": "minimal-ui",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Demonstrates how to use the nama_fluttify plugin.",
+    "description": "Demonstrates how to use the faceunity_nama_fluttify plugin.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

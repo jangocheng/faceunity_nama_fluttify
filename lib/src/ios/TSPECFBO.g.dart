@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class TSPECFBO extends NSObject  {
 
   //region creators
   static Future<TSPECFBO> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createTSPECFBO');
-    final object = TSPECFBO()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createTSPECFBO');
+    final object = TSPECFBO()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class TSPECFBO extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchTSPECFBO', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchTSPECFBO', {'length': length});
   
-    final List<TSPECFBO> typedResult = resultBatch.map((result) => TSPECFBO()..refId = result..tag = 'nama_fluttify').toList();
+    final List<TSPECFBO> typedResult = resultBatch.map((result) => TSPECFBO()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,13 +41,13 @@ class TSPECFBO extends NSObject  {
 
   //region getters
   Future<int> get_fbo() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSPECFBO::get_fbo", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TSPECFBO::get_fbo", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_tex() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSPECFBO::get_tex", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TSPECFBO::get_tex", {'refId': refId});
   
     return result;
   }
@@ -56,13 +56,13 @@ class TSPECFBO extends NSObject  {
 
   //region setters
   Future<void> set_fbo(int fbo) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TSPECFBO::set_fbo', {'refId': refId, "fbo": fbo});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TSPECFBO::set_fbo', {'refId': refId, "fbo": fbo});
   
   
   }
   
   Future<void> set_tex(int tex) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TSPECFBO::set_tex', {'refId': refId, "tex": tex});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TSPECFBO::set_tex', {'refId': refId, "tex": tex});
   
   
   }
@@ -77,14 +77,14 @@ class TSPECFBO extends NSObject  {
 extension TSPECFBO_Batch on List<TSPECFBO> {
   //region getters
   Future<List<int>> get_fbo_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSPECFBO::get_fbo_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TSPECFBO::get_fbo_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_tex_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TSPECFBO::get_tex_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TSPECFBO::get_tex_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -94,13 +94,13 @@ extension TSPECFBO_Batch on List<TSPECFBO> {
 
   //region setters
   Future<void> set_fbo_batch(List<int> fbo) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TSPECFBO::set_fbo_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fbo": fbo[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TSPECFBO::set_fbo_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "fbo": fbo[i]}]);
   
   
   }
   
   Future<void> set_tex_batch(List<int> tex) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TSPECFBO::set_tex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tex": tex[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TSPECFBO::set_tex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tex": tex[i]}]);
   
   
   }

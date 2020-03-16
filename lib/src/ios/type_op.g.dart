@@ -7,131 +7,131 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-extension TypeOpNamaFluttifyIOS on Ref {
+extension TypeOpFaceunityNamaFluttifyIOS on Ref {
   Future<bool> isTCameraDesc() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfTCameraDesc', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfTCameraDesc', {'refId': refId});
     return result;
   }
   
   Future<bool> isTAndroidDualMode() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfTAndroidDualMode', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfTAndroidDualMode', {'refId': refId});
     return result;
   }
   
   Future<bool> isTNV12Buffer() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfTNV12Buffer', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfTNV12Buffer', {'refId': refId});
     return result;
   }
   
   Future<bool> isTIOSDualInput() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfTIOSDualInput', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfTIOSDualInput', {'refId': refId});
     return result;
   }
   
   Future<bool> isTSPECFBO() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfTSPECFBO', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfTSPECFBO', {'refId': refId});
     return result;
   }
   
   Future<bool> isTGLRenderingDesc() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfTGLRenderingDesc', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfTGLRenderingDesc', {'refId': refId});
     return result;
   }
   
   Future<bool> isTAvatarInfo() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfTAvatarInfo', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfTAvatarInfo', {'refId': refId});
     return result;
   }
   
   Future<bool> isTSplitViewInfo() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfTSplitViewInfo', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfTSplitViewInfo', {'refId': refId});
     return result;
   }
   
   Future<bool> isFUOutput() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfFUOutput', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfFUOutput', {'refId': refId});
     return result;
   }
   
   Future<bool> isFURotatedImage() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfFURotatedImage', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfFURotatedImage', {'refId': refId});
     return result;
   }
   
   Future<bool> isFUAvatarInfo() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfFUAvatarInfo', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfFUAvatarInfo', {'refId': refId});
     return result;
   }
   
   Future<bool> isFURenderer() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::isKindOfFURenderer', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::isKindOfFURenderer', {'refId': refId});
     return result;
   }
   
 
   Future<TCameraDesc> asTCameraDesc() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asTCameraDesc', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asTCameraDesc', {'refId': refId});
     return TCameraDesc()..refId = result;
   }
   
   Future<TAndroidDualMode> asTAndroidDualMode() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asTAndroidDualMode', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asTAndroidDualMode', {'refId': refId});
     return TAndroidDualMode()..refId = result;
   }
   
   Future<TNV12Buffer> asTNV12Buffer() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asTNV12Buffer', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asTNV12Buffer', {'refId': refId});
     return TNV12Buffer()..refId = result;
   }
   
   Future<TIOSDualInput> asTIOSDualInput() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asTIOSDualInput', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asTIOSDualInput', {'refId': refId});
     return TIOSDualInput()..refId = result;
   }
   
   Future<TSPECFBO> asTSPECFBO() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asTSPECFBO', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asTSPECFBO', {'refId': refId});
     return TSPECFBO()..refId = result;
   }
   
   Future<TGLRenderingDesc> asTGLRenderingDesc() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asTGLRenderingDesc', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asTGLRenderingDesc', {'refId': refId});
     return TGLRenderingDesc()..refId = result;
   }
   
   Future<TAvatarInfo> asTAvatarInfo() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asTAvatarInfo', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asTAvatarInfo', {'refId': refId});
     return TAvatarInfo()..refId = result;
   }
   
   Future<TSplitViewInfo> asTSplitViewInfo() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asTSplitViewInfo', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asTSplitViewInfo', {'refId': refId});
     return TSplitViewInfo()..refId = result;
   }
   
   Future<FUOutput> asFUOutput() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asFUOutput', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asFUOutput', {'refId': refId});
     return FUOutput()..refId = result;
   }
   
   Future<FURotatedImage> asFURotatedImage() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asFURotatedImage', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asFURotatedImage', {'refId': refId});
     return FURotatedImage()..refId = result;
   }
   
   Future<FUAvatarInfo> asFUAvatarInfo() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asFUAvatarInfo', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asFUAvatarInfo', {'refId': refId});
     return FUAvatarInfo()..refId = result;
   }
   
   Future<FURenderer> asFURenderer() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('RefClass::asFURenderer', {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('RefClass::asFURenderer', {'refId': refId});
     return FURenderer()..refId = result;
   }
   

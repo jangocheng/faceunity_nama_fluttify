@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class TAvatarInfo extends NSObject  {
 
   //region creators
   static Future<TAvatarInfo> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createTAvatarInfo');
-    final object = TAvatarInfo()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createTAvatarInfo');
+    final object = TAvatarInfo()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class TAvatarInfo extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchTAvatarInfo', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchTAvatarInfo', {'length': length});
   
-    final List<TAvatarInfo> typedResult = resultBatch.map((result) => TAvatarInfo()..refId = result..tag = 'nama_fluttify').toList();
+    final List<TAvatarInfo> typedResult = resultBatch.map((result) => TAvatarInfo()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,37 +41,37 @@ class TAvatarInfo extends NSObject  {
 
   //region getters
   Future<NSValue/* float* */> get_p_translation() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_p_translation", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* float* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_p_translation", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<NSValue/* float* */> get_p_rotation() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_p_rotation", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* float* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_p_rotation", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<NSValue/* float* */> get_p_expression() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_p_expression", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* float* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_p_expression", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<NSValue/* float* */> get_rotation_mode() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_rotation_mode", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* float* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_rotation_mode", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<NSValue/* float* */> get_pupil_pos() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_pupil_pos", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* float* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_pupil_pos", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<int> get_is_valid() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_is_valid", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_is_valid", {'refId': refId});
   
     return result;
   }
@@ -80,37 +80,37 @@ class TAvatarInfo extends NSObject  {
 
   //region setters
   Future<void> set_p_translation(NSValue/* float* */ p_translation) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_p_translation', {'refId': refId, "p_translation": p_translation.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_p_translation', {'refId': refId, "p_translation": p_translation.refId});
   
   
   }
   
   Future<void> set_p_rotation(NSValue/* float* */ p_rotation) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_p_rotation', {'refId': refId, "p_rotation": p_rotation.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_p_rotation', {'refId': refId, "p_rotation": p_rotation.refId});
   
   
   }
   
   Future<void> set_p_expression(NSValue/* float* */ p_expression) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_p_expression', {'refId': refId, "p_expression": p_expression.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_p_expression', {'refId': refId, "p_expression": p_expression.refId});
   
   
   }
   
   Future<void> set_rotation_mode(NSValue/* float* */ rotation_mode) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_rotation_mode', {'refId': refId, "rotation_mode": rotation_mode.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_rotation_mode', {'refId': refId, "rotation_mode": rotation_mode.refId});
   
   
   }
   
   Future<void> set_pupil_pos(NSValue/* float* */ pupil_pos) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_pupil_pos', {'refId': refId, "pupil_pos": pupil_pos.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_pupil_pos', {'refId': refId, "pupil_pos": pupil_pos.refId});
   
   
   }
   
   Future<void> set_is_valid(int is_valid) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_is_valid', {'refId': refId, "is_valid": is_valid});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_is_valid', {'refId': refId, "is_valid": is_valid});
   
   
   }
@@ -125,42 +125,42 @@ class TAvatarInfo extends NSObject  {
 extension TAvatarInfo_Batch on List<TAvatarInfo> {
   //region getters
   Future<List<NSValue/* float* */>> get_p_translation_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_p_translation_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_p_translation_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<NSValue/* float* */>> get_p_rotation_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_p_rotation_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_p_rotation_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<NSValue/* float* */>> get_p_expression_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_p_expression_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_p_expression_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<NSValue/* float* */>> get_rotation_mode_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_rotation_mode_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_rotation_mode_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<NSValue/* float* */>> get_pupil_pos_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_pupil_pos_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_pupil_pos_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<int>> get_is_valid_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TAvatarInfo::get_is_valid_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TAvatarInfo::get_is_valid_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -170,37 +170,37 @@ extension TAvatarInfo_Batch on List<TAvatarInfo> {
 
   //region setters
   Future<void> set_p_translation_batch(List<NSValue/* float* */> p_translation) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_p_translation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_translation": p_translation[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_p_translation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_translation": p_translation[i].refId}]);
   
   
   }
   
   Future<void> set_p_rotation_batch(List<NSValue/* float* */> p_rotation) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_p_rotation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_rotation": p_rotation[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_p_rotation_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_rotation": p_rotation[i].refId}]);
   
   
   }
   
   Future<void> set_p_expression_batch(List<NSValue/* float* */> p_expression) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_p_expression_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_expression": p_expression[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_p_expression_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_expression": p_expression[i].refId}]);
   
   
   }
   
   Future<void> set_rotation_mode_batch(List<NSValue/* float* */> rotation_mode) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_rotation_mode_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotation_mode": rotation_mode[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_rotation_mode_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotation_mode": rotation_mode[i].refId}]);
   
   
   }
   
   Future<void> set_pupil_pos_batch(List<NSValue/* float* */> pupil_pos) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_pupil_pos_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pupil_pos": pupil_pos[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_pupil_pos_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pupil_pos": pupil_pos[i].refId}]);
   
   
   }
   
   Future<void> set_is_valid_batch(List<int> is_valid) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TAvatarInfo::set_is_valid_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "is_valid": is_valid[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TAvatarInfo::set_is_valid_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "is_valid": is_valid[i]}]);
   
   
   }

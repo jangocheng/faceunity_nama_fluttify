@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -56,8 +56,8 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
 
   //region creators
   static Future<com_faceunity_wrapper_faceunity> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity__');
-    final object = com_faceunity_wrapper_faceunity()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity__');
+    final object = com_faceunity_wrapper_faceunity()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -67,9 +67,9 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity__', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity__', {'length': length});
   
-    final List<com_faceunity_wrapper_faceunity> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity()..refId = result..tag = 'nama_fluttify').toList();
+    final List<com_faceunity_wrapper_faceunity> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -92,7 +92,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRotateImage', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRotateImage', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
   
   
     // handle native call
@@ -114,7 +114,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetup__Uint8List__Uint8List', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetup__Uint8List__Uint8List', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -136,7 +136,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetupLocal', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetupLocal', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
@@ -158,7 +158,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateItemFromPackage', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateItemFromPackage', {"var0": var0});
   
   
     // handle native call
@@ -180,7 +180,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadAIModelFromPackage', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadAIModelFromPackage', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -202,7 +202,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseAIModel', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseAIModel', {"var0": var0});
   
   
     // handle native call
@@ -224,7 +224,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsAIModelLoaded', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsAIModelLoaded', {"var0": var0});
   
   
     // handle native call
@@ -246,7 +246,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyItem', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyItem', {"var0": var0});
   
   
     // handle native call
@@ -268,7 +268,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyAllItems', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyAllItems', );
   
   
     // handle native call
@@ -290,7 +290,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyLibData', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyLibData', );
   
   
     // handle native call
@@ -312,7 +312,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderNV21ImageToTexture', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderNV21ImageToTexture', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
@@ -334,7 +334,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderI420ImageToTexture', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderI420ImageToTexture', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
@@ -356,7 +356,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDone', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDone', );
   
   
     // handle native call
@@ -378,7 +378,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuOnDeviceLost', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuOnDeviceLost', );
   
   
     // handle native call
@@ -400,7 +400,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuOnCameraChange', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuOnCameraChange', );
   
   
     // handle native call
@@ -422,7 +422,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__double', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__double', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
@@ -444,7 +444,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__Float64List', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__Float64List', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
@@ -466,7 +466,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__String', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__String', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
@@ -488,7 +488,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu64', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu64', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
@@ -510,7 +510,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu8v', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu8v', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -532,7 +532,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsTracking', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsTracking', );
   
   
     // handle native call
@@ -554,7 +554,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParam', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParam', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -576,7 +576,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamdv', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamdv', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -598,7 +598,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamfv', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamfv', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -620,7 +620,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamString', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamString', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -642,7 +642,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamu8v', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamu8v', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -664,7 +664,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMaxFaces', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMaxFaces', {"var0": var0});
   
   
     // handle native call
@@ -686,7 +686,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
@@ -708,7 +708,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21ImageMasked', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21ImageMasked', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
   
   
     // handle native call
@@ -730,7 +730,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
   
   
     // handle native call
@@ -752,7 +752,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__int__int__int__int__Int32List__int', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__int__int__int__int__Int32List__int', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
   
   
     // handle native call
@@ -774,7 +774,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
   
   
     // handle native call
@@ -796,7 +796,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -818,7 +818,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
@@ -840,7 +840,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420ImageMasked', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420ImageMasked', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
   
   
     // handle native call
@@ -862,7 +862,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
   
   
     // handle native call
@@ -884,7 +884,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__int__int__int__int__Int32List__int', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__int__int__int__int__Int32List__int', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
   
   
     // handle native call
@@ -906,7 +906,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
   
   
     // handle native call
@@ -928,7 +928,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -950,7 +950,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
@@ -972,7 +972,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
   
   
     // handle native call
@@ -994,7 +994,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__int__int__int__int__Int32List__int', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__int__int__int__int__Int32List__int', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
   
   
     // handle native call
@@ -1016,7 +1016,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
   
   
     // handle native call
@@ -1038,7 +1038,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -1060,7 +1060,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9});
   
   
     // handle native call
@@ -1082,7 +1082,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -1104,7 +1104,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__int__int__int__int__int__int__int__int__int__Int32List', {"var0": var0, "var2": var2, "var4": var4, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__int__int__int__int__int__int__int__int__int__Int32List', {"var0": var0, "var2": var2, "var4": var4, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12});
   
   
     // handle native call
@@ -1126,7 +1126,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
   
   
     // handle native call
@@ -1148,7 +1148,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__int__int__int__int__int__int__Int32List', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__int__int__int__int__int__int__Int32List', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
   
   
     // handle native call
@@ -1170,7 +1170,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTextureMasked', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTextureMasked', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
   
   
     // handle native call
@@ -1192,7 +1192,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9});
   
   
     // handle native call
@@ -1214,7 +1214,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11});
   
   
     // handle native call
@@ -1236,7 +1236,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToFBO', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToFBO', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
   
   
     // handle native call
@@ -1258,7 +1258,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultOrientation', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultOrientation', {"var0": var0});
   
   
     // handle native call
@@ -1280,7 +1280,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
   
   
     // handle native call
@@ -1302,7 +1302,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8});
   
   
     // handle native call
@@ -1324,7 +1324,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int__int__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -1346,7 +1346,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateEGLContext', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateEGLContext', );
   
   
     // handle native call
@@ -1368,7 +1368,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseEGLContext', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseEGLContext', );
   
   
     // handle native call
@@ -1390,7 +1390,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDisableBoostWithEGLImage', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDisableBoostWithEGLImage', );
   
   
     // handle native call
@@ -1412,7 +1412,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceIdentifier', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceIdentifier', {"var0": var0});
   
   
     // handle native call
@@ -1434,7 +1434,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Float64List', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Float64List', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
@@ -1456,7 +1456,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Int32List', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Int32List', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
@@ -1478,7 +1478,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBeautifyImage', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBeautifyImage', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
   
   
     // handle native call
@@ -1500,7 +1500,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFace', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFace', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -1522,7 +1522,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFaceWithTongue', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFaceWithTongue', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -1544,7 +1544,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9});
   
   
     // handle native call
@@ -1566,7 +1566,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -1588,7 +1588,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTextureWithTrans', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTextureWithTrans', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10});
   
   
     // handle native call
@@ -1610,7 +1610,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12});
   
   
     // handle native call
@@ -1632,7 +1632,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12, "var13": var13});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12, "var13": var13});
   
   
     // handle native call
@@ -1654,7 +1654,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToCurrentFBO', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToCurrentFBO', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11});
   
   
     // handle native call
@@ -1676,7 +1676,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReadPixelsRGBA2NV21', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReadPixelsRGBA2NV21', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
@@ -1698,7 +1698,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundles', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundles', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
   
   
     // handle native call
@@ -1720,7 +1720,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesWithCamera', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesWithCamera', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
   
   
     // handle native call
@@ -1742,7 +1742,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesSplitView', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6.refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesSplitView', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6.refId});
   
   
     // handle native call
@@ -1764,7 +1764,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetVersion', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetVersion', );
   
   
     // handle native call
@@ -1786,7 +1786,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetQualityTradeoff', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetQualityTradeoff', {"var0": var0});
   
   
     // handle native call
@@ -1808,7 +1808,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBindItems', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBindItems', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -1830,7 +1830,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnBindItems', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnBindItems', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -1852,7 +1852,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnbindAllItems', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnbindAllItems', {"var0": var0});
   
   
     // handle native call
@@ -1874,7 +1874,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuClearReadbackRelated', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuClearReadbackRelated', );
   
   
     // handle native call
@@ -1896,7 +1896,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetSystemError', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetSystemError', );
   
   
     // handle native call
@@ -1918,7 +1918,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetSystemErrorString', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetSystemErrorString', {"var0": var0});
   
   
     // handle native call
@@ -1940,7 +1940,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCheckDebugItem', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCheckDebugItem', {"var0": var0});
   
   
     // handle native call
@@ -1962,7 +1962,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetExpressionCalibration', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetExpressionCalibration', {"var0": var0});
   
   
     // handle native call
@@ -1984,7 +1984,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadTongueModel', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadTongueModel', {"var0": var0});
   
   
     // handle native call
@@ -2006,7 +2006,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetStrictTracking', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetStrictTracking', {"var0": var0});
   
   
     // handle native call
@@ -2028,7 +2028,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultRotationMode', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultRotationMode', {"var0": var0});
   
   
     // handle native call
@@ -2050,7 +2050,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDeviceOrientation', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDeviceOrientation', {"var0": var0});
   
   
     // handle native call
@@ -2072,7 +2072,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetCurrentRotationMode', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetCurrentRotationMode', );
   
   
     // handle native call
@@ -2094,7 +2094,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetModuleCode', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetModuleCode', {"var0": var0});
   
   
     // handle native call
@@ -2116,7 +2116,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuHasFace', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuHasFace', );
   
   
     // handle native call
@@ -2138,7 +2138,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFocalLengthScale', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFocalLengthScale', {"var0": var0});
   
   
     // handle native call
@@ -2160,7 +2160,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMultiSamples', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMultiSamples', {"var0": var0});
   
   
     // handle native call
@@ -2182,7 +2182,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetAsyncTrackFace', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetAsyncTrackFace', {"var0": var0});
   
   
     // handle native call
@@ -2204,7 +2204,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetTongueTracking', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetTongueTracking', {"var0": var0});
   
   
     // handle native call
@@ -2226,7 +2226,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateTexForItem', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateTexForItem', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
@@ -2248,7 +2248,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDeleteTexForItem', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDeleteTexForItem', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -2270,7 +2270,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetInputCameraMatrix', {"var0": var0, "var1": var1, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetInputCameraMatrix', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
@@ -2292,7 +2292,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetOutputResolution', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetOutputResolution', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -2314,7 +2314,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceDetParam', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceDetParam', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -2336,7 +2336,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceTrackParam', {"var0": var0, "var1": var1});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceTrackParam', {"var0": var0, "var1": var1});
   
   
     // handle native call
@@ -2358,7 +2358,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerCreate', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerCreate', {"var0": var0});
   
   
     // handle native call
@@ -2380,7 +2380,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy', {"var0": var0});
   
   
     // handle native call
@@ -2402,7 +2402,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
   
   
     // handle native call
@@ -2424,7 +2424,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureCreate', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureCreate', {"var0": var0});
   
   
     // handle native call
@@ -2446,7 +2446,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureDestory', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureDestory', {"var0": var0});
   
   
     // handle native call
@@ -2468,7 +2468,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene', {"var0": var0, "var2": var2});
   
   
     // handle native call
@@ -2490,7 +2490,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5});
   
   
     // handle native call
@@ -2512,7 +2512,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureReset', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureReset', {"var0": var0});
   
   
     // handle native call
@@ -2534,7 +2534,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6});
   
   
     // handle native call
@@ -2556,7 +2556,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks', {"var0": var0, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks', {"var0": var0, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -2578,7 +2578,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity', {"var0": var0, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity', {"var0": var0, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -2600,7 +2600,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression', {"var0": var0, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression', {"var0": var0, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -2622,7 +2622,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation', {"var0": var0, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation', {"var0": var0, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -2644,7 +2644,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultEyesRotation', {"var0": var0, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultEyesRotation', {"var0": var0, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -2666,7 +2666,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTranslation', {"var0": var0, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTranslation', {"var0": var0, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -2688,7 +2688,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueExp', {"var0": var0, "var2": var2, "var3": var3});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueExp', {"var0": var0, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -2710,7 +2710,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIsFace', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIsFace', {"var0": var0, "var2": var2});
   
   
     // handle native call
@@ -2732,7 +2732,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceID', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceID', {"var0": var0, "var2": var2});
   
   
     // handle native call
@@ -2754,7 +2754,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueScore', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueScore', {"var0": var0, "var2": var2});
   
   
     // handle native call
@@ -2776,7 +2776,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceScore', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceScore', {"var0": var0, "var2": var2});
   
   
     // handle native call
@@ -2798,7 +2798,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueClass', {"var0": var0, "var2": var2});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueClass', {"var0": var0, "var2": var2});
   
   
     // handle native call
@@ -2820,7 +2820,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFocalLength', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFocalLength', {"var0": var0});
   
   
     // handle native call
@@ -2842,7 +2842,7 @@ class com_faceunity_wrapper_faceunity extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceNum', {"var0": var0});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceNum', {"var0": var0});
   
   
     // handle native call
@@ -2876,7 +2876,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRotateImage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRotateImage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2895,7 +2895,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetup__Uint8List__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetup__Uint8List__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2914,7 +2914,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetupLocal_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetupLocal_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2933,7 +2933,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateItemFromPackage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateItemFromPackage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2952,7 +2952,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadAIModelFromPackage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadAIModelFromPackage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2971,7 +2971,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseAIModel_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseAIModel_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2990,7 +2990,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsAIModelLoaded_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsAIModelLoaded_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3009,7 +3009,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3028,7 +3028,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyAllItems_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyAllItems_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3047,7 +3047,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyLibData_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDestroyLibData_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3066,7 +3066,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderNV21ImageToTexture_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderNV21ImageToTexture_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3085,7 +3085,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderI420ImageToTexture_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderI420ImageToTexture_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3104,7 +3104,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDone_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDone_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3123,7 +3123,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuOnDeviceLost_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuOnDeviceLost_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3142,7 +3142,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuOnCameraChange_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuOnCameraChange_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3161,7 +3161,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__double_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__double_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3180,7 +3180,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__Float64List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__Float64List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3199,7 +3199,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__String_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParam__int__String__String_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3218,7 +3218,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu64_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu64_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3237,7 +3237,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu8v_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemSetParamu8v_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3256,7 +3256,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsTracking_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuIsTracking_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3275,7 +3275,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParam_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParam_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3294,7 +3294,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamdv_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamdv_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3313,7 +3313,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamfv_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamfv_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3332,7 +3332,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3351,7 +3351,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamu8v_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuItemGetParamu8v_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3370,7 +3370,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMaxFaces_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMaxFaces_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3389,7 +3389,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3408,7 +3408,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21ImageMasked_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21ImageMasked_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3427,7 +3427,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3446,7 +3446,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3465,7 +3465,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3484,7 +3484,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToNV21Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3503,7 +3503,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3522,7 +3522,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420ImageMasked_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420ImageMasked_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3541,7 +3541,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3560,7 +3560,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3579,7 +3579,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3598,7 +3598,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToI420Image__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3617,7 +3617,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3636,7 +3636,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3655,7 +3655,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3674,7 +3674,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3693,7 +3693,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToRgbaImage__Uint8List__int__int__int__Int32List__int__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3712,7 +3712,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3731,7 +3731,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__Uint8List__Uint8List__Uint8List__int__int__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3750,7 +3750,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__int__int__int__int__int__int__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var4": var4[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToYUVImage__int__int__int__int__int__int__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var4": var4[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3769,7 +3769,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3788,7 +3788,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__int__int__int__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__int__int__int__int__int__int__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3807,7 +3807,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTextureMasked_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTextureMasked_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3826,7 +3826,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3845,7 +3845,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToTexture__Uint8List__int__int__int__int__int__Int32List__int__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3864,7 +3864,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToFBO_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDualInputToFBO_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3883,7 +3883,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultOrientation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultOrientation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3902,7 +3902,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3921,7 +3921,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3940,7 +3940,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderToTexture__int__int__int__int__Int32List__int__Uint8List__int__int__int__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3959,7 +3959,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateEGLContext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateEGLContext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3978,7 +3978,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseEGLContext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReleaseEGLContext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -3997,7 +3997,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDisableBoostWithEGLImage_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDisableBoostWithEGLImage_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4016,7 +4016,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceIdentifier_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceIdentifier_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4035,7 +4035,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Float64List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Float64List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4054,7 +4054,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetFaceInfo__int__String__Int32List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4073,7 +4073,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBeautifyImage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBeautifyImage_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4092,7 +4092,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFace_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFace_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4111,7 +4111,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFaceWithTongue_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuTrackFaceWithTongue_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4130,7 +4130,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4149,7 +4149,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTexture__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4168,7 +4168,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTextureWithTrans_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToTextureWithTrans_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4187,7 +4187,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4206,7 +4206,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "var13": var13[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToImage__Float64List__Float64List__Float64List__Float64List__Float64List__int__int__int__int__Int32List__int__int__int__Uint8List_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "var12": var12[i], "var13": var13[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4225,7 +4225,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToCurrentFBO_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuAvatarToCurrentFBO_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "var8": var8[i], "var9": var9[i], "var10": var10[i], "var11": var11[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4244,7 +4244,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReadPixelsRGBA2NV21_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuReadPixelsRGBA2NV21_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4263,7 +4263,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundles_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundles_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4282,7 +4282,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesWithCamera_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesWithCamera_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4301,7 +4301,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesSplitView_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuRenderBundlesSplitView_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i].refId, "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4320,7 +4320,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetVersion_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetVersion_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4339,7 +4339,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetQualityTradeoff_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetQualityTradeoff_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4358,7 +4358,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBindItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuBindItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4377,7 +4377,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnBindItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnBindItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4396,7 +4396,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnbindAllItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuUnbindAllItems_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4415,7 +4415,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuClearReadbackRelated_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuClearReadbackRelated_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4434,7 +4434,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetSystemError_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetSystemError_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4453,7 +4453,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetSystemErrorString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetSystemErrorString_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4472,7 +4472,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCheckDebugItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCheckDebugItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4491,7 +4491,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetExpressionCalibration_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetExpressionCalibration_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4510,7 +4510,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadTongueModel_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuLoadTongueModel_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4529,7 +4529,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetStrictTracking_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetStrictTracking_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4548,7 +4548,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultRotationMode_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDefaultRotationMode_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4567,7 +4567,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDeviceOrientation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetDeviceOrientation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4586,7 +4586,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetCurrentRotationMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetCurrentRotationMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4605,7 +4605,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetModuleCode_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuGetModuleCode_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4624,7 +4624,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuHasFace_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuHasFace_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4643,7 +4643,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFocalLengthScale_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFocalLengthScale_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4662,7 +4662,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMultiSamples_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetMultiSamples_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4681,7 +4681,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetAsyncTrackFace_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetAsyncTrackFace_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4700,7 +4700,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetTongueTracking_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetTongueTracking_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4719,7 +4719,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateTexForItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuCreateTexForItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4738,7 +4738,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDeleteTexForItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuDeleteTexForItem_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4757,7 +4757,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetInputCameraMatrix_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetInputCameraMatrix_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4776,7 +4776,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetOutputResolution_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetOutputResolution_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4795,7 +4795,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceDetParam_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceDetParam_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4814,7 +4814,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceTrackParam_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuSetFaceTrackParam_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4833,7 +4833,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerCreate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerCreate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4852,7 +4852,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerDestroy_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4871,7 +4871,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fu3DBodyTrackerRun_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "var7": var7[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4890,7 +4890,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureCreate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureCreate_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4909,7 +4909,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureDestory_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureDestory_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4928,7 +4928,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetScene_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4947,7 +4947,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureSetBBOX_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4966,7 +4966,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureReset_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureReset_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -4985,7 +4985,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureProcessFrame_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i], "var6": var6[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5004,7 +5004,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultLandmarks_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5023,7 +5023,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIdentity_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5042,7 +5042,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultExpression_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5061,7 +5061,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultRotation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5080,7 +5080,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultEyesRotation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultEyesRotation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5099,7 +5099,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTranslation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTranslation_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5118,7 +5118,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueExp_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueExp_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var3": var3[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5137,7 +5137,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIsFace_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultIsFace_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5156,7 +5156,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceID_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5175,7 +5175,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueScore_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueScore_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5194,7 +5194,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceScore_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceScore_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5213,7 +5213,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueClass_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultTongueClass_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5232,7 +5232,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFocalLength_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFocalLength_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -5251,7 +5251,7 @@ extension com_faceunity_wrapper_faceunity_Batch on List<com_faceunity_wrapper_fa
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceNum_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity::fuFaceCaptureGetResultFaceNum_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object

@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class TCameraDesc extends NSObject  {
 
   //region creators
   static Future<TCameraDesc> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createTCameraDesc');
-    final object = TCameraDesc()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createTCameraDesc');
+    final object = TCameraDesc()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class TCameraDesc extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchTCameraDesc', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchTCameraDesc', {'length': length});
   
-    final List<TCameraDesc> typedResult = resultBatch.map((result) => TCameraDesc()..refId = result..tag = 'nama_fluttify').toList();
+    final List<TCameraDesc> typedResult = resultBatch.map((result) => TCameraDesc()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,7 +41,7 @@ class TCameraDesc extends NSObject  {
 
   //region getters
   Future<int> get_camera_id() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TCameraDesc::get_camera_id", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TCameraDesc::get_camera_id", {'refId': refId});
   
     return result;
   }
@@ -50,7 +50,7 @@ class TCameraDesc extends NSObject  {
 
   //region setters
   Future<void> set_camera_id(int camera_id) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TCameraDesc::set_camera_id', {'refId': refId, "camera_id": camera_id});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TCameraDesc::set_camera_id', {'refId': refId, "camera_id": camera_id});
   
   
   }
@@ -65,7 +65,7 @@ class TCameraDesc extends NSObject  {
 extension TCameraDesc_Batch on List<TCameraDesc> {
   //region getters
   Future<List<int>> get_camera_id_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TCameraDesc::get_camera_id_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TCameraDesc::get_camera_id_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -75,7 +75,7 @@ extension TCameraDesc_Batch on List<TCameraDesc> {
 
   //region setters
   Future<void> set_camera_id_batch(List<int> camera_id) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TCameraDesc::set_camera_id_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "camera_id": camera_id[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TCameraDesc::set_camera_id_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "camera_id": camera_id[i]}]);
   
   
   }

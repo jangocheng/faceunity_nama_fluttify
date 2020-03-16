@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class TNV12Buffer extends NSObject  {
 
   //region creators
   static Future<TNV12Buffer> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createTNV12Buffer');
-    final object = TNV12Buffer()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createTNV12Buffer');
+    final object = TNV12Buffer()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class TNV12Buffer extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchTNV12Buffer', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchTNV12Buffer', {'length': length});
   
-    final List<TNV12Buffer> typedResult = resultBatch.map((result) => TNV12Buffer()..refId = result..tag = 'nama_fluttify').toList();
+    final List<TNV12Buffer> typedResult = resultBatch.map((result) => TNV12Buffer()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,25 +41,25 @@ class TNV12Buffer extends NSObject  {
 
   //region getters
   Future<NSValue/* void* */> get_p_Y() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_p_Y", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TNV12Buffer::get_p_Y", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<NSValue/* void* */> get_p_CbCr() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_p_CbCr", {'refId': refId});
-    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
-    return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TNV12Buffer::get_p_CbCr", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
   }
   
   Future<int> get_stride_Y() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_stride_Y", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TNV12Buffer::get_stride_Y", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_stride_CbCr() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_stride_CbCr", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TNV12Buffer::get_stride_CbCr", {'refId': refId});
   
     return result;
   }
@@ -68,25 +68,25 @@ class TNV12Buffer extends NSObject  {
 
   //region setters
   Future<void> set_p_Y(NSValue/* void* */ p_Y) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TNV12Buffer::set_p_Y', {'refId': refId, "p_Y": p_Y.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TNV12Buffer::set_p_Y', {'refId': refId, "p_Y": p_Y.refId});
   
   
   }
   
   Future<void> set_p_CbCr(NSValue/* void* */ p_CbCr) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TNV12Buffer::set_p_CbCr', {'refId': refId, "p_CbCr": p_CbCr.refId});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TNV12Buffer::set_p_CbCr', {'refId': refId, "p_CbCr": p_CbCr.refId});
   
   
   }
   
   Future<void> set_stride_Y(int stride_Y) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TNV12Buffer::set_stride_Y', {'refId': refId, "stride_Y": stride_Y});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TNV12Buffer::set_stride_Y', {'refId': refId, "stride_Y": stride_Y});
   
   
   }
   
   Future<void> set_stride_CbCr(int stride_CbCr) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TNV12Buffer::set_stride_CbCr', {'refId': refId, "stride_CbCr": stride_CbCr});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TNV12Buffer::set_stride_CbCr', {'refId': refId, "stride_CbCr": stride_CbCr});
   
   
   }
@@ -101,28 +101,28 @@ class TNV12Buffer extends NSObject  {
 extension TNV12Buffer_Batch on List<TNV12Buffer> {
   //region getters
   Future<List<NSValue/* void* */>> get_p_Y_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_p_Y_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TNV12Buffer::get_p_Y_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<NSValue/* void* */>> get_p_CbCr_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_p_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TNV12Buffer::get_p_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<int>> get_stride_Y_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_stride_Y_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TNV12Buffer::get_stride_Y_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_stride_CbCr_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("TNV12Buffer::get_stride_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("TNV12Buffer::get_stride_CbCr_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -132,25 +132,25 @@ extension TNV12Buffer_Batch on List<TNV12Buffer> {
 
   //region setters
   Future<void> set_p_Y_batch(List<NSValue/* void* */> p_Y) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TNV12Buffer::set_p_Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_Y": p_Y[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TNV12Buffer::set_p_Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_Y": p_Y[i].refId}]);
   
   
   }
   
   Future<void> set_p_CbCr_batch(List<NSValue/* void* */> p_CbCr) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TNV12Buffer::set_p_CbCr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_CbCr": p_CbCr[i].refId}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TNV12Buffer::set_p_CbCr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "p_CbCr": p_CbCr[i].refId}]);
   
   
   }
   
   Future<void> set_stride_Y_batch(List<int> stride_Y) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TNV12Buffer::set_stride_Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_Y": stride_Y[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TNV12Buffer::set_stride_Y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_Y": stride_Y[i]}]);
   
   
   }
   
   Future<void> set_stride_CbCr_batch(List<int> stride_CbCr) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('TNV12Buffer::set_stride_CbCr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_CbCr": stride_CbCr[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('TNV12Buffer::set_stride_CbCr_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "stride_CbCr": stride_CbCr[i]}]);
   
   
   }

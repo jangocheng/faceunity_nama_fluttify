@@ -1,4 +1,4 @@
-# nama_fluttify
+# faceunity_nama_fluttify
 
 A new flutter plugin project.
 

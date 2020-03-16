@@ -1,5 +1,5 @@
-name: nama_fluttify_example
-description: Demonstrates how to use the nama_fluttify plugin.
+name: faceunity_nama_fluttify_example
+description: Demonstrates how to use the faceunity_nama_fluttify plugin.
 publish_to: 'none'
 
 environment:
@@ -17,7 +17,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  nama_fluttify:
+  faceunity_nama_fluttify:
     path: ../
 
 # For information on the generic Dart part of this file, see the

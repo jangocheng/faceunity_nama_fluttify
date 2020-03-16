@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,7 +19,7 @@ Future<void> fu3DBodyTrackerDestroy(NSValue/* void* */ model_ptr) async {
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fu3DBodyTrackerDestroy::fu3DBodyTrackerDestroy', {"model_ptr": model_ptr.refId});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fu3DBodyTrackerDestroy::fu3DBodyTrackerDestroy', {"model_ptr": model_ptr.refId});
   
 
   // handle native call
@@ -41,7 +41,7 @@ Future<int> fu3DBodyTrackerRun(NSValue/* void* */ model_ptr, int human_handle, N
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fu3DBodyTrackerRun::fu3DBodyTrackerRun', {"model_ptr": model_ptr.refId, "human_handle": human_handle, "img": img.refId, "w": w, "h": h, "fu_image_format": fu_image_format, "rotation_mode": rotation_mode});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fu3DBodyTrackerRun::fu3DBodyTrackerRun', {"model_ptr": model_ptr.refId, "human_handle": human_handle, "img": img.refId, "w": w, "h": h, "fu_image_format": fu_image_format, "rotation_mode": rotation_mode});
   
 
   // handle native call
@@ -63,7 +63,7 @@ Future<int> fuFaceCaptureDestory(NSValue/* void* */ model_ptr) async {
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureDestory::fuFaceCaptureDestory', {"model_ptr": model_ptr.refId});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureDestory::fuFaceCaptureDestory', {"model_ptr": model_ptr.refId});
   
 
   // handle native call
@@ -85,7 +85,7 @@ Future<int> fuFaceCaptureSetScene(NSValue/* void* */ model_ptr, int scene_type) 
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureSetScene::fuFaceCaptureSetScene', {"model_ptr": model_ptr.refId, "scene_type": scene_type});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureSetScene::fuFaceCaptureSetScene', {"model_ptr": model_ptr.refId, "scene_type": scene_type});
   
 
   // handle native call
@@ -107,7 +107,7 @@ Future<int> fuFaceCaptureSetBBOX(NSValue/* void* */ model_ptr, int cx, int cy, i
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureSetBBOX::fuFaceCaptureSetBBOX', {"model_ptr": model_ptr.refId, "cx": cx, "cy": cy, "sx": sx, "sy": sy});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureSetBBOX::fuFaceCaptureSetBBOX', {"model_ptr": model_ptr.refId, "cx": cx, "cy": cy, "sx": sx, "sy": sy});
   
 
   // handle native call
@@ -129,7 +129,7 @@ Future<int> fuFaceCaptureReset(NSValue/* void* */ model_ptr) async {
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureReset::fuFaceCaptureReset', {"model_ptr": model_ptr.refId});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureReset::fuFaceCaptureReset', {"model_ptr": model_ptr.refId});
   
 
   // handle native call
@@ -151,7 +151,7 @@ Future<int> fuFaceCaptureProcessFrame(NSValue/* void* */ manager_ptr_addr, NSVal
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureProcessFrame::fuFaceCaptureProcessFrame', {"manager_ptr_addr": manager_ptr_addr.refId, "image_data": image_data.refId, "image_w": image_w, "image_h": image_h, "fu_image_format": fu_image_format, "rotate_mode": rotate_mode});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureProcessFrame::fuFaceCaptureProcessFrame', {"manager_ptr_addr": manager_ptr_addr.refId, "image_data": image_data.refId, "image_w": image_w, "image_h": image_h, "fu_image_format": fu_image_format, "rotate_mode": rotate_mode});
   
 
   // handle native call
@@ -173,7 +173,7 @@ Future<int> fuFaceCaptureGetResultIsFace(NSValue/* void* */ manager_ptr_addr, in
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureGetResultIsFace::fuFaceCaptureGetResultIsFace', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureGetResultIsFace::fuFaceCaptureGetResultIsFace', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
   
 
   // handle native call
@@ -195,7 +195,7 @@ Future<int> fuFaceCaptureGetResultFaceID(NSValue/* void* */ manager_ptr_addr, in
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureGetResultFaceID::fuFaceCaptureGetResultFaceID', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureGetResultFaceID::fuFaceCaptureGetResultFaceID', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
   
 
   // handle native call
@@ -217,7 +217,7 @@ Future<double> fuFaceCaptureGetResultFocalLength(NSValue/* void* */ manager_ptr_
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureGetResultFocalLength::fuFaceCaptureGetResultFocalLength', {"manager_ptr_addr": manager_ptr_addr.refId});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureGetResultFocalLength::fuFaceCaptureGetResultFocalLength', {"manager_ptr_addr": manager_ptr_addr.refId});
   
 
   // handle native call
@@ -239,7 +239,7 @@ Future<int> fuFaceCaptureGetResultFaceNum(NSValue/* void* */ manager_ptr_addr) a
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureGetResultFaceNum::fuFaceCaptureGetResultFaceNum', {"manager_ptr_addr": manager_ptr_addr.refId});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureGetResultFaceNum::fuFaceCaptureGetResultFaceNum', {"manager_ptr_addr": manager_ptr_addr.refId});
   
 
   // handle native call
@@ -261,7 +261,7 @@ Future<double> fuFaceCaptureGetResultTongueScore(NSValue/* void* */ manager_ptr_
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureGetResultTongueScore::fuFaceCaptureGetResultTongueScore', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureGetResultTongueScore::fuFaceCaptureGetResultTongueScore', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
   
 
   // handle native call
@@ -283,7 +283,7 @@ Future<double> fuFaceCaptureGetResultFaceScore(NSValue/* void* */ manager_ptr_ad
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureGetResultFaceScore::fuFaceCaptureGetResultFaceScore', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureGetResultFaceScore::fuFaceCaptureGetResultFaceScore', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
   
 
   // handle native call
@@ -305,7 +305,7 @@ Future<int> fuFaceCaptureGetResultTongueClass(NSValue/* void* */ manager_ptr_add
   }
 
   // invoke native method
-  final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('fuFaceCaptureGetResultTongueClass::fuFaceCaptureGetResultTongueClass', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
+  final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('fuFaceCaptureGetResultTongueClass::fuFaceCaptureGetResultTongueClass', {"manager_ptr_addr": manager_ptr_addr.refId, "face_n": face_n});
   
 
   // handle native call

@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class com_faceunity_wrapper_faceunity_RotatedImage extends java_lang_Object  {
 
   //region creators
   static Future<com_faceunity_wrapper_faceunity_RotatedImage> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity_RotatedImage__');
-    final object = com_faceunity_wrapper_faceunity_RotatedImage()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity_RotatedImage__');
+    final object = com_faceunity_wrapper_faceunity_RotatedImage()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class com_faceunity_wrapper_faceunity_RotatedImage extends java_lang_Object  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity_RotatedImage__', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity_RotatedImage__', {'length': length});
   
-    final List<com_faceunity_wrapper_faceunity_RotatedImage> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity_RotatedImage()..refId = result..tag = 'nama_fluttify').toList();
+    final List<com_faceunity_wrapper_faceunity_RotatedImage> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity_RotatedImage()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,19 +41,19 @@ class com_faceunity_wrapper_faceunity_RotatedImage extends java_lang_Object  {
 
   //region getters
   Future<Uint8List> get_mData() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mData", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mData", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_mWidth() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mWidth", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mWidth", {'refId': refId});
   
     return result;
   }
   
   Future<int> get_mHeight() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mHeight", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mHeight", {'refId': refId});
   
     return result;
   }
@@ -62,19 +62,19 @@ class com_faceunity_wrapper_faceunity_RotatedImage extends java_lang_Object  {
 
   //region setters
   Future<void> set_mData(Uint8List mData) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mData', {'refId': refId, "mData": mData});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mData', {'refId': refId, "mData": mData});
   
   
   }
   
   Future<void> set_mWidth(int mWidth) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mWidth', {'refId': refId, "mWidth": mWidth});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mWidth', {'refId': refId, "mWidth": mWidth});
   
   
   }
   
   Future<void> set_mHeight(int mHeight) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mHeight', {'refId': refId, "mHeight": mHeight});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mHeight', {'refId': refId, "mHeight": mHeight});
   
   
   }
@@ -89,21 +89,21 @@ class com_faceunity_wrapper_faceunity_RotatedImage extends java_lang_Object  {
 extension com_faceunity_wrapper_faceunity_RotatedImage_Batch on List<com_faceunity_wrapper_faceunity_RotatedImage> {
   //region getters
   Future<List<Uint8List>> get_mData_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mData_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mData_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_mWidth_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mWidth_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mWidth_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_mHeight_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mHeight_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.RotatedImage::get_mHeight_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -113,19 +113,19 @@ extension com_faceunity_wrapper_faceunity_RotatedImage_Batch on List<com_faceuni
 
   //region setters
   Future<void> set_mData_batch(List<Uint8List> mData) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mData": mData[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mData_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mData": mData[i]}]);
   
   
   }
   
   Future<void> set_mWidth_batch(List<int> mWidth) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mWidth": mWidth[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mWidth_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mWidth": mWidth[i]}]);
   
   
   }
   
   Future<void> set_mHeight_batch(List<int> mHeight) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mHeight_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHeight": mHeight[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.RotatedImage::set_mHeight_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mHeight": mHeight[i]}]);
   
   
   }

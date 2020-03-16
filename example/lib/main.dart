@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:nama_fluttify/nama_fluttify.dart';
+import 'package:faceunity_nama_fluttify/faceunity_nama_fluttify.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await NamaFluttify.platformVersion;
+      platformVersion = await FaceunityNamaFluttify.platformVersion;
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }

@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class FURenderer extends NSObject  {
 
   //region creators
   static Future<FURenderer> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createFURenderer');
-    final object = FURenderer()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createFURenderer');
+    final object = FURenderer()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class FURenderer extends NSObject  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchFURenderer', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchFURenderer', {'length': length});
   
-    final List<FURenderer> typedResult = resultBatch.map((result) => FURenderer()..refId = result..tag = 'nama_fluttify').toList();
+    final List<FURenderer> typedResult = resultBatch.map((result) => FURenderer()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -55,7 +55,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::shareRenderer', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::shareRenderer', );
   
   
     // handle native call
@@ -65,8 +65,8 @@ class FURenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(FURenderer()..refId = result..tag = 'nama_fluttify');
-      return FURenderer()..refId = result..tag = 'nama_fluttify';
+      kNativeObjectPool.add(FURenderer()..refId = result..tag = 'faceunity_nama_fluttify');
+      return FURenderer()..refId = result..tag = 'faceunity_nama_fluttify';
     }
   }
   
@@ -77,7 +77,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setBackCurrentContext', {"refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setBackCurrentContext', {"refId": refId});
   
   
     // handle native call
@@ -99,7 +99,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setUpCurrentContext', {"refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setUpCurrentContext', {"refId": refId});
   
   
     // handle native call
@@ -121,7 +121,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSize', {"data": data.refId, "dataSize": dataSize, "ardata": ardata.refId, "package": package.refId, "size": size, "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSize', {"data": data.refId, "dataSize": dataSize, "ardata": ardata.refId, "package": package.refId, "size": size, "refId": refId});
   
   
     // handle native call
@@ -143,7 +143,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext', {"data": data.refId, "dataSize": dataSize, "ardata": ardata.refId, "package": package.refId, "size": size, "shouldCreate": shouldCreate, "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext', {"data": data.refId, "dataSize": dataSize, "ardata": ardata.refId, "package": package.refId, "size": size, "shouldCreate": shouldCreate, "refId": refId});
   
   
     // handle native call
@@ -165,7 +165,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataPathAuthPackageauthSizeshouldCreateContext', {"v3path": v3path, "package": package.refId, "size": size, "shouldCreate": shouldCreate, "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setupWithDataPathAuthPackageauthSizeshouldCreateContext', {"v3path": v3path, "package": package.refId, "size": size, "shouldCreate": shouldCreate, "refId": refId});
   
   
     // handle native call
@@ -187,7 +187,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext', {"v3path": v3path, "offLinePath": offLinePath, "package": package.refId, "size": size, "shouldCreate": shouldCreate, "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext', {"v3path": v3path, "offLinePath": offLinePath, "package": package.refId, "size": size, "shouldCreate": shouldCreate, "refId": refId});
   
   
     // handle native call
@@ -197,8 +197,8 @@ class FURenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSData()..refId = result..tag = 'nama_fluttify');
-      return NSData()..refId = result..tag = 'nama_fluttify';
+      kNativeObjectPool.add(NSData()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSData()..refId = result..tag = 'faceunity_nama_fluttify';
     }
   }
   
@@ -209,7 +209,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx', {"inPtr": inPtr.refId, "inFormat": inFormat.index, "outPtr": outPtr.refId, "outFormat": outFormat.index, "width": width, "height": height, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "flip": flip, "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx', {"inPtr": inPtr.refId, "inFormat": inFormat.index, "outPtr": outPtr.refId, "outFormat": outFormat.index, "width": width, "height": height, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "flip": flip, "refId": refId});
   
   
     // handle native call
@@ -231,7 +231,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount', {"inPtr": inPtr.refId, "inFormat": inFormat.index, "outPtr": outPtr.refId, "outFormat": outFormat.index, "width": width, "height": height, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount', {"inPtr": inPtr.refId, "inFormat": inFormat.index, "outPtr": outPtr.refId, "outFormat": outFormat.index, "width": width, "height": height, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "refId": refId});
   
   
     // handle native call
@@ -253,7 +253,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr', {"inPtr": inPtr.refId, "inFormat": inFormat.index, "outPtr": outPtr.refId, "outFormat": outFormat.index, "width": width, "height": height, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "splitViewInfoPtr": splitViewInfoPtr.map((it) => it.refId).toList(), "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr', {"inPtr": inPtr.refId, "inFormat": inFormat.index, "outPtr": outPtr.refId, "outFormat": outFormat.index, "width": width, "height": height, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "splitViewInfoPtr": splitViewInfoPtr.map((it) => it.refId).toList(), "refId": refId});
   
   
     // handle native call
@@ -275,7 +275,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setInputCameraMatrixFlip_yrotate_mode', {"flip_x": flip_x, "flip_y": flip_y, "rotate_mode": rotate_mode, "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setInputCameraMatrixFlip_yrotate_mode', {"flip_x": flip_x, "flip_y": flip_y, "rotate_mode": rotate_mode, "refId": refId});
   
   
     // handle native call
@@ -297,7 +297,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setOutputResolutionH', {"w": w, "h": h, "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setOutputResolutionH', {"w": w, "h": h, "refId": refId});
   
   
     // handle native call
@@ -319,7 +319,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::rotateImageInPtrinFormatwidthheightrotationModeflipXflipY', {"outImage": outImage.refId, "inPtr": inPtr.refId, "inFormat": inFormat.index, "width": width, "height": height, "rotationMode": rotationMode.index, "flipX": flipX, "flipY": flipY, "refId": refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::rotateImageInPtrinFormatwidthheightrotationModeflipXflipY', {"outImage": outImage.refId, "inPtr": inPtr.refId, "inFormat": inFormat.index, "width": width, "height": height, "rotationMode": rotationMode.index, "flipX": flipX, "flipY": flipY, "refId": refId});
   
   
     // handle native call
@@ -341,7 +341,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::onCameraChange', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::onCameraChange', );
   
   
     // handle native call
@@ -363,7 +363,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::OnDeviceLost', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::OnDeviceLost', );
   
   
     // handle native call
@@ -385,7 +385,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::createItemFromPackageSize', {"data": data.refId, "size": size});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::createItemFromPackageSize', {"data": data.refId, "size": size});
   
   
     // handle native call
@@ -407,7 +407,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemWithContentsOfFile', {"path": path});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemWithContentsOfFile', {"path": path});
   
   
     // handle native call
@@ -429,7 +429,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::destroyItem', {"item": item});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::destroyItem', {"item": item});
   
   
     // handle native call
@@ -451,7 +451,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::destroyAllItems', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::destroyAllItems', );
   
   
     // handle native call
@@ -473,7 +473,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::loadAIModelFromPackageSizeaitype', {"data": data.refId, "size": size, "type": type.index});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::loadAIModelFromPackageSizeaitype', {"data": data.refId, "size": size, "type": type.index});
   
   
     // handle native call
@@ -495,7 +495,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::releaseAIModel', {"type": type.index});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::releaseAIModel', {"type": type.index});
   
   
     // handle native call
@@ -517,7 +517,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::isAIModelLoaded', {"type": type.index});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::isAIModelLoaded', {"type": type.index});
   
   
     // handle native call
@@ -539,7 +539,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamWithNamevalue', {"item": item, "name": name, "value": value.refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemSetParamWithNamevalue', {"item": item, "name": name, "value": value.refId});
   
   
     // handle native call
@@ -561,7 +561,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamdvWithNamevaluelength', {"item": item, "name": name, "value": value.refId, "length": length});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemSetParamdvWithNamevaluelength', {"item": item, "name": name, "value": value.refId, "length": length});
   
   
     // handle native call
@@ -583,7 +583,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamdvWithNamebufferlength', {"item": item, "name": name, "buffer": buffer.refId, "length": length});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemGetParamdvWithNamebufferlength', {"item": item, "name": name, "buffer": buffer.refId, "length": length});
   
   
     // handle native call
@@ -605,7 +605,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamfvWithNamebufferlength', {"item": item, "name": name, "buffer": buffer.refId, "length": length});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemGetParamfvWithNamebufferlength', {"item": item, "name": name, "buffer": buffer.refId, "length": length});
   
   
     // handle native call
@@ -627,7 +627,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getDoubleParamFromItemWithName', {"item": item, "name": name});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getDoubleParamFromItemWithName', {"item": item, "name": name});
   
   
     // handle native call
@@ -649,7 +649,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getStringParamFromItemWithName', {"item": item, "name": name});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getStringParamFromItemWithName', {"item": item, "name": name});
   
   
     // handle native call
@@ -671,7 +671,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamu8vWithNamebuffersize', {"item": item, "name": name, "buffer": buffer.refId, "size": size});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemSetParamu8vWithNamebuffersize', {"item": item, "name": name, "buffer": buffer.refId, "size": size});
   
   
     // handle native call
@@ -693,7 +693,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamu8vWithNamebuffersize', {"item": item, "name": name, "buffer": buffer.refId, "size": size});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemGetParamu8vWithNamebuffersize', {"item": item, "name": name, "buffer": buffer.refId, "size": size});
   
   
     // handle native call
@@ -715,7 +715,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::isTracking', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::isTracking', );
   
   
     // handle native call
@@ -737,7 +737,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setMaxFaces', {"maxFaces": maxFaces});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setMaxFaces', {"maxFaces": maxFaces});
   
   
     // handle native call
@@ -759,7 +759,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::trackFaceInputDatawidthheight', {"inputFormat": inputFormat, "inputData": inputData.refId, "width": width, "height": height});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::trackFaceInputDatawidthheight', {"inputFormat": inputFormat, "inputData": inputData.refId, "width": width, "height": height});
   
   
     // handle native call
@@ -781,7 +781,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::trackFaceWithTongueInputDatawidthheight', {"inputFormat": inputFormat, "inputData": inputData.refId, "width": width, "height": height});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::trackFaceWithTongueInputDatawidthheight', {"inputFormat": inputFormat, "inputData": inputData.refId, "width": width, "height": height});
   
   
     // handle native call
@@ -803,7 +803,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getFaceInfoNamepretnumber', {"faceId": faceId, "name": name, "pret": pret.refId, "number": number});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getFaceInfoNamepretnumber', {"faceId": faceId, "name": name, "pret": pret.refId, "number": number});
   
   
     // handle native call
@@ -825,7 +825,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getFaceIdentifier', {"faceId": faceId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getFaceIdentifier', {"faceId": faceId});
   
   
     // handle native call
@@ -847,7 +847,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::avatarBindItemsItemsitemsCountcontractscontractsCount', {"avatarItem": avatarItem, "items": items.refId, "itemsCount": itemsCount, "contracts": contracts.refId, "contractsCount": contractsCount});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::avatarBindItemsItemsitemsCountcontractscontractsCount', {"avatarItem": avatarItem, "items": items.refId, "itemsCount": itemsCount, "contracts": contracts.refId, "contractsCount": contractsCount});
   
   
     // handle native call
@@ -869,7 +869,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::avatarUnbindItemsItemsitemsCount', {"avatarItem": avatarItem, "items": items.refId, "itemsCount": itemsCount});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::avatarUnbindItemsItemsitemsCount', {"avatarItem": avatarItem, "items": items.refId, "itemsCount": itemsCount});
   
   
     // handle native call
@@ -891,7 +891,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::bindItemsItemsitemsCount', {"item": item, "items": items.refId, "itemsCount": itemsCount});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::bindItemsItemsitemsCount', {"item": item, "items": items.refId, "itemsCount": itemsCount});
   
   
     // handle native call
@@ -913,7 +913,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::unBindItemsItemsitemsCount', {"item": item, "items": items.refId, "itemsCount": itemsCount});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::unBindItemsItemsitemsCount', {"item": item, "items": items.refId, "itemsCount": itemsCount});
   
   
     // handle native call
@@ -935,7 +935,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::unbindAllItems', {"item": item});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::unbindAllItems', {"item": item});
   
   
     // handle native call
@@ -957,7 +957,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getVersion', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getVersion', );
   
   
     // handle native call
@@ -979,7 +979,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setExpressionCalibration', {"expressionCalibration": expressionCalibration});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setExpressionCalibration', {"expressionCalibration": expressionCalibration});
   
   
     // handle native call
@@ -1001,7 +1001,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setFocalLengthScale', {"scale": scale});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setFocalLengthScale', {"scale": scale});
   
   
     // handle native call
@@ -1023,7 +1023,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setDefaultRotationMode', {"mode": mode});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setDefaultRotationMode', {"mode": mode});
   
   
     // handle native call
@@ -1045,7 +1045,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setDeviceOrientation', {"orientation": orientation});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setDeviceOrientation', {"orientation": orientation});
   
   
     // handle native call
@@ -1067,7 +1067,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getCurrentRotationMode', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getCurrentRotationMode', );
   
   
     // handle native call
@@ -1089,7 +1089,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setMultiSamples', {"samples": samples});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setMultiSamples', {"samples": samples});
   
   
     // handle native call
@@ -1111,7 +1111,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setAsyncTrackFaceEnable', {"enable": enable});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setAsyncTrackFaceEnable', {"enable": enable});
   
   
     // handle native call
@@ -1133,7 +1133,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setTongueTrackingEnable', {"enable": enable});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setTongueTrackingEnable', {"enable": enable});
   
   
     // handle native call
@@ -1155,7 +1155,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::loadTongueModelSize', {"model": model.refId, "size": size});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::loadTongueModelSize', {"model": model.refId, "size": size});
   
   
     // handle native call
@@ -1177,7 +1177,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::create3DBodyTrackerSize', {"model": model.refId, "size": size});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::create3DBodyTrackerSize', {"model": model.refId, "size": size});
   
   
     // handle native call
@@ -1187,8 +1187,8 @@ class FURenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
-      return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
     }
   }
   
@@ -1199,7 +1199,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::destroy3DBodyTracker', {"modelPtr": modelPtr.refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::destroy3DBodyTracker', {"modelPtr": modelPtr.refId});
   
   
     // handle native call
@@ -1221,7 +1221,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode', {"modelPtr": modelPtr.refId, "humanHandle": humanHandle, "inPtr": inPtr.refId, "inFormat": inFormat.index, "w": w, "h": h, "rotationMode": rotationMode});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode', {"modelPtr": modelPtr.refId, "humanHandle": humanHandle, "inPtr": inPtr.refId, "inFormat": inFormat.index, "w": w, "h": h, "rotationMode": rotationMode});
   
   
     // handle native call
@@ -1243,7 +1243,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureCreateSize', {"data": data.refId, "size": size});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureCreateSize', {"data": data.refId, "size": size});
   
   
     // handle native call
@@ -1253,8 +1253,8 @@ class FURenderer extends NSObject  {
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'nama_fluttify');
-      return NSValue/* void* */()..refId = result..tag = 'nama_fluttify';
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
     }
   }
   
@@ -1265,7 +1265,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureDestory', {"model": model.refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureDestory', {"model": model.refId});
   
   
     // handle native call
@@ -1287,7 +1287,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureReset', {"model": model.refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureReset', {"model": model.refId});
   
   
     // handle native call
@@ -1309,7 +1309,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureProcessFrameInPtrinFormatwhrotationMode', {"model": model.refId, "inPtr": inPtr.refId, "inFormat": inFormat.index, "w": w, "h": h, "rotationMode": rotationMode});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureProcessFrameInPtrinFormatwhrotationMode', {"model": model.refId, "inPtr": inPtr.refId, "inFormat": inFormat.index, "w": w, "h": h, "rotationMode": rotationMode});
   
   
     // handle native call
@@ -1331,7 +1331,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultLandmarksFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultLandmarksFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
   
   
     // handle native call
@@ -1353,7 +1353,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIdentityFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIdentityFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
   
   
     // handle native call
@@ -1375,7 +1375,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultExpressionFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultExpressionFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
   
   
     // handle native call
@@ -1397,7 +1397,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultRotationFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultRotationFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
   
   
     // handle native call
@@ -1419,7 +1419,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTranslationFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTranslationFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
   
   
     // handle native call
@@ -1441,7 +1441,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCapturGetResultTongueExpFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCapturGetResultTongueExpFaceNbufferlength', {"model": model.refId, "faceN": faceN, "buffer": buffer.refId, "length": length});
   
   
     // handle native call
@@ -1463,7 +1463,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIsFaceFaceN', {"model": model.refId, "faceN": faceN});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIsFaceFaceN', {"model": model.refId, "faceN": faceN});
   
   
     // handle native call
@@ -1485,7 +1485,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceIDFaceN', {"model": model.refId, "faceN": faceN});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceIDFaceN', {"model": model.refId, "faceN": faceN});
   
   
     // handle native call
@@ -1507,7 +1507,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueScoreFaceN', {"model": model.refId, "faceN": faceN});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueScoreFaceN', {"model": model.refId, "faceN": faceN});
   
   
     // handle native call
@@ -1529,7 +1529,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueClassFaceN', {"model": model.refId, "faceN": faceN});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueClassFaceN', {"model": model.refId, "faceN": faceN});
   
   
     // handle native call
@@ -1551,7 +1551,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFocalLength', {"model": model.refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFocalLength', {"model": model.refId});
   
   
     // handle native call
@@ -1573,7 +1573,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceNum', {"model": model.refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceNum', {"model": model.refId});
   
   
     // handle native call
@@ -1595,7 +1595,7 @@ class FURenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::namaLibDestroy', );
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::namaLibDestroy', );
   
   
     // handle native call
@@ -1629,14 +1629,14 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::shareRenderer_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::shareRenderer_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => FURenderer()..refId = result..tag = 'nama_fluttify').toList();
+      final typedResult = (resultBatch as List).map((result) => FURenderer()..refId = result..tag = 'faceunity_nama_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1648,7 +1648,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setBackCurrentContext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setBackCurrentContext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1667,7 +1667,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setUpCurrentContext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setUpCurrentContext_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1686,7 +1686,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSize_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "dataSize": dataSize[i], "ardata": ardata[i].refId, "package": package[i].refId, "size": size[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSize_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "dataSize": dataSize[i], "ardata": ardata[i].refId, "package": package[i].refId, "size": size[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1705,7 +1705,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "dataSize": dataSize[i], "ardata": ardata[i].refId, "package": package[i].refId, "size": size[i], "shouldCreate": shouldCreate[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setupWithDataDataSizeardataauthPackageauthSizeshouldCreateContext_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "dataSize": dataSize[i], "ardata": ardata[i].refId, "package": package[i].refId, "size": size[i], "shouldCreate": shouldCreate[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1724,7 +1724,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupWithDataPathAuthPackageauthSizeshouldCreateContext_batch', [for (int i = 0; i < this.length; i++) {"v3path": v3path[i], "package": package[i].refId, "size": size[i], "shouldCreate": shouldCreate[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setupWithDataPathAuthPackageauthSizeshouldCreateContext_batch', [for (int i = 0; i < this.length; i++) {"v3path": v3path[i], "package": package[i].refId, "size": size[i], "shouldCreate": shouldCreate[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1743,14 +1743,14 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext_batch', [for (int i = 0; i < this.length; i++) {"v3path": v3path[i], "offLinePath": offLinePath[i], "package": package[i].refId, "size": size[i], "shouldCreate": shouldCreate[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setupLocalWithV3PathOffLinePathauthPackageauthSizeshouldCreateContext_batch', [for (int i = 0; i < this.length; i++) {"v3path": v3path[i], "offLinePath": offLinePath[i], "package": package[i].refId, "size": size[i], "shouldCreate": shouldCreate[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => NSData()..refId = result..tag = 'nama_fluttify').toList();
+      final typedResult = (resultBatch as List).map((result) => NSData()..refId = result..tag = 'faceunity_nama_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1762,7 +1762,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx_batch', [for (int i = 0; i < this.length; i++) {"inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "outPtr": outPtr[i].refId, "outFormat": outFormat[i].index, "width": width[i], "height": height[i], "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "flip": flip[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx_batch', [for (int i = 0; i < this.length; i++) {"inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "outPtr": outPtr[i].refId, "outFormat": outFormat[i].index, "width": width[i], "height": height[i], "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "flip": flip[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1781,7 +1781,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount_batch', [for (int i = 0; i < this.length; i++) {"inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "outPtr": outPtr[i].refId, "outFormat": outFormat[i].index, "width": width[i], "height": height[i], "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderBundlesInFormatoutPtroutFormatwidthheightframeIditemsitemCount_batch', [for (int i = 0; i < this.length; i++) {"inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "outPtr": outPtr[i].refId, "outFormat": outFormat[i].index, "width": width[i], "height": height[i], "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1800,7 +1800,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr_batch', [for (int i = 0; i < this.length; i++) {"inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "outPtr": outPtr[i].refId, "outFormat": outFormat[i].index, "width": width[i], "height": height[i], "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "splitViewInfoPtr": splitViewInfoPtr[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderBundlesSplitViewInFormatoutPtroutFormatwidthheightframeIditemsitemCountsplitViewInfoPtr_batch', [for (int i = 0; i < this.length; i++) {"inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "outPtr": outPtr[i].refId, "outFormat": outFormat[i].index, "width": width[i], "height": height[i], "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "splitViewInfoPtr": splitViewInfoPtr[i].map((it) => it.refId).toList(), "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1819,7 +1819,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setInputCameraMatrixFlip_yrotate_mode_batch', [for (int i = 0; i < this.length; i++) {"flip_x": flip_x[i], "flip_y": flip_y[i], "rotate_mode": rotate_mode[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setInputCameraMatrixFlip_yrotate_mode_batch', [for (int i = 0; i < this.length; i++) {"flip_x": flip_x[i], "flip_y": flip_y[i], "rotate_mode": rotate_mode[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1838,7 +1838,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setOutputResolutionH_batch', [for (int i = 0; i < this.length; i++) {"w": w[i], "h": h[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setOutputResolutionH_batch', [for (int i = 0; i < this.length; i++) {"w": w[i], "h": h[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1857,7 +1857,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::rotateImageInPtrinFormatwidthheightrotationModeflipXflipY_batch', [for (int i = 0; i < this.length; i++) {"outImage": outImage[i].refId, "inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "width": width[i], "height": height[i], "rotationMode": rotationMode[i].index, "flipX": flipX[i], "flipY": flipY[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::rotateImageInPtrinFormatwidthheightrotationModeflipXflipY_batch', [for (int i = 0; i < this.length; i++) {"outImage": outImage[i].refId, "inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "width": width[i], "height": height[i], "rotationMode": rotationMode[i].index, "flipX": flipX[i], "flipY": flipY[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1876,7 +1876,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::onCameraChange_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::onCameraChange_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1895,7 +1895,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::OnDeviceLost_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::OnDeviceLost_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1914,7 +1914,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::createItemFromPackageSize_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "size": size[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::createItemFromPackageSize_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "size": size[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1933,7 +1933,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemWithContentsOfFile_batch', [for (int i = 0; i < this.length; i++) {"path": path[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemWithContentsOfFile_batch', [for (int i = 0; i < this.length; i++) {"path": path[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1952,7 +1952,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::destroyItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::destroyItem_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1971,7 +1971,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::destroyAllItems_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::destroyAllItems_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -1990,7 +1990,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::loadAIModelFromPackageSizeaitype_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "size": size[i], "type": type[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::loadAIModelFromPackageSizeaitype_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "size": size[i], "type": type[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2009,7 +2009,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::releaseAIModel_batch', [for (int i = 0; i < this.length; i++) {"type": type[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::releaseAIModel_batch', [for (int i = 0; i < this.length; i++) {"type": type[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2028,7 +2028,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::isAIModelLoaded_batch', [for (int i = 0; i < this.length; i++) {"type": type[i].index, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::isAIModelLoaded_batch', [for (int i = 0; i < this.length; i++) {"type": type[i].index, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2047,7 +2047,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamWithNamevalue_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "value": value[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemSetParamWithNamevalue_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "value": value[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2066,7 +2066,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamdvWithNamevaluelength_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "value": value[i].refId, "length": length[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemSetParamdvWithNamevaluelength_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "value": value[i].refId, "length": length[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2085,7 +2085,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamdvWithNamebufferlength_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemGetParamdvWithNamebufferlength_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2104,7 +2104,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamfvWithNamebufferlength_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemGetParamfvWithNamebufferlength_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2123,7 +2123,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getDoubleParamFromItemWithName_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getDoubleParamFromItemWithName_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2142,7 +2142,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getStringParamFromItemWithName_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getStringParamFromItemWithName_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2161,7 +2161,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemSetParamu8vWithNamebuffersize_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "size": size[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemSetParamu8vWithNamebuffersize_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "size": size[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2180,7 +2180,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::itemGetParamu8vWithNamebuffersize_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "size": size[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::itemGetParamu8vWithNamebuffersize_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "name": name[i], "buffer": buffer[i].refId, "size": size[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2199,7 +2199,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::isTracking_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::isTracking_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2218,7 +2218,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setMaxFaces_batch', [for (int i = 0; i < this.length; i++) {"maxFaces": maxFaces[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setMaxFaces_batch', [for (int i = 0; i < this.length; i++) {"maxFaces": maxFaces[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2237,7 +2237,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::trackFaceInputDatawidthheight_batch', [for (int i = 0; i < this.length; i++) {"inputFormat": inputFormat[i], "inputData": inputData[i].refId, "width": width[i], "height": height[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::trackFaceInputDatawidthheight_batch', [for (int i = 0; i < this.length; i++) {"inputFormat": inputFormat[i], "inputData": inputData[i].refId, "width": width[i], "height": height[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2256,7 +2256,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::trackFaceWithTongueInputDatawidthheight_batch', [for (int i = 0; i < this.length; i++) {"inputFormat": inputFormat[i], "inputData": inputData[i].refId, "width": width[i], "height": height[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::trackFaceWithTongueInputDatawidthheight_batch', [for (int i = 0; i < this.length; i++) {"inputFormat": inputFormat[i], "inputData": inputData[i].refId, "width": width[i], "height": height[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2275,7 +2275,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getFaceInfoNamepretnumber_batch', [for (int i = 0; i < this.length; i++) {"faceId": faceId[i], "name": name[i], "pret": pret[i].refId, "number": number[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getFaceInfoNamepretnumber_batch', [for (int i = 0; i < this.length; i++) {"faceId": faceId[i], "name": name[i], "pret": pret[i].refId, "number": number[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2294,7 +2294,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getFaceIdentifier_batch', [for (int i = 0; i < this.length; i++) {"faceId": faceId[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getFaceIdentifier_batch', [for (int i = 0; i < this.length; i++) {"faceId": faceId[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2313,7 +2313,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::avatarBindItemsItemsitemsCountcontractscontractsCount_batch', [for (int i = 0; i < this.length; i++) {"avatarItem": avatarItem[i], "items": items[i].refId, "itemsCount": itemsCount[i], "contracts": contracts[i].refId, "contractsCount": contractsCount[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::avatarBindItemsItemsitemsCountcontractscontractsCount_batch', [for (int i = 0; i < this.length; i++) {"avatarItem": avatarItem[i], "items": items[i].refId, "itemsCount": itemsCount[i], "contracts": contracts[i].refId, "contractsCount": contractsCount[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2332,7 +2332,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::avatarUnbindItemsItemsitemsCount_batch', [for (int i = 0; i < this.length; i++) {"avatarItem": avatarItem[i], "items": items[i].refId, "itemsCount": itemsCount[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::avatarUnbindItemsItemsitemsCount_batch', [for (int i = 0; i < this.length; i++) {"avatarItem": avatarItem[i], "items": items[i].refId, "itemsCount": itemsCount[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2351,7 +2351,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::bindItemsItemsitemsCount_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "items": items[i].refId, "itemsCount": itemsCount[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::bindItemsItemsitemsCount_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "items": items[i].refId, "itemsCount": itemsCount[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2370,7 +2370,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::unBindItemsItemsitemsCount_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "items": items[i].refId, "itemsCount": itemsCount[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::unBindItemsItemsitemsCount_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "items": items[i].refId, "itemsCount": itemsCount[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2389,7 +2389,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::unbindAllItems_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::unbindAllItems_batch', [for (int i = 0; i < this.length; i++) {"item": item[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2408,7 +2408,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getVersion_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getVersion_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2427,7 +2427,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setExpressionCalibration_batch', [for (int i = 0; i < this.length; i++) {"expressionCalibration": expressionCalibration[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setExpressionCalibration_batch', [for (int i = 0; i < this.length; i++) {"expressionCalibration": expressionCalibration[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2446,7 +2446,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setFocalLengthScale_batch', [for (int i = 0; i < this.length; i++) {"scale": scale[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setFocalLengthScale_batch', [for (int i = 0; i < this.length; i++) {"scale": scale[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2465,7 +2465,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setDefaultRotationMode_batch', [for (int i = 0; i < this.length; i++) {"mode": mode[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setDefaultRotationMode_batch', [for (int i = 0; i < this.length; i++) {"mode": mode[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2484,7 +2484,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setDeviceOrientation_batch', [for (int i = 0; i < this.length; i++) {"orientation": orientation[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setDeviceOrientation_batch', [for (int i = 0; i < this.length; i++) {"orientation": orientation[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2503,7 +2503,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::getCurrentRotationMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getCurrentRotationMode_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2522,7 +2522,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setMultiSamples_batch', [for (int i = 0; i < this.length; i++) {"samples": samples[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setMultiSamples_batch', [for (int i = 0; i < this.length; i++) {"samples": samples[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2541,7 +2541,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setAsyncTrackFaceEnable_batch', [for (int i = 0; i < this.length; i++) {"enable": enable[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setAsyncTrackFaceEnable_batch', [for (int i = 0; i < this.length; i++) {"enable": enable[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2560,7 +2560,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::setTongueTrackingEnable_batch', [for (int i = 0; i < this.length; i++) {"enable": enable[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::setTongueTrackingEnable_batch', [for (int i = 0; i < this.length; i++) {"enable": enable[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2579,7 +2579,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::loadTongueModelSize_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "size": size[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::loadTongueModelSize_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "size": size[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2598,14 +2598,14 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::create3DBodyTrackerSize_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "size": size[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::create3DBodyTrackerSize_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "size": size[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -2617,7 +2617,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::destroy3DBodyTracker_batch', [for (int i = 0; i < this.length; i++) {"modelPtr": modelPtr[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::destroy3DBodyTracker_batch', [for (int i = 0; i < this.length; i++) {"modelPtr": modelPtr[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2636,7 +2636,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode_batch', [for (int i = 0; i < this.length; i++) {"modelPtr": modelPtr[i].refId, "humanHandle": humanHandle[i], "inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "w": w[i], "h": h[i], "rotationMode": rotationMode[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::run3DBodyTrackerHumanHandleinPtrinFormatwhrotationMode_batch', [for (int i = 0; i < this.length; i++) {"modelPtr": modelPtr[i].refId, "humanHandle": humanHandle[i], "inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "w": w[i], "h": h[i], "rotationMode": rotationMode[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2655,14 +2655,14 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureCreateSize_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "size": size[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureCreateSize_batch', [for (int i = 0; i < this.length; i++) {"data": data[i].refId, "size": size[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'nama_fluttify').toList();
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -2674,7 +2674,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureDestory_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureDestory_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2693,7 +2693,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureReset_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureReset_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2712,7 +2712,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureProcessFrameInPtrinFormatwhrotationMode_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "w": w[i], "h": h[i], "rotationMode": rotationMode[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureProcessFrameInPtrinFormatwhrotationMode_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "inPtr": inPtr[i].refId, "inFormat": inFormat[i].index, "w": w[i], "h": h[i], "rotationMode": rotationMode[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2731,7 +2731,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultLandmarksFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultLandmarksFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2750,7 +2750,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIdentityFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIdentityFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2769,7 +2769,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultExpressionFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultExpressionFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2788,7 +2788,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultRotationFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultRotationFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2807,7 +2807,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTranslationFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTranslationFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2826,7 +2826,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCapturGetResultTongueExpFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCapturGetResultTongueExpFaceNbufferlength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "buffer": buffer[i].refId, "length": length[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2845,7 +2845,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIsFaceFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultIsFaceFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2864,7 +2864,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceIDFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceIDFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2883,7 +2883,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueScoreFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueScoreFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2902,7 +2902,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueClassFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultTongueClassFaceN_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "faceN": faceN[i], "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2921,7 +2921,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFocalLength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFocalLength_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2940,7 +2940,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceNum_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::faceCaptureGetResultFaceNum_batch', [for (int i = 0; i < this.length; i++) {"model": model[i].refId, "refId": this[i].refId}]);
   
   
     // convert native result to dart side object
@@ -2959,7 +2959,7 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('FURenderer::namaLibDestroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::namaLibDestroy_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
   
   
     // convert native result to dart side object

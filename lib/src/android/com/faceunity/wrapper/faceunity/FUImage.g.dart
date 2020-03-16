@@ -5,8 +5,8 @@
 
 import 'dart:typed_data';
 
-import 'package:nama_fluttify/src/ios/ios.export.g.dart';
-import 'package:nama_fluttify/src/android/android.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/ios/ios.export.g.dart';
+import 'package:faceunity_nama_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +19,8 @@ class com_faceunity_wrapper_faceunity_FUImage extends java_lang_Object  {
 
   //region creators
   static Future<com_faceunity_wrapper_faceunity_FUImage> create__() async {
-    final int refId = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity_FUImage__');
-    final object = com_faceunity_wrapper_faceunity_FUImage()..refId = refId..tag = 'nama_fluttify';
+    final int refId = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::createcom_faceunity_wrapper_faceunity_FUImage__');
+    final object = com_faceunity_wrapper_faceunity_FUImage()..refId = refId..tag = 'faceunity_nama_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,9 +30,9 @@ class com_faceunity_wrapper_faceunity_FUImage extends java_lang_Object  {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity_FUImage__', {'length': length});
+    final List resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('ObjectFactory::create_batchcom_faceunity_wrapper_faceunity_FUImage__', {'length': length});
   
-    final List<com_faceunity_wrapper_faceunity_FUImage> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity_FUImage()..refId = result..tag = 'nama_fluttify').toList();
+    final List<com_faceunity_wrapper_faceunity_FUImage> typedResult = resultBatch.map((result) => com_faceunity_wrapper_faceunity_FUImage()..refId = result..tag = 'faceunity_nama_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -41,13 +41,13 @@ class com_faceunity_wrapper_faceunity_FUImage extends java_lang_Object  {
 
   //region getters
   Future<int> get_tex() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_tex", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_tex", {'refId': refId});
   
     return result;
   }
   
   Future<Uint8List> get_nv21_data() async {
-    final result = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_nv21_data", {'refId': refId});
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_nv21_data", {'refId': refId});
   
     return result;
   }
@@ -56,13 +56,13 @@ class com_faceunity_wrapper_faceunity_FUImage extends java_lang_Object  {
 
   //region setters
   Future<void> set_tex(int tex) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.FUImage::set_tex', {'refId': refId, "tex": tex});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.FUImage::set_tex', {'refId': refId, "tex": tex});
   
   
   }
   
   Future<void> set_nv21_data(Uint8List nv21_data) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.FUImage::set_nv21_data', {'refId': refId, "nv21_data": nv21_data});
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.FUImage::set_nv21_data', {'refId': refId, "nv21_data": nv21_data});
   
   
   }
@@ -77,14 +77,14 @@ class com_faceunity_wrapper_faceunity_FUImage extends java_lang_Object  {
 extension com_faceunity_wrapper_faceunity_FUImage_Batch on List<com_faceunity_wrapper_faceunity_FUImage> {
   //region getters
   Future<List<int>> get_tex_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_tex_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_tex_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<Uint8List>> get_nv21_data_batch() async {
-    final resultBatch = await MethodChannel('com.fluttify/nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_nv21_data_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("com.faceunity.wrapper.faceunity.FUImage::get_nv21_data_batch", [for (final item in this) {'refId': item.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -94,13 +94,13 @@ extension com_faceunity_wrapper_faceunity_FUImage_Batch on List<com_faceunity_wr
 
   //region setters
   Future<void> set_tex_batch(List<int> tex) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.FUImage::set_tex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tex": tex[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.FUImage::set_tex_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "tex": tex[i]}]);
   
   
   }
   
   Future<void> set_nv21_data_batch(List<Uint8List> nv21_data) async {
-    await MethodChannel('com.fluttify/nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.FUImage::set_nv21_data_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "nv21_data": nv21_data[i]}]);
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('com.faceunity.wrapper.faceunity.FUImage::set_nv21_data_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "nv21_data": nv21_data[i]}]);
   
   
   }
