@@ -22,7 +22,7 @@ A new flutter plugin project.
   s.dependency 'Nama-lite', '~> 6.6.0'
 
   s.static_framework = true
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   # include project framework
   s.vendored_frameworks = 'Vendor/*.framework'
   # include project .a
