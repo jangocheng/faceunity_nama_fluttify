@@ -40,10 +40,20 @@ class FUOutput extends NSObject  {
   //endregion
 
   //region getters
+  Future<NSValue/* void* */> get_pixelBuffer() async {
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("FUOutput::get_pixelBuffer", {'refId': refId});
+    kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+    return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
+  }
   
   //endregion
 
   //region setters
+  Future<void> set_pixelBuffer(NSValue/* void* */ pixelBuffer) async {
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FUOutput::set_pixelBuffer', {'refId': refId, "pixelBuffer": pixelBuffer.refId});
+  
+  
+  }
   
   //endregion
 
@@ -54,10 +64,21 @@ class FUOutput extends NSObject  {
 
 extension FUOutput_Batch on List<FUOutput> {
   //region getters
+  Future<List<NSValue/* void* */>> get_pixelBuffer_batch() async {
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod("FUOutput::get_pixelBuffer_batch", [for (final item in this) {'refId': item.refId}]);
+    final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 
   //region setters
+  Future<void> set_pixelBuffer_batch(List<NSValue/* void* */> pixelBuffer) async {
+    await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FUOutput::set_pixelBuffer_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pixelBuffer": pixelBuffer[i].refId}]);
+  
+  
+  }
   
   //endregion
 

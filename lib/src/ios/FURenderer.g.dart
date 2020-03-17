@@ -202,6 +202,138 @@ class FURenderer extends NSObject  {
     }
   }
   
+  Future<NSValue/* void* */> renderPixelBufferWithFrameIditemsitemCount(NSValue/* void* */ pixelBuffer, int frameid, NSValue/* int* */ items, int itemCount) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::renderPixelBuffer([\'frameid\':$frameid, \'itemCount\':$itemCount])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderPixelBufferWithFrameIditemsitemCount', {"pixelBuffer": pixelBuffer.refId, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
+    }
+  }
+  
+  Future<NSValue/* void* */> renderPixelBufferWithFrameIditemsitemCountflipx(NSValue/* void* */ pixelBuffer, int frameid, NSValue/* int* */ items, int itemCount, bool flip) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::renderPixelBuffer([\'frameid\':$frameid, \'itemCount\':$itemCount, \'flip\':$flip])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderPixelBufferWithFrameIditemsitemCountflipx', {"pixelBuffer": pixelBuffer.refId, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "flip": flip, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
+    }
+  }
+  
+  Future<NSValue/* void* */> renderPixelBufferWithFrameIditemsitemCountflipxcustomSize(NSValue/* void* */ pixelBuffer, int frameid, NSValue/* int* */ items, int itemCount, bool flip, CGSize customSize) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::renderPixelBuffer([\'frameid\':$frameid, \'itemCount\':$itemCount, \'flip\':$flip])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderPixelBufferWithFrameIditemsitemCountflipxcustomSize', {"pixelBuffer": pixelBuffer.refId, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "flip": flip, "customSize": customSize.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
+    }
+  }
+  
+  Future<NSValue/* void* */> renderToInternalPixelBufferWithFrameIditemsitemCount(NSValue/* void* */ pixelBuffer, int frameid, NSValue/* int* */ items, int itemCount) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::renderToInternalPixelBuffer([\'frameid\':$frameid, \'itemCount\':$itemCount])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderToInternalPixelBufferWithFrameIditemsitemCount', {"pixelBuffer": pixelBuffer.refId, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
+    }
+  }
+  
+  Future<NSValue/* void* */> beautifyPixelBufferWithBeautyItem(NSValue/* void* */ pixelBuffer, int item) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::beautifyPixelBuffer([\'item\':$item])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::beautifyPixelBufferWithBeautyItem', {"pixelBuffer": pixelBuffer.refId, "item": item, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
+    }
+  }
+  
+  Future<NSValue/* void* */> renderPixelBufferWithFrameIditemsitemCountflipxmasks(NSValue/* void* */ pixelBuffer, int frameid, NSValue/* int* */ items, int itemCount, bool flip, NSValue/* void* */ masks) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::renderPixelBuffer([\'frameid\':$frameid, \'itemCount\':$itemCount, \'flip\':$flip])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderPixelBufferWithFrameIditemsitemCountflipxmasks', {"pixelBuffer": pixelBuffer.refId, "frameid": frameid, "items": items.refId, "itemCount": itemCount, "flip": flip, "masks": masks.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
+    }
+  }
+  
   Future<int> renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx(NSValue/* void* */ inPtr, FUFormat inFormat, NSValue/* void* */ outPtr, FUFormat outFormat, int width, int height, int frameid, NSValue/* int* */ items, int itemCount, bool flip) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -331,6 +463,50 @@ class FURenderer extends NSObject  {
     } else {
     
       return result;
+    }
+  }
+  
+  Future<NSValue/* void* */> resizePixelBufferResizeSize(NSValue/* void* */ pixelBuffer, CGSize resizeSize) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::resizePixelBuffer([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::resizePixelBufferResizeSize', {"pixelBuffer": pixelBuffer.refId, "resizeSize": resizeSize.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
+    }
+  }
+  
+  Future<NSValue/* void* */> getPixelBufferFromTextureTextureSizeoutputSizeoutputFormat(int texture, CGSize textureSize, CGSize outPutSize, int outputFormat) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: FURenderer@$refId::getPixelBufferFromTexture([\'texture\':$texture, \'outputFormat\':$outputFormat])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getPixelBufferFromTextureTextureSizeoutputSizeoutputFormat', {"texture": texture, "textureSize": textureSize.refId, "outPutSize": outPutSize.refId, "outputFormat": outputFormat, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify');
+      return NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify';
     }
   }
   
@@ -1756,6 +1932,120 @@ extension FURenderer_Batch on List<FURenderer> {
     }
   }
   
+  Future<List<NSValue/* void* */>> renderPixelBufferWithFrameIditemsitemCount_batch(List<NSValue/* void* */> pixelBuffer, List<int> frameid, List<NSValue/* int* */> items, List<int> itemCount) async {
+    if (pixelBuffer.length != frameid.length || frameid.length != items.length || items.length != itemCount.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderPixelBufferWithFrameIditemsitemCount_batch', [for (int i = 0; i < this.length; i++) {"pixelBuffer": pixelBuffer[i].refId, "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue/* void* */>> renderPixelBufferWithFrameIditemsitemCountflipx_batch(List<NSValue/* void* */> pixelBuffer, List<int> frameid, List<NSValue/* int* */> items, List<int> itemCount, List<bool> flip) async {
+    if (pixelBuffer.length != frameid.length || frameid.length != items.length || items.length != itemCount.length || itemCount.length != flip.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderPixelBufferWithFrameIditemsitemCountflipx_batch', [for (int i = 0; i < this.length; i++) {"pixelBuffer": pixelBuffer[i].refId, "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "flip": flip[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue/* void* */>> renderPixelBufferWithFrameIditemsitemCountflipxcustomSize_batch(List<NSValue/* void* */> pixelBuffer, List<int> frameid, List<NSValue/* int* */> items, List<int> itemCount, List<bool> flip, List<CGSize> customSize) async {
+    if (pixelBuffer.length != frameid.length || frameid.length != items.length || items.length != itemCount.length || itemCount.length != flip.length || flip.length != customSize.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderPixelBufferWithFrameIditemsitemCountflipxcustomSize_batch', [for (int i = 0; i < this.length; i++) {"pixelBuffer": pixelBuffer[i].refId, "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "flip": flip[i], "customSize": customSize[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue/* void* */>> renderToInternalPixelBufferWithFrameIditemsitemCount_batch(List<NSValue/* void* */> pixelBuffer, List<int> frameid, List<NSValue/* int* */> items, List<int> itemCount) async {
+    if (pixelBuffer.length != frameid.length || frameid.length != items.length || items.length != itemCount.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderToInternalPixelBufferWithFrameIditemsitemCount_batch', [for (int i = 0; i < this.length; i++) {"pixelBuffer": pixelBuffer[i].refId, "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue/* void* */>> beautifyPixelBufferWithBeautyItem_batch(List<NSValue/* void* */> pixelBuffer, List<int> item) async {
+    if (pixelBuffer.length != item.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::beautifyPixelBufferWithBeautyItem_batch', [for (int i = 0; i < this.length; i++) {"pixelBuffer": pixelBuffer[i].refId, "item": item[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue/* void* */>> renderPixelBufferWithFrameIditemsitemCountflipxmasks_batch(List<NSValue/* void* */> pixelBuffer, List<int> frameid, List<NSValue/* int* */> items, List<int> itemCount, List<bool> flip, List<NSValue/* void* */> masks) async {
+    if (pixelBuffer.length != frameid.length || frameid.length != items.length || items.length != itemCount.length || itemCount.length != flip.length || flip.length != masks.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::renderPixelBufferWithFrameIditemsitemCountflipxmasks_batch', [for (int i = 0; i < this.length; i++) {"pixelBuffer": pixelBuffer[i].refId, "frameid": frameid[i], "items": items[i].refId, "itemCount": itemCount[i], "flip": flip[i], "masks": masks[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
   Future<List<int>> renderItemsInFormatoutPtroutFormatwidthheightframeIditemsitemCountflipx_batch(List<NSValue/* void* */> inPtr, List<FUFormat> inFormat, List<NSValue/* void* */> outPtr, List<FUFormat> outFormat, List<int> width, List<int> height, List<int> frameid, List<NSValue/* int* */> items, List<int> itemCount, List<bool> flip) async {
     if (inPtr.length != inFormat.length || inFormat.length != outPtr.length || outPtr.length != outFormat.length || outFormat.length != width.length || width.length != height.length || height.length != frameid.length || frameid.length != items.length || items.length != itemCount.length || itemCount.length != flip.length) {
       return Future.error('all args must have same length!');
@@ -1866,6 +2156,44 @@ extension FURenderer_Batch on List<FURenderer> {
     } else {
       final typedResult = (resultBatch as List).map((result) => result).toList();
     
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue/* void* */>> resizePixelBufferResizeSize_batch(List<NSValue/* void* */> pixelBuffer, List<CGSize> resizeSize) async {
+    if (pixelBuffer.length != resizeSize.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::resizePixelBufferResizeSize_batch', [for (int i = 0; i < this.length; i++) {"pixelBuffer": pixelBuffer[i].refId, "resizeSize": resizeSize[i].refId, "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<NSValue/* void* */>> getPixelBufferFromTextureTextureSizeoutputSizeoutputFormat_batch(List<int> texture, List<CGSize> textureSize, List<CGSize> outPutSize, List<int> outputFormat) async {
+    if (texture.length != textureSize.length || textureSize.length != outPutSize.length || outPutSize.length != outputFormat.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('com.fluttify/faceunity_nama_fluttify').invokeMethod('FURenderer::getPixelBufferFromTextureTextureSizeoutputSizeoutputFormat_batch', [for (int i = 0; i < this.length; i++) {"texture": texture[i], "textureSize": textureSize[i].refId, "outPutSize": outPutSize[i].refId, "outputFormat": outputFormat[i], "refId": this[i].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).map((result) => NSValue/* void* */()..refId = result..tag = 'faceunity_nama_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
   }
